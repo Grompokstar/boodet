@@ -159,3 +159,14 @@ a.btn {
 .mt-1 {
   margin-top: 1em;
 }
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: url(grayscale.svg#greyscale); /* Firefox 4+ */
+  filter: gray; /* IE 6-9 */
+  -webkit-filter: grayscale(1);
+}

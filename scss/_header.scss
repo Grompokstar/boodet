@@ -12,4 +12,27 @@
       height: 100%;
     }
   }
+
+  .main-menu-container {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(at bottom left, rgba(18, 23, 41, 0.9) 0%, rgba(44, 78, 221, 0.9) 61%, rgba(100, 44, 221, 0.9) 100%);
+
+    .logo-row {
+      display: flex;
+      justify-content: center;
+
+      .close-btn {
+        cursor: pointer;
+        position: absolute;
+        top: 2em;
+        right: 3em;
+        width: 3.5em;
+        height: 3.5em;
+      }
+    }
+  }
 }
