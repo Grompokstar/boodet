@@ -1,0 +1,52 @@
+#why-we {
+  background: linear-gradient(45deg, rgba(61,65,163,1) 0%,rgba(44,78,221,1) 100%);
+
+
+
+  .wave-image {
+    padding: 0 7% 5em;
+
+    svg {
+      height: 4em;
+      margin-left: 35.333%;
+    }
+  }
+
+  .section-header {
+
+    .header-image {
+
+      img {
+        height: 24em;
+        left: -0.5em;
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(90deg, #ff3200, #2c4edd);
+        border-image-slice: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #why-we {
+    .section-header .header-image img {
+      left: -4em;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #why-we {
+    .section-header .header-image img {
+      left: -6em;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #why-we {
+    .section-header .header-image img {
+      left: -10em;
+    }
+  }
+}

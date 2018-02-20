@@ -1,0 +1,15 @@
+#header {
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    height: 3.75em;
+    padding: 2em;
+    margin: auto;
+    svg {
+      height: 100%;
+    }
+  }
+}

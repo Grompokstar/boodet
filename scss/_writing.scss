@@ -1,0 +1,22 @@
+#writing {
+  padding: 4em 9% 6em;
+  background-color: #e7e7e7;
+
+  .writing-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 3em;
+
+
+    .write-item {
+      width: 9em;
+      height: 9em;
+      background-color: #fff;
+      border-radius: 50%;
+      min-width: 9em;
+      margin-right: 1em;
+      margin-bottom: 2em;
+    }
+  }
+}

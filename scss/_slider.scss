@@ -1,0 +1,17 @@
+#slider {
+  position: relative;
+  background: lighten($blue-brand-color, 10%);
+  height: 22.5em;
+  z-index: 2;
+}
+
+#b-image-right {
+  position: absolute;
+  top: 170px;
+  right: -20em;
+  z-index: 3;
+  img {
+    height: 35em;
+  }
+
+}

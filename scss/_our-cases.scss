@@ -1,0 +1,131 @@
+#our-cases {
+  padding-bottom: 7em;
+
+  .section-header {
+    .header-image {
+      img {
+        left: -5em;
+        height: 22em;
+        bottom: -70px;
+      }
+    }
+
+    .header-text {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .cases {
+    display: flex;
+
+    .right-block {
+      width: 66.666%;
+      padding-left: 5%;
+    }
+
+    .cases-control {
+      display: flex;
+      width: 26em;
+      align-items: center;
+      margin-bottom: 3em;
+
+      .circle {
+        width: 1.5em;
+        min-width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        border: 1px solid $gray-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        .red-circle {
+          display: none;
+          width: 0.9em;
+          height: 0.9em;
+          border-radius: 50%;
+          background: $red-brand-color;
+        }
+
+        &.active {
+          .red-circle {
+            display: block;
+          }
+        }
+
+        &:hover {
+          .red-circle {
+            background: $blue-brand-color;
+            display: block;
+          }
+        }
+      }
+
+      .line {
+        width: 100%;
+        height: 1px;
+        background: $gray-color;
+        margin: 0 0.5em;
+      }
+    }
+
+    .case {
+      .case-li {
+        font-size: 1.3em;
+        margin-bottom: 2em;
+        line-height: 1.4em;
+        display: flex;
+        position: relative;
+        left: -6em;
+
+        .li-title {
+          font-size: 0.5em;
+          font-weight: 500;
+          text-transform: uppercase;
+          color: $blue-brand-color;
+          letter-spacing: 2px;
+          width: 12em;
+          min-width: 12em;
+          text-align: right;
+          padding-right: 2em;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
+
+}
+
+
+@media (max-width: 1400px) {
+  #our-cases {
+    .section-header .header-image img {
+      left: -8em;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #our-cases {
+    .section-header .header-image img {
+      left: -12em;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #our-cases {
+    .section-header .header-image img {
+      left: -16em;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #our-cases {
+    .section-header .header-image img {
+      left: -20em;
+    }
+  }
+}

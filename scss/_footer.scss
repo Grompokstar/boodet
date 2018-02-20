@@ -1,0 +1,47 @@
+#footer {
+  padding: 3em 9% 2em;
+  background-color: #000;
+
+  .footer-main-container {
+    display: flex;
+    margin-bottom: 3em;
+  }
+
+  .column-title {
+    margin-bottom: 0.7em;
+  }
+
+  a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.6em;
+    line-height: 1.3em;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .socials-block {
+    margin-top: 3em;
+
+    .social-links {
+      display: flex;
+      margin: 1em 0;
+
+      a {
+        margin-right: 1em;
+      }
+
+      a img {
+        height: 2.2em;
+      }
+    }
+  }
+
+  .footer-bottom-container {
+    display: flex;
+    margin-top: 1em;
+  }
+}

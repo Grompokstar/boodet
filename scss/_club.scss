@@ -1,0 +1,22 @@
+#club {
+
+  padding-bottom: 7em;
+
+  .section-header {
+    .header-image {
+      img {
+        height: 15em;
+      }
+    }
+  }
+
+  .btn-row {
+    display: flex;
+  }
+
+  .btn-container {
+    width: 66.666%;
+    padding-left: 5%;
+    padding-right: 3%;
+  }
+}

@@ -1,0 +1,62 @@
+#how-much-lose {
+  position: relative;
+
+  .b-image-left {
+    position: absolute;
+    top: -160;
+    left: -16em;
+    img {
+      height: 35em;
+    }
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 1.3em;
+    max-width: 14em;
+    margin: 4em auto 1.5em;
+    padding-left: 3em;
+    position: relative;
+
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 0.13em;
+      width: 1em;
+      position: absolute;
+      top: 0.65em;
+      left: 1.4em;
+      background: linear-gradient(90deg, $red-brand-color, $blue-brand-color);
+    }
+
+  }
+
+  #play-container {
+    height: 240px;
+    background-image: url("../images/svg/site-07-09.svg");
+    background-repeat: no-repeat;
+    background-position: 500px 0;
+
+    .play-icon {
+      width: 3em;
+      padding: 2em 0;
+      cursor: pointer;
+    }
+
+    .wave-icon {
+      height: 1em;
+      svg {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  #how-much-lose {
+    #play-container {
+      background-size: cover;
+    }
+  }
+}

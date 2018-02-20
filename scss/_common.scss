@@ -1,0 +1,161 @@
+html, body {
+  font-family: "Ubuntu", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #000;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.white-color-text {
+  color: #fff;
+}
+
+.font-xl {
+  font-size: 2em;
+}
+
+.font-lg {
+  font-size: 1.6em;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.section-header-title {
+  font-size: 6em;
+  font-weight: 500;
+  line-height: 1em;
+}
+
+.header-subtext {
+  margin-top: 1em;
+  font-size: 1.2em;
+  line-height: 1.3em;
+}
+
+.blocks-container {
+  display: flex;
+  padding: 3em 7% 1em;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+
+  .block {
+    width: 33.333%;
+    min-width: 15em;
+    padding: 2em;
+    margin-bottom: 3em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .block-pic {
+      margin-bottom: 3em;
+
+      svg {
+        height: 4.5em;
+      }
+    }
+
+    .block-title {
+      font-size: 1.8em;
+      font-weight: 500;
+      margin-bottom: 1em;
+      line-height: 1.3em;
+    }
+
+    .block-description {
+      line-height: 1.3em;
+      margin-bottom: auto;
+    }
+
+    .btn {
+      margin-top: 2em;
+    }
+  }
+}
+
+a.btn {
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 0.125em solid transparent;
+  text-decoration: none;
+  border-image: linear-gradient(to right, $red-brand-color 0%, #c45492 50%,  $blue-brand-color 100%);
+  border-image-slice: 1;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: #fff;
+    color: #2c4edd;
+  }
+
+  &:active {
+    border-image: none;
+  }
+
+  &.white-bg {
+    color: #000;
+
+    &:hover {
+      color: $blue-brand-color;
+    }
+  }
+
+}
+
+.section-header {
+  display: flex;
+
+  .header-image {
+    width: 33.333%;
+    position: relative;
+
+    img {
+      height: 22em;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    &.to-right-position {
+      img {
+        left: inherit;
+        right: 0;
+      }
+    }
+  }
+
+  .header-text {
+    width: 66.666%;
+    margin: 5em 0 3em;
+    padding-left: 5%;
+    padding-right: 3%;
+  }
+}
+
+.width-33 {
+  width: 33.333%;
+}
+
+
+.xl-btn-row {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+}
+
+.btn-x2 {
+  font-size: 2em;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
