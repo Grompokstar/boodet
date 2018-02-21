@@ -24,6 +24,22 @@
         border-radius: 50%;
       }
     }
+
+    .entry {
+      position: absolute;
+      top: 4em;
+      right: 4em;
+      padding-bottom: 0.3em;
+      font-size: 0.9em;
+      font-weight: 500;
+      text-transform: uppercase;
+      border-bottom: 1px solid $gray-color;
+      cursor: pointer;
+
+      &:hover {
+        border: none;
+      }
+    }
   }
 
   .logo {
@@ -56,10 +72,10 @@
       .close-btn {
         cursor: pointer;
         position: absolute;
-        top: 2em;
+        top: 2.5em;
         right: 3em;
-        width: 3.5em;
-        height: 3.5em;
+        width: 3em;
+        height: 3em;
       }
     }
 

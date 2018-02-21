@@ -166,14 +166,11 @@ html {
     overflow-y: hidden!important;
 
     .content {
-      -webkit-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      -o-filter: grayscale(100%);
-      filter: grayscale(100%);
-      filter: url(grayscale.svg#greyscale); /* Firefox 4+ */
+      -webkit-filter: grayscale(100%) blur(3px);
+      -moz-filter: grayscale(100%) blur(3px);
+      -o-filter: grayscale(100%) blur(3px);
+      filter: grayscale(100%) blur(3px);
       filter: gray; /* IE 6-9 */
-      -webkit-filter: grayscale(1);
     }
 
     .main-menu-container {
