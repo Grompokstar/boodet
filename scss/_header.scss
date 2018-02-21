@@ -2,6 +2,28 @@
   .header-container {
     display: flex;
     justify-content: space-between;
+
+    .main-menu-btn {
+      width: 4.5em;
+      height: 4.5em;
+      position: absolute;
+      z-index: 5;
+      top: 1.5em;
+      left: 3em;
+      cursor: pointer;
+
+      &:hover {
+        .main-menu-btn-svg .st1 {
+          stroke: $blue-brand-color;
+        }
+      }
+
+      &.fixed {
+        position: fixed;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 50%;
+      }
+    }
   }
 
   .logo {
@@ -17,9 +39,15 @@
     position: fixed;
     z-index: 10;
     top: 0;
-    height: 100vh;
+    height: 0;
     width: 100%;
     background: radial-gradient(at bottom left, rgba(18, 23, 41, 0.9) 0%, rgba(44, 78, 221, 0.9) 61%, rgba(100, 44, 221, 0.9) 100%);
+    overflow-y: auto;
+    transition: height 0.4s ease;
+
+    &.open {
+      height: 100vh;
+    }
 
     .logo-row {
       display: flex;
@@ -33,6 +61,31 @@
         width: 3.5em;
         height: 3.5em;
       }
+    }
+
+    ul.main-menu {
+      width: 100%;
+      margin-top: 1em;
+
+      font-size: 2.8em;
+      font-weight: 500;
+
+      li {
+        text-align: center;
+
+        a {
+          display: inline-block;
+          width: 100%;
+          text-decoration: none;
+          color: #fff;
+          padding: 0.5em 0;
+
+          &:hover {
+            background: rgba(255, 255, 255, 0.15);
+          }
+        }
+      }
+
     }
   }
 }

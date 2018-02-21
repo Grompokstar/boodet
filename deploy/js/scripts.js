@@ -2,6 +2,19 @@ $(function(){
 
   $(window).ready(function(){
 
+    $('.main-menu-btn').on('click', function() {
+      $('html').addClass('open-main-menu');
+    });
+
+
+    $('.close-btn').on('click', function() {
+      $('html').removeClass('open-main-menu');
+    });
+
+    $('.main-menu a').on('click', function() {
+      $('html').removeClass('open-main-menu');
+    });
+
     function howMachLoseSetPositions() {
       var $playContainer = $('#play-container')
       var $playContainerWidth = $playContainer.width();
@@ -22,6 +35,17 @@ $(function(){
 
 
     $(window).resize(howMachLoseSetPositions);
+
+    function scrolledHeader() {
+      var scrolled = $(window).scrollTop();
+      var headerHeight = $('#header').height();
+
+      if (scrolled > headerHeight) {
+        $('.main-menu-btn').addClass('fixed');
+      } else {
+        $('.main-menu-btn').removeClass('fixed');
+      }
+    }
 
 
     function parallax(){
@@ -51,6 +75,7 @@ $(function(){
     parallax();
 
     $(window).scroll(function(e){
+      scrolledHeader();
       parallax();
     });
   });

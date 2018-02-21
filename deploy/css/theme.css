@@ -155,6 +155,22 @@ a.btn {
 .mt-1 {
   margin-top: 1em; }
 
+html.open-main-menu {
+  overflow-y: hidden !important; }
+  html.open-main-menu .content {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: url(grayscale.svg#greyscale);
+    /* Firefox 4+ */
+    filter: gray;
+    /* IE 6-9 */
+    -webkit-filter: grayscale(1); }
+  html.open-main-menu .main-menu-container {
+    height: 100vh !important; }
+
 .grayscale {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -186,461 +202,6 @@ a.btn {
   stroke-miterlimit: 10; }
 #main-logo .st5 {
   fill: #FF3200; }
-#main-logo .st6 {
-  clip-path: url(#SVGID_3_);
-  fill: url(#SVGID_4_); }
-#main-logo .st7 {
-  fill: url(#SVGID_5_); }
-#main-logo .st8 {
-  fill: #E3F0FF; }
-#main-logo .st9 {
-  fill: url(#SVGID_6_); }
-#main-logo .st10 {
-  fill: url(#SVGID_7_); }
-#main-logo .st11 {
-  fill: url(#SVGID_8_); }
-#main-logo .st12 {
-  fill: #12172F; }
-#main-logo .st13 {
-  fill: #2A102C; }
-#main-logo .st14 {
-  fill: url(#SVGID_9_); }
-#main-logo .st15 {
-  fill: url(#SVGID_10_); }
-#main-logo .st16 {
-  fill: url(#SVGID_11_); }
-#main-logo .st17 {
-  opacity: 0.67;
-  fill: url(#SVGID_12_); }
-#main-logo .st18 {
-  opacity: 0.67;
-  fill: url(#SVGID_13_); }
-#main-logo .st19 {
-  fill: url(#SVGID_14_); }
-#main-logo .st20 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 3;
-  stroke-miterlimit: 10; }
-#main-logo .st21 {
-  opacity: 0.25;
-  fill: none;
-  stroke: #CFDAE5;
-  stroke-width: 20;
-  stroke-miterlimit: 10; }
-#main-logo .st22 {
-  fill: none;
-  stroke: #EF2932;
-  stroke-width: 16.9397;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st23 {
-  fill: none;
-  stroke: #0102F7;
-  stroke-width: 16.9397;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
-#main-logo .st24 {
-  fill: #FFFFFF;
-  stroke: #0102F7;
-  stroke-width: 16.9397;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
-#main-logo .st25 {
-  fill: none;
-  stroke: url(#SVGID_15_);
-  stroke-width: 16.9397;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st26 {
-  opacity: 0.56;
-  fill: #CFDAE5; }
-#main-logo .st27 {
-  clip-path: url(#SVGID_17_);
-  fill: #2C4EDD; }
-#main-logo .st28 {
-  fill: #F2F2F2;
-  stroke: #000000;
-  stroke-miterlimit: 10; }
-#main-logo .st29 {
-  fill: none;
-  stroke: #000000;
-  stroke-miterlimit: 10; }
-#main-logo .st30 {
-  clip-path: url(#SVGID_19_);
-  fill: #2C4EDD; }
-#main-logo .st31 {
-  clip-path: url(#SVGID_21_); }
-#main-logo .st32 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st33 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 4;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
-#main-logo .st34 {
-  fill: #FFFFFF;
-  stroke: #000000;
-  stroke-width: 4;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
-#main-logo .st35 {
-  fill: url(#SVGID_22_); }
-#main-logo .st36 {
-  fill: url(#SVGID_23_); }
-#main-logo .st37 {
-  fill: url(#SVGID_24_); }
-#main-logo .st38 {
-  clip-path: url(#SVGID_26_);
-  fill: #2C4EDD; }
-#main-logo .st39 {
-  clip-path: url(#SVGID_28_);
-  fill: #2C4EDD; }
-#main-logo .st40 {
-  fill: none;
-  stroke: #2C4EDD;
-  stroke-width: 2.3917;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
-#main-logo .st41 {
-  fill: #FCEF00; }
-#main-logo .st42 {
-  fill: none;
-  stroke: #FF3201;
-  stroke-width: 4.7835;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
-#main-logo .st43 {
-  fill: #F4D47A; }
-#main-logo .st44 {
-  clip-path: url(#SVGID_30_); }
-#main-logo .st45 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 6.454;
-  stroke-linecap: square;
-  stroke-miterlimit: 10; }
-#main-logo .st46 {
-  clip-path: url(#SVGID_32_); }
-#main-logo .st47 {
-  fill: #7C6635; }
-#main-logo .st48 {
-  fill: none;
-  stroke: #FF3200;
-  stroke-width: 5.4088;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
-#main-logo .st49 {
-  fill: none;
-  stroke: #FF3200;
-  stroke-width: 4.7835;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
-#main-logo .st50 {
-  clip-path: url(#SVGID_34_); }
-#main-logo .st51 {
-  fill: none;
-  stroke: #2C4EDD;
-  stroke-width: 6.454;
-  stroke-linecap: square;
-  stroke-miterlimit: 10; }
-#main-logo .st52 {
-  clip-path: url(#SVGID_36_); }
-#main-logo .st53 {
-  fill: url(#SVGID_37_); }
-#main-logo .st54 {
-  fill: url(#SVGID_38_); }
-#main-logo .st55 {
-  clip-path: url(#SVGID_40_);
-  fill: #2C4EDD; }
-#main-logo .st56 {
-  clip-path: url(#SVGID_42_);
-  fill: #2C4EDD; }
-#main-logo .st57 {
-  fill: url(#SVGID_43_); }
-#main-logo .st58 {
-  clip-path: url(#SVGID_45_);
-  fill: #2C4EDD; }
-#main-logo .st59 {
-  clip-path: url(#SVGID_47_);
-  fill: #2C4EDD; }
-#main-logo .st60 {
-  clip-path: url(#SVGID_49_); }
-#main-logo .st61 {
-  clip-path: url(#SVGID_51_); }
-#main-logo .st62 {
-  opacity: 0.8;
-  fill: url(#SVGID_52_); }
-#main-logo .st63 {
-  clip-path: url(#SVGID_54_); }
-#main-logo .st64 {
-  opacity: 0.5;
-  fill: #F4D47A; }
-#main-logo .st65 {
-  opacity: 0.8;
-  fill: url(#SVGID_55_); }
-#main-logo .st66 {
-  clip-path: url(#SVGID_54_);
-  fill: #F4D47A; }
-#main-logo .st67 {
-  clip-path: url(#SVGID_54_);
-  fill: #7AC943; }
-#main-logo .st68 {
-  fill: url(#SVGID_56_); }
-#main-logo .st69 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st70 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 0.25;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st71 {
-  fill: #FF1D25; }
-#main-logo .st72 {
-  fill: none;
-  stroke: url(#SVGID_57_);
-  stroke-miterlimit: 10; }
-#main-logo .st73 {
-  fill: none;
-  stroke: url(#SVGID_58_);
-  stroke-miterlimit: 10; }
-#main-logo .st74 {
-  fill: none;
-  stroke: url(#SVGID_59_);
-  stroke-miterlimit: 10; }
-#main-logo .st75 {
-  fill: none;
-  stroke: url(#SVGID_60_);
-  stroke-width: 3.5847;
-  stroke-miterlimit: 10; }
-#main-logo .st76 {
-  fill: none;
-  stroke: url(#SVGID_61_);
-  stroke-width: 3.8006;
-  stroke-miterlimit: 10; }
-#main-logo .st77 {
-  fill: #FFFFFF;
-  stroke: #FFFFFF;
-  stroke-width: 3.5847;
-  stroke-miterlimit: 10; }
-#main-logo .st78 {
-  fill: #FFFFFF;
-  stroke: url(#SVGID_62_);
-  stroke-width: 3.5847;
-  stroke-miterlimit: 10; }
-#main-logo .st79 {
-  fill: url(#SVGID_63_); }
-#main-logo .st80 {
-  fill: url(#SVGID_64_); }
-#main-logo .st81 {
-  fill: url(#SVGID_65_); }
-#main-logo .st82 {
-  fill: url(#SVGID_66_); }
-#main-logo .st83 {
-  fill: none;
-  stroke: url(#SVGID_67_);
-  stroke-width: 3.5847;
-  stroke-miterlimit: 10; }
-#main-logo .st84 {
-  clip-path: url(#SVGID_69_); }
-#main-logo .st85 {
-  fill: none;
-  stroke: url(#SVGID_70_);
-  stroke-miterlimit: 10; }
-#main-logo .st86 {
-  fill: none;
-  stroke: #BABABA;
-  stroke-width: 0.8914;
-  stroke-miterlimit: 10; }
-#main-logo .st87 {
-  fill: none;
-  stroke: #2C4EDD;
-  stroke-width: 0.8914;
-  stroke-miterlimit: 10; }
-#main-logo .st88 {
-  opacity: 0.3;
-  fill: none;
-  stroke: #000000;
-  stroke-width: 0.5;
-  stroke-miterlimit: 10; }
-#main-logo .st89 {
-  opacity: 0.3;
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 0.5;
-  stroke-miterlimit: 10; }
-#main-logo .st90 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 3.3535;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st91 {
-  fill: #FFFFFF;
-  stroke: #000000;
-  stroke-width: 1.4476;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st92 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 1.4476;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st93 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 3.3348;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st94 {
-  fill: #FFFFFF;
-  stroke: #000000;
-  stroke-width: 3.3535;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st95 {
-  stroke: #000000;
-  stroke-width: 3.3535;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st96 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 9.6752;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st97 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 3.1994;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st98 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 1.9792;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st99 {
-  fill: #FFFFFF;
-  stroke: #000000;
-  stroke-width: 1.9792;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st100 {
-  stroke: #000000;
-  stroke-width: 1.9792;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st101 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 5.7102;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st102 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 1.8883;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st103 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 1.9792;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10; }
-#main-logo .st104 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 4.2412;
-  stroke-miterlimit: 10; }
-#main-logo .st105 {
-  fill: none;
-  stroke: url(#SVGID_71_);
-  stroke-width: 3.5847;
-  stroke-miterlimit: 10; }
-#main-logo .st106 {
-  fill: none; }
-#main-logo .st107 {
-  fill: #FF0000; }
-#main-logo .st108 {
-  fill: #282828; }
-#main-logo .st109 {
-  fill: url(#SVGID_72_); }
-#main-logo .st110 {
-  fill: #C8DAEA; }
-#main-logo .st111 {
-  fill: #A9C9DD; }
-#main-logo .st112 {
-  fill: url(#SVGID_73_); }
-#main-logo .st113 {
-  fill: #3C5A99; }
-#main-logo .st114 {
-  fill: #D6D6D6; }
-#main-logo .st115 {
-  fill: #C2C2C2; }
-#main-logo .st116 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 2.3987;
-  stroke-linecap: round;
-  stroke-linejoin: round; }
-#main-logo .st117 {
-  fill: #FF3201; }
-#main-logo .st118 {
-  fill: none;
-  stroke: #F4D47A;
-  stroke-width: 7;
-  stroke-miterlimit: 10; }
-#main-logo .st119 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 3;
-  stroke-linecap: round;
-  stroke-miterlimit: 10; }
-#main-logo .st120 {
-  opacity: 0.9;
-  fill: url(#SVGID_74_); }
-#main-logo .st121 {
-  opacity: 0.15;
-  fill: #FFFFFF; }
-#main-logo .st122 {
-  fill: #FFE39C; }
-#main-logo .st123 {
-  opacity: 0.79; }
-#main-logo .st124 {
-  fill: #FFFF00; }
 
 #main-logo-white .st0 {
   fill: url(#SVGID_1_); }
@@ -1673,9 +1234,29 @@ a.btn {
   stroke-linejoin: round;
   stroke-miterlimit: 10; }
 
+.main-menu-btn-svg .st1 {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
+
 #header .header-container {
   display: flex;
   justify-content: space-between; }
+  #header .header-container .main-menu-btn {
+    width: 4.5em;
+    height: 4.5em;
+    position: absolute;
+    z-index: 5;
+    top: 1.5em;
+    left: 3em;
+    cursor: pointer; }
+    #header .header-container .main-menu-btn:hover .main-menu-btn-svg .st1 {
+      stroke: #2c4edd; }
+    #header .header-container .main-menu-btn.fixed {
+      position: fixed;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 50%; }
 #header .logo {
   height: 3.75em;
   padding: 2em;
@@ -1686,9 +1267,13 @@ a.btn {
   position: fixed;
   z-index: 10;
   top: 0;
-  height: 100vh;
+  height: 0;
   width: 100%;
-  background: radial-gradient(at bottom left, rgba(18, 23, 41, 0.9) 0%, rgba(44, 78, 221, 0.9) 61%, rgba(100, 44, 221, 0.9) 100%); }
+  background: radial-gradient(at bottom left, rgba(18, 23, 41, 0.9) 0%, rgba(44, 78, 221, 0.9) 61%, rgba(100, 44, 221, 0.9) 100%);
+  overflow-y: auto;
+  transition: height 0.4s ease; }
+  #header .main-menu-container.open {
+    height: 100vh; }
   #header .main-menu-container .logo-row {
     display: flex;
     justify-content: center; }
@@ -1699,6 +1284,21 @@ a.btn {
       right: 3em;
       width: 3.5em;
       height: 3.5em; }
+  #header .main-menu-container ul.main-menu {
+    width: 100%;
+    margin-top: 1em;
+    font-size: 2.8em;
+    font-weight: 500; }
+    #header .main-menu-container ul.main-menu li {
+      text-align: center; }
+      #header .main-menu-container ul.main-menu li a {
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        color: #fff;
+        padding: 0.5em 0; }
+        #header .main-menu-container ul.main-menu li a:hover {
+          background: rgba(255, 255, 255, 0.15); }
 
 #slider {
   position: relative;
