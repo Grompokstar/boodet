@@ -14,6 +14,7 @@
 
       &:hover {
         .main-menu-btn-svg .st1 {
+          transition: all 0.3s ease;
           stroke: $blue-brand-color;
         }
       }
