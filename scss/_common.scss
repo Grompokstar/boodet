@@ -59,6 +59,33 @@ html, body {
     flex-direction: column;
     justify-content: flex-start;
 
+    &.centered {
+      align-items: center;
+    }
+
+    .block-circle {
+      width: 11em;
+      height: 11em;
+      border-radius: 50%;
+      background-color: #fff;
+      margin-bottom: 1.5em;
+      color: $blue-brand-color;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .count {
+        font-size: 6em;
+        text-align: center;
+      }
+
+      .text {
+        font-size: 1.7em;
+        text-align: center;
+      }
+    }
+
     .block-pic {
       margin-bottom: 3em;
 
@@ -306,6 +333,86 @@ ol.yellow-number-list {
       width: 1.1em;
       height: 2px;
       background-color: $blue-brand-color;
+    }
+  }
+}
+
+.cases {
+  display: flex;
+
+  .right-block {
+    width: 66.666%;
+    padding-left: 5%;
+  }
+
+  .cases-control {
+    display: flex;
+    width: 26em;
+    align-items: center;
+    margin-bottom: 3em;
+
+    .circle {
+      width: 1.5em;
+      min-width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      border: 1px solid $gray-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      .red-circle {
+        display: none;
+        width: 0.9em;
+        height: 0.9em;
+        border-radius: 50%;
+        background: $red-brand-color;
+      }
+
+      &.active {
+        .red-circle {
+          display: block;
+        }
+      }
+
+      &:hover {
+        .red-circle {
+          background: $blue-brand-color;
+          display: block;
+        }
+      }
+    }
+
+    .line {
+      width: 100%;
+      height: 1px;
+      background: $gray-color;
+      margin: 0 0.5em;
+    }
+  }
+
+  .case {
+    .case-li {
+      font-size: 1.3em;
+      margin-bottom: 2em;
+      line-height: 1.4em;
+      display: flex;
+      position: relative;
+      left: -6em;
+
+      .li-title {
+        font-size: 0.5em;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $blue-brand-color;
+        letter-spacing: 2px;
+        width: 12em;
+        min-width: 12em;
+        text-align: right;
+        padding-right: 2em;
+        box-sizing: border-box;
+      }
     }
   }
 }

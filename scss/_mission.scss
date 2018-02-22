@@ -1,0 +1,24 @@
+#mission {
+  padding: 3em 0 5em;
+
+  .img {
+    height: 15em;
+    position: absolute;
+    top: 0;
+    right: 2em;
+
+    svg {
+      height: 100%;
+    }
+
+    .yellow-circle {
+      width: 2em;
+      height: 2em;
+      border-radius: 50%;
+      background-color: #FCEF00;
+      position: absolute;
+      top: -1em;
+      right: 1em;
+    }
+  }
+}
