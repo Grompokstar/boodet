@@ -1064,6 +1064,8 @@ ol.yellow-number-list {
         padding: 0.5em 0; }
         #header .main-menu-container ul.main-menu li a:hover {
           background: rgba(255, 255, 255, 0.15); }
+        #header .main-menu-container ul.main-menu li a.current {
+          color: #ffe39c; }
 
 #slider {
   position: relative;

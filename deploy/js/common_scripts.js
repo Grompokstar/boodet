@@ -65,6 +65,27 @@ $(function(){
       scrolledHeader();
       parallax();
     });
+
+
+    function activeCurrentMenuItem() {
+      var $mainMenuLinks = $('.main-menu a');
+      var location = window.location.href;
+
+      var locationArray = location.split('/');
+      var currentPage = locationArray[locationArray.length -1];
+
+      $mainMenuLinks.each(function() {
+        if ($(this).attr('href') === currentPage) {
+          $(this).addClass('current')
+        }
+      });
+    }
+
+    activeCurrentMenuItem()
+
+
+
+
   });
 
 }());
