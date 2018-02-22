@@ -1,0 +1,62 @@
+#kipr {
+  padding: 3em 0 5em;
+  background: radial-gradient(at bottom left, rgba(21,30,69,1) 0%,rgba(44,78,221,1) 61%,rgba(100,44,221,1) 100%);
+
+
+  h4 {
+    margin-bottom: 0.7em;
+  }
+
+  ul {
+    margin-bottom: 3em;
+  }
+
+  .width-33 {
+    position: relative;
+    top: -3em
+  }
+
+  .img {
+    position: relative;
+
+    #beach-img {
+      height: 30em;
+      position: relative;
+      top: 0;
+      left: 0;
+
+      svg {
+        height: 100%;
+      }
+
+      #boat-img {
+        height: 18em;
+        position: absolute;
+        top: 2em;
+        left: 22em;
+
+        svg {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+
+  @media (max-width: 1200px) {
+    .img {
+      #beach-img {
+        left: -5em;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .img {
+      #beach-img {
+        left: -10em;
+      }
+    }
+  }
+
+}

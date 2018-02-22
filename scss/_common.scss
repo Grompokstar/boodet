@@ -22,6 +22,10 @@ html, body {
   font-size: 1.6em;
 }
 
+.font-md {
+  font-size: 1.2em;
+}
+
 .medium {
   font-weight: 500;
 }
@@ -141,8 +145,20 @@ a.btn {
   }
 }
 
+.flex-container {
+  display: flex;
+}
+
 .width-33 {
   width: 33.333%;
+  position: relative;
+}
+
+.width-66 {
+  width: 66.666%;
+  position: relative;
+  padding-left: 5%;
+  padding-right: 3%;
 }
 
 
@@ -264,5 +280,32 @@ ol.yellow-number-list {
   left: -16em;
   img {
     height: 35em;
+  }
+}
+
+.boodet-list {
+  margin: 1em 0;
+  padding-left: 2em;
+  font-size: 1.2em;
+
+  &.red {
+    li:before {
+      background-color: $red-brand-color;
+    }
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 1em;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0.5em;
+      left: -1.4em;
+      width: 1.1em;
+      height: 2px;
+      background-color: $blue-brand-color;
+    }
   }
 }
