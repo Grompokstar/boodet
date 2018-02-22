@@ -12,3 +12,22 @@
   }
 
 }
+
+@media (max-width: 1200px) {
+  #b-image-right {
+    right: -14em;
+    img {
+      height: 25em;
+    }
+  }
+
+  #b-image-left {
+    left: -12em;
+
+    img {
+      height: 25em;
+    }
+
+  }
+}
+

@@ -1515,6 +1515,16 @@ ol.yellow-number-list {
       height: 4em;
       margin-left: 35.333%; }
 
+@media (max-width: 1200px) {
+  #b-image-right {
+    right: -14em; }
+    #b-image-right img {
+      height: 25em; }
+
+  #b-image-left {
+    left: -12em; }
+    #b-image-left img {
+      height: 25em; } }
 #mission {
   padding: 3em 0 5em; }
   #mission .img {
