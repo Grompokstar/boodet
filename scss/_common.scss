@@ -63,12 +63,23 @@ html, body {
       align-items: center;
     }
 
+    .circle-1 {
+      position: absolute;
+    }
+
+
+    .circle-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em;
+    }
+
     .block-circle {
-      width: 11em;
-      height: 11em;
+      width: 164px;
+      height: 164px;
       border-radius: 50%;
       background-color: #fff;
-      margin-bottom: 1.5em;
       color: $blue-brand-color;
       font-weight: 500;
       display: flex;
@@ -76,7 +87,7 @@ html, body {
       justify-content: center;
 
       .count {
-        font-size: 6em;
+        font-size: 5.5em;
         text-align: center;
       }
 
@@ -305,6 +316,7 @@ ol.yellow-number-list {
   position: absolute;
   top: 400px;
   left: -16em;
+  z-index: 3;
   img {
     height: 35em;
   }
@@ -415,4 +427,30 @@ ol.yellow-number-list {
       }
     }
   }
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+
+.rotate-70 {
+  transform: rotate(70deg);
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
+
+.rotate-260 {
+  transform: rotate(260deg);
+}
+
+
+.rotate-240 {
+  transform: rotate(240deg);
+}
+
+.rotate-135 {
+  transform: rotate(135deg);
 }

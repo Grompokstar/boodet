@@ -92,19 +92,25 @@ html, body {
     justify-content: flex-start; }
     .blocks-container .block.centered {
       align-items: center; }
+    .blocks-container .block .circle-1 {
+      position: absolute; }
+    .blocks-container .block .circle-group {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1em; }
     .blocks-container .block .block-circle {
-      width: 11em;
-      height: 11em;
+      width: 164px;
+      height: 164px;
       border-radius: 50%;
       background-color: #fff;
-      margin-bottom: 1.5em;
       color: #2c4edd;
       font-weight: 500;
       display: flex;
       flex-direction: column;
       justify-content: center; }
       .blocks-container .block .block-circle .count {
-        font-size: 6em;
+        font-size: 5.5em;
         text-align: center; }
       .blocks-container .block .block-circle .text {
         font-size: 1.7em;
@@ -251,7 +257,8 @@ ol.yellow-number-list {
 #b-image-left {
   position: absolute;
   top: 400px;
-  left: -16em; }
+  left: -16em;
+  z-index: 3; }
   #b-image-left img {
     height: 35em; }
 
@@ -327,6 +334,24 @@ ol.yellow-number-list {
       text-align: right;
       padding-right: 2em;
       box-sizing: border-box; }
+
+.rotate-180 {
+  transform: rotate(180deg); }
+
+.rotate-70 {
+  transform: rotate(70deg); }
+
+.rotate-45 {
+  transform: rotate(45deg); }
+
+.rotate-260 {
+  transform: rotate(260deg); }
+
+.rotate-240 {
+  transform: rotate(240deg); }
+
+.rotate-135 {
+  transform: rotate(135deg); }
 
 #main-logo .st0 {
   fill: url(#SVGID_1_); }
@@ -1507,6 +1532,7 @@ ol.yellow-number-list {
       left: -10em; } }
 
 #about-us {
+  position: relative;
   padding-top: 3em;
   background: linear-gradient(45deg, #3d41a3 0%, #2c4edd 100%); }
   #about-us .wave-image {
@@ -1514,17 +1540,10 @@ ol.yellow-number-list {
     #about-us .wave-image svg {
       height: 4em;
       margin-left: 35.333%; }
+  #about-us .blocks-container {
+    position: relative;
+    z-index: 4; }
 
-@media (max-width: 1200px) {
-  #b-image-right {
-    right: -14em; }
-    #b-image-right img {
-      height: 25em; }
-
-  #b-image-left {
-    left: -12em; }
-    #b-image-left img {
-      height: 25em; } }
 #mission {
   padding: 3em 0 5em; }
   #mission .img {
