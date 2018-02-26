@@ -128,8 +128,10 @@ a.btn {
   color: #fff;
   display: inline-block;
   padding: 0.5em 1em;
-  border: 0.125em solid transparent;
   text-decoration: none;
+  border-style: solid;
+  border-width: 0.125em;
+  border-color: transparent;
   border-image: linear-gradient(to right, $red-brand-color 0%, #c45492 50%,  $blue-brand-color 100%);
   border-image-slice: 1;
   transition: all 0.3s ease;

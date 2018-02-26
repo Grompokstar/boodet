@@ -17,7 +17,9 @@
       img {
         height: 24em;
         left: -0.5em;
-        border-bottom: 1px solid transparent;
+        border-style: solid;
+        border-width: 1px;
+        border-color: transparent;
         border-image: linear-gradient(90deg, #ff3200, #2c4edd);
         border-image-slice: 1;
       }

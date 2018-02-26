@@ -135,8 +135,10 @@ a.btn {
   color: #fff;
   display: inline-block;
   padding: 0.5em 1em;
-  border: 0.125em solid transparent;
   text-decoration: none;
+  border-style: solid;
+  border-width: 0.125em;
+  border-color: transparent;
   border-image: linear-gradient(to right, #ff3200 0%, #c45492 50%, #2c4edd 100%);
   border-image-slice: 1;
   transition: all 0.3s ease; }
@@ -1339,7 +1341,9 @@ ol.yellow-number-list {
   #why-we .section-header .header-image img {
     height: 24em;
     left: -0.5em;
-    border-bottom: 1px solid transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: transparent;
     border-image: linear-gradient(90deg, #ff3200, #2c4edd);
     border-image-slice: 1; }
 
