@@ -1,5 +1,5 @@
 #why-we {
-  background: linear-gradient(45deg, rgba(61,65,163,1) 0%,rgba(44,78,221,1) 100%);
+  @include blue-background-gradient-1();
 
   .wave-image {
     padding: 0 7% 5em;
@@ -11,14 +11,12 @@
   }
 
   .section-header {
-
     .header-image {
-
       img {
         height: 24em;
         left: -0.5em;
         border-style: solid;
-        border-width: 1px;
+        border-bottom-width: 1px;
         border-color: transparent;
         border-image: linear-gradient(90deg, #ff3200, #2c4edd);
         border-image-slice: 1;

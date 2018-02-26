@@ -1,0 +1,13 @@
+.section {
+  padding: 3em 0;
+
+
+  &.dark-bg-1 {
+    @include blue-background-gradient-1();
+  }
+
+
+  &.dark-bg-2 {
+    @include blue-background-gradient-2();
+  }
+}

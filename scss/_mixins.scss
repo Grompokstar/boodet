@@ -1,0 +1,7 @@
+@mixin blue-background-gradient-1() {
+  background: linear-gradient(45deg, rgba(61,65,163,1) 0%,rgba(44,78,221,1) 100%);
+}
+
+@mixin blue-background-gradient-2() {
+  background: radial-gradient(at bottom left, rgba(21,30,69,1) 0%,rgba(44,78,221,1) 61%,rgba(100,44,221,1) 100%);
+}

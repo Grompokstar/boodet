@@ -1,5 +1,7 @@
 @import "reset";
 @import "variables";
+@import "spasing";
+@import "mixins";
 @import "common";
 @import "svg-styles";
 @import "header";
@@ -12,10 +14,12 @@
 @import "club";
 @import "writing";
 @import "footer";
+@import "section";
 
 @import "rules";
-@import "earn-points";
+@import "section-img";
 @import "kipr";
 @import "about-us";
 @import "mission";
 @import "team";
+@import "cloud-power";

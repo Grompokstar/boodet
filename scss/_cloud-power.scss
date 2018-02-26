@@ -1,0 +1,62 @@
+#cloud-power {
+  @include blue-background-gradient-1();
+  position: relative;
+
+  .wave-image {
+    padding: 0 7% 5em;
+
+    svg {
+      height: 4em;
+      margin-left: 35.333%;
+    }
+  }
+
+
+  .section-header {
+    position: relative;
+    z-index: 4;
+
+    .header-image {
+      min-height: 25em;
+
+      svg {
+        height: 20em;
+        position: absolute;
+        top: 5em;
+        right: 0;
+      }
+    }
+  }
+
+
+  .blocks-header {
+    position: relative;
+    z-index: 4;
+    margin-top: 5em;
+    padding: 0 2em;
+  }
+
+  .blocks-container {
+    padding-top: 1em;
+  }
+
+  .block {
+    align-items: center;
+    text-align: center;
+    min-width: 19em;
+  }
+
+  .block-pic {
+    min-height: 6.5em;
+    margin-bottom: 2em;
+
+    svg {
+      height: 6.5em;
+    }
+
+    #pic13 {
+      height: 5em;
+    }
+  }
+
+}

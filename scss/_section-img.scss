@@ -1,13 +1,15 @@
-#earn-points {
-  padding: 3em 0 5em;
+.section-img {
+  padding: 3em 0;
 
   h4 {
     margin-bottom: 1em;
   }
 
   .img {
+    min-height: 17em;
+
     svg {
-      height: 20em;
+      height: 17em;
       position: absolute;
       top: 0;
       right: 0;
