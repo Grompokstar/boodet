@@ -14,6 +14,10 @@ $spacers: (
                 x: 0,
                 y: 0
         ),
+        '05': (
+                x: ($spacer-x * 0.5),
+                y: ($spacer-y * 0.5)
+        ),
         1: (
                 x: $spacer-x,
                 y: $spacer-y

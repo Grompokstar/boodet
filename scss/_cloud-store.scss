@@ -1,0 +1,20 @@
+#cloud-store {
+  @include blue-background-gradient-1();
+  position: relative;
+
+  .section-header {
+    position: relative;
+    z-index: 4;
+
+    .header-image {
+      min-height: 25em;
+
+      svg {
+        height: 20em;
+        position: absolute;
+        top: 5em;
+        right: 0;
+      }
+    }
+  }
+}

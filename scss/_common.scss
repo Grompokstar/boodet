@@ -56,8 +56,8 @@ html, body {
   flex-wrap: wrap;
   justify-content: space-around;
 
-  &.centered {
-
+  &.just-left {
+justify-content: flex-start;
   }
 
 
@@ -501,7 +501,6 @@ ol.yellow-number-list {
   transform: rotate(260deg);
 }
 
-
 .rotate-240 {
   transform: rotate(240deg);
 }
@@ -514,4 +513,11 @@ ol.yellow-number-list {
   svg {
     height: 4em;
   }
+}
+
+.hyphens {
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }

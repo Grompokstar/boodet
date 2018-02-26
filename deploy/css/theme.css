@@ -64,6 +64,29 @@ table {
   margin-top: 0 !important;
   margin-bottom: 0 !important; }
 
+.m-05 {
+  margin: 0.5em 0.5em !important; }
+
+.mt-05 {
+  margin-top: 0.5em !important; }
+
+.mr-05 {
+  margin-right: 0.5em !important; }
+
+.mb-05 {
+  margin-bottom: 0.5em !important; }
+
+.ml-05 {
+  margin-left: 0.5em !important; }
+
+.mx-05 {
+  margin-right: 0.5em !important;
+  margin-left: 0.5em !important; }
+
+.my-05 {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important; }
+
 .m-1 {
   margin: 1em 1em !important; }
 
@@ -408,6 +431,29 @@ table {
 .py-0 {
   padding-top: 0 !important;
   padding-bottom: 0 !important; }
+
+.p-05 {
+  padding: 0.5em 0.5em !important; }
+
+.pt-05 {
+  padding-top: 0.5em !important; }
+
+.pr-05 {
+  padding-right: 0.5em !important; }
+
+.pb-05 {
+  padding-bottom: 0.5em !important; }
+
+.pl-05 {
+  padding-left: 0.5em !important; }
+
+.px-05 {
+  padding-right: 0.5em !important;
+  padding-left: 0.5em !important; }
+
+.py-05 {
+  padding-top: 0.5em !important;
+  padding-bottom: 0.5em !important; }
 
 .p-1 {
   padding: 1em 1em !important; }
@@ -777,6 +823,8 @@ html, body {
   padding: 3em 7% 1em;
   flex-wrap: wrap;
   justify-content: space-around; }
+  .blocks-container.just-left {
+    justify-content: flex-start; }
   .blocks-container .block {
     width: 33.333%;
     min-width: 15em;
@@ -1081,6 +1129,12 @@ ol.yellow-number-list {
 
 .wave-img-container svg {
   height: 4em; }
+
+.hyphens {
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
 
 #main-logo .st0 {
   fill: url(#SVGID_1_); }
@@ -2016,6 +2070,27 @@ ol.yellow-number-list {
 #rest-api .st2 {
   fill: #FF3200; }
 
+#backup .st0 {
+  fill: url(#SVGID_1_); }
+#backup .st1 {
+  fill: #232E4F; }
+#backup .st2 {
+  fill: #FFFFFF; }
+#backup .st3 {
+  fill: #E2E3E4; }
+#backup .st4 {
+  fill: #F5F6F6; }
+#backup .st5 {
+  fill: #FF3200; }
+#backup .st6 {
+  fill: #C22600; }
+#backup .st7 {
+  fill: #F4D47A; }
+#backup .st8 {
+  fill: #E3C571; }
+#backup .st9 {
+  fill: #E6E7E8; }
+
 #header .header-container {
   display: flex;
   justify-content: space-between; }
@@ -2440,5 +2515,19 @@ ol.yellow-number-list {
       height: 6.5em; }
     #cloud-power .block-pic #pic13 {
       height: 5em; }
+
+#cloud-store {
+  background: linear-gradient(45deg, #3d41a3 0%, #2c4edd 100%);
+  position: relative; }
+  #cloud-store .section-header {
+    position: relative;
+    z-index: 4; }
+    #cloud-store .section-header .header-image {
+      min-height: 25em; }
+      #cloud-store .section-header .header-image svg {
+        height: 20em;
+        position: absolute;
+        top: 5em;
+        right: 0; }
 
 /*# sourceMappingURL=theme.css.map */
