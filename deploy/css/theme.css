@@ -878,7 +878,8 @@ html, body {
     padding: 2em;
     box-sizing: border-box;
     width: 50%;
-    min-width: 20em; }
+    min-width: 20em;
+    align-items: center; }
     .blocks-container .block-row .block-icon {
       margin-right: 2em; }
       .blocks-container .block-row .block-icon svg {
