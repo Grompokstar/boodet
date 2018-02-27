@@ -1877,16 +1877,15 @@ ol.yellow-number-list {
 
 #boat .st0 {
   fill: #FFFFFF; }
-#boat .st19 {
+#boat .st1 {
+  fill: #FF1D25; }
+#boat .st2 {
+  fill: #2C4EDD; }
+#boat .st3 {
   fill: none;
   stroke: #FFFFFF;
-  stroke-width: 3;
-  stroke-linecap: round;
+  stroke-width: 0.9672;
   stroke-miterlimit: 10; }
-#boat .st22 {
-  fill: #FF1D25; }
-#boat .st23 {
-  fill: #2C4EDD; }
 
 #knight .st0 {
   fill: #FFFFFF; }
@@ -2010,58 +2009,28 @@ ol.yellow-number-list {
   fill: #7AC943; }
 
 #cloud-power-img .st0 {
-  fill: #FFFFFF; }
-#cloud-power-img .st3 {
-  fill: #FF3200; }
-#cloud-power-img .st24 {
   fill: none;
   stroke: #FFFFFF;
-  stroke-miterlimit: 10; }
-#cloud-power-img .st25 {
-  fill: none;
-  stroke: #FFFFFF;
+  stroke-width: 0.9487;
   stroke-miterlimit: 10;
-  stroke-dasharray: 2.0057,2.0057; }
-#cloud-power-img .st26 {
+  stroke-dasharray: 1.8973; }
+#cloud-power-img .st1 {
+  fill: #FFFFFF; }
+#cloud-power-img .st2 {
+  fill: #FF3200; }
+#cloud-power-img .st3 {
   fill: none;
   stroke: #FFFFFF;
-  stroke-width: 4;
+  stroke-width: 1.8973;
   stroke-miterlimit: 10; }
-#cloud-power-img .st27 {
-  font-family: 'Ubuntu'; }
-#cloud-power-img .st28 {
-  font-size: 11.5261px; }
-#cloud-power-img .st29 {
+#cloud-power-img .st4 {
   fill: none;
   stroke: #FFE39C;
-  stroke-width: 1.4992;
+  stroke-width: 1.4222;
   stroke-linecap: round;
   stroke-miterlimit: 10; }
-#cloud-power-img .st30 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-width: 1.4992;
-  stroke-miterlimit: 10; }
-#cloud-power-img .st31 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-miterlimit: 10;
-  stroke-dasharray: 1.9453,1.9453; }
-#cloud-power-img .st32 {
-  fill: none;
-  stroke: #FFFFFF;
-  stroke-miterlimit: 10;
-  stroke-dasharray: 1.975,1.975; }
-#cloud-power-img .st33 {
-  opacity: 0.5;
-  fill: #F4D47A; }
-#cloud-power-img .st34 {
-  opacity: 0.8;
-  fill: url(#SVGID_15_); }
-#cloud-power-img .st35 {
-  fill: #FF3201; }
-#cloud-power-img .st36 {
-  fill: #7AC943; }
+#cloud-power-img .st5 {
+  fill: #FFE39C; }
 
 #rest-api .st0 {
   fill: url(#SVGID_1_); }
@@ -2165,6 +2134,14 @@ ol.yellow-number-list {
           background: rgba(255, 255, 255, 0.15); }
         #header .main-menu-container ul.main-menu li a.current {
           color: #ffe39c; }
+      #header .main-menu-container ul.main-menu li .sub-list-title {
+        width: 100%;
+        color: #fff;
+        padding: 0.5em 0; }
+      #header .main-menu-container ul.main-menu li .sub-list {
+        margin-bottom: 0.5em; }
+        #header .main-menu-container ul.main-menu li .sub-list a {
+          font-size: 0.7em; }
 
 #slider {
   position: relative;
@@ -2491,9 +2468,9 @@ ol.yellow-number-list {
     position: relative;
     z-index: 4; }
     #cloud-power .section-header .header-image {
-      min-height: 25em; }
+      min-height: 27em; }
       #cloud-power .section-header .header-image svg {
-        height: 20em;
+        height: 22em;
         position: absolute;
         top: 5em;
         right: 0; }

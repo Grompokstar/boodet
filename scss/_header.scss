@@ -105,6 +105,20 @@
             color: $active-main-menu-link-color;
           }
         }
+
+        .sub-list-title {
+          width: 100%;
+          color: #fff;
+          padding: 0.5em 0;
+        }
+
+
+        .sub-list {
+          margin-bottom: 0.5em;
+          a {
+            font-size: 0.7em;
+          }
+        }
       }
 
     }
