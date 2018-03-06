@@ -2392,7 +2392,7 @@ ol.yellow-number-list {
       height: 30em;
       position: relative;
       top: 0;
-      left: 0; }
+      left: -3em; }
       #kipr .img #beach-img svg {
         height: 100%; }
       #kipr .img #beach-img #boat-img {
@@ -2404,7 +2404,7 @@ ol.yellow-number-list {
           height: 100%; }
   @media (max-width: 1200px) {
     #kipr .img #beach-img {
-      left: -5em; } }
+      left: -6em; } }
   @media (max-width: 992px) {
     #kipr .img #beach-img {
       left: -10em; } }
