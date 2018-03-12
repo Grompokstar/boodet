@@ -230,6 +230,22 @@ a.btn {
   padding-right: 3%;
 }
 
+.row {
+  display: flex;
+}
+
+.col-1 {
+  width: 33.333%;
+}
+
+.col-2 {
+  width: 66.666%;
+}
+
+.col-3 {
+  width: 100%;
+}
+
 
 .xl-btn-row {
   display: flex;
