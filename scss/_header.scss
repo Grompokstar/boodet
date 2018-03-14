@@ -1,4 +1,5 @@
 #header {
+
   .header-container {
     display: flex;
     justify-content: space-between;
@@ -44,11 +45,15 @@
   }
 
   .logo {
-    height: 3.75em;
     padding: 2em;
     margin: auto;
+
+    a {
+      display: block;
+    }
     svg {
       height: 100%;
+      width: 12em;
     }
   }
 

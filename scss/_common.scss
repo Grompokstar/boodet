@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html, body {
   font-family: "Ubuntu", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -6,7 +8,7 @@ html, body {
   overflow-x: hidden;
 }
 
-.container {
+.boodet__container {
   padding: 0 7%;
 }
 
@@ -34,8 +36,24 @@ html, body {
   font-size: 1.2em;
 }
 
+.font-light {
+  font-weight: 300;
+}
+
 .medium {
   font-weight: 500;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+.ultra-bold {
+  font-weight: 900;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .section-header-title {
@@ -236,14 +254,18 @@ a.btn {
 
 .col-1 {
   width: 33.333%;
+  box-sizing: content-box;
+
 }
 
 .col-2 {
   width: 66.666%;
+  box-sizing: content-box;
 }
 
 .col-3 {
   width: 100%;
+  box-sizing: content-box;
 }
 
 
@@ -347,6 +369,65 @@ ol.yellow-number-list {
     line-height: 1.1em;
     border-radius: 50%;
     background: $yellow-color;
+    text-align: center;
+
+
+  }
+}
+
+
+ol.blue-number-list {
+  margin: 1em 0;
+  padding-left: 2em;
+
+  li {
+    position: relative;
+    margin-bottom: 1em;
+
+    &:first-child {
+      &:before {
+        content: '1';
+      }
+    }
+
+
+    &:nth-child(2) {
+      &:before {
+        content: '2';
+      }
+    }
+
+    &:nth-child(3) {
+      &:before {
+        content: '3';
+      }
+    }
+
+    &:nth-child(4) {
+      &:before {
+        content: '4';
+      }
+    }
+
+    &:nth-child(5) {
+      &:before {
+        content: '5';
+      }
+    }
+  }
+
+  li:before {
+    content: '';
+    color: #fff;
+    font-size: 0.9em;
+    position: absolute;
+    top: 0.15em;
+    left: -1.5em;
+    width: 1.2em;
+    height: 1.2em;
+    line-height: 1.2em;
+    border-radius: 50%;
+    background: $blue-brand-color;
     text-align: center;
 
 
@@ -537,4 +618,8 @@ ol.yellow-number-list {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
+}
+
+img.full-width {
+  width: 100%;
 }

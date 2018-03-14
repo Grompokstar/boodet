@@ -3,6 +3,7 @@ $blue-brand-color: #2c4edd;
 
 $yellow-color: #f4d47a;
 $gray-color: lighten(#000, 70%);
+$light-gray-color: lighten(#000, 80%);
 $active-main-menu-link-color: #ffe39c;
 
 
@@ -69,6 +70,14 @@ $spacers: (
         9: (
                 x: ($spacer-x * 9),
                 y: ($spacer-y * 9)
+        ),
+        10: (
+                x: ($spacer-x * 10),
+                y: ($spacer-y * 10)
+        ),
+        11: (
+                x: ($spacer-x * 11),
+                y: ($spacer-y * 11)
         ),
         12: (
                 x: ($spacer-x * 12),
