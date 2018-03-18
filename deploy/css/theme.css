@@ -1290,6 +1290,12 @@ ol.blue-number-list {
 img.full-width {
   width: 100%; }
 
+.d-none-sm {
+  display: none; }
+
+.d-sm {
+  display: none; }
+
 @media (max-width: 575px) {
   #b-image-right, #b-image-left {
     display: none; }
@@ -1304,7 +1310,7 @@ img.full-width {
       margin-top: 3em; }
 
   .section-header-title {
-    font-size: 4.5em; }
+    font-size: 4em; }
 
   .blocks-container {
     font-size: 0.9em; }
@@ -1322,7 +1328,16 @@ img.full-width {
     width: 100%; }
 
   .col-2 {
-    width: 100%; } }
+    width: 100%; }
+
+  .d-none-sm {
+    display: block; }
+
+  .btn-x2 {
+    margin: auto; } }
+@media (min-width: 576px) {
+  .d-sm {
+    display: block; } }
 #main-logo .st0 {
   fill: url(#SVGID_1_); }
 #main-logo .st1 {
@@ -2524,7 +2539,9 @@ img.full-width {
     padding-right: 3%; }
   @media (max-width: 575px) {
     #club {
-      padding-bottom: 4em; } }
+      padding-bottom: 4em; }
+      #club .section-header .header-image img {
+        height: 10em; } }
 
 #writing {
   padding: 4em 9% 6em;
@@ -2612,6 +2629,11 @@ img.full-width {
     margin-top: 3em; }
     #rules .wave-image svg {
       height: 4em; }
+  @media (max-width: 575px) {
+    #rules {
+      padding-bottom: 2em; }
+      #rules .wave-image svg {
+        height: 2em; } }
 
 .section-img {
   padding: 3em 0; }
@@ -2670,6 +2692,10 @@ img.full-width {
   #about-us .blocks-container {
     position: relative;
     z-index: 4; }
+  @media (max-width: 575px) {
+    #about-us .wave-image svg {
+      height: 2em;
+      margin-left: 20%; } }
 
 #mission {
   padding: 3em 0 5em; }
@@ -2752,6 +2778,10 @@ img.full-width {
       height: 6.5em; }
     #cloud-power .block-pic #pic13 {
       height: 5em; }
+  @media (max-width: 575px) {
+    #cloud-power .wave-image svg {
+      height: 2em;
+      margin-left: 20%; } }
 
 #cloud-store {
   background: linear-gradient(45deg, #3d41a3 0%, #2c4edd 100%);

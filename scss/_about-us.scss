@@ -17,5 +17,14 @@
     z-index: 4;
   }
 
+  @media (max-width: 575px) {
+    .wave-image {
+      svg {
+        height: 2em;
+        margin-left: 20%;
+      }
+    }
+  }
+
 }
 

@@ -23,5 +23,13 @@
 
   @media (max-width: 575px) {
     padding-bottom: 4em;
+
+    .section-header {
+      .header-image {
+        img {
+          height: 10em;
+        }
+      }
+    }
   }
 }
