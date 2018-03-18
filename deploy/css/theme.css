@@ -2873,7 +2873,8 @@ img.full-width {
     .blog-content .title-section .blog-title-container {
       padding: 1em; }
       .blog-content .title-section .blog-title-container .title {
-        font-size: 2em; }
+        font-size: 2em;
+        padding: 0 5%; }
       .blog-content .title-section .blog-title-container .subtitle {
         margin-bottom: 3em; }
       .blog-content .title-section .blog-title-container .title-img {
