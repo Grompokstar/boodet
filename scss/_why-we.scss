@@ -23,6 +23,15 @@
       }
     }
   }
+
+  @media (max-width: 575px) {
+    .wave-image {
+      svg {
+        height: 2em;
+        margin-left: 20%;
+      }
+    }
+  }
 }
 
 @media (max-width: 1200px) {

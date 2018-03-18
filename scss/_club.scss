@@ -19,4 +19,9 @@
     padding-left: 5%;
     padding-right: 3%;
   }
+
+
+  @media (max-width: 575px) {
+    padding-bottom: 4em;
+  }
 }

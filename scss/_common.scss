@@ -220,6 +220,7 @@ a.btn {
       img {
         left: inherit;
         right: 0;
+        top: 3em;
       }
     }
   }
@@ -622,4 +623,55 @@ ol.blue-number-list {
 
 img.full-width {
   width: 100%;
+}
+
+
+@media (max-width: 575px) {
+  #b-image-right, #b-image-left {
+    display: none;
+  }
+
+  .section-header {
+    font-size: 0.8em;
+
+    .header-text {
+      position: relative;
+      -moz-hyphens: auto;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      margin-top: 3em;
+    }
+  }
+
+  .section-header-title {
+    font-size: 4.5em;
+  }
+
+  .blocks-container {
+    font-size: 0.9em;
+
+    .block {
+      margin-bottom: 2em;
+
+      .block-pic {
+        margin-bottom: 1.5em;
+      }
+
+      .block-title {
+        margin-bottom: 0.8em;
+      }
+    }
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .col-1 {
+    width: 100%
+  }
+
+  .col-2 {
+    width: 100%
+  }
 }

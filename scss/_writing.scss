@@ -19,4 +19,11 @@
       margin-bottom: 2em;
     }
   }
+
+  @media (max-width: 575px) {
+    padding: 3em 9% 4em;
+    .writing-container {
+      justify-content: center;
+    }
+  }
 }

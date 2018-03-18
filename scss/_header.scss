@@ -128,4 +128,46 @@
 
     }
   }
+
+  @media (max-width: 575px) {
+    .logo {
+      padding: 1em;
+
+      svg {
+        width: 9em;
+      }
+    }
+
+    .header-container {
+
+      .main-menu-btn {
+        width: 3.5em;
+        height: 3.5em;
+        top: 0.5em;
+        left: 0.5em;
+      }
+
+      .entry {
+        top: 2em;
+        right: 1em;
+      }
+
+    }
+
+    .main-menu-container {
+      .logo-row {
+        .close-btn {
+          width: 2em;
+          height: 2em;
+
+          top: 1em;
+          right: 1em;
+        }
+      }
+
+      ul.main-menu {
+        font-size: 1.5em;
+      }
+    }
+  }
 }

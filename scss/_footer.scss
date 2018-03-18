@@ -44,4 +44,24 @@
     display: flex;
     margin-top: 1em;
   }
+
+  @media (max-width: 575px) {
+    .footer-main-container {
+      flex-wrap: wrap;
+
+      .width-33 {
+        width: 100%;
+        margin-bottom: 2em;
+      }
+    }
+
+    .footer-bottom-container {
+      flex-wrap: wrap;
+
+      .width-33 {
+        width: 100%;
+        margin-bottom: 1em;
+      }
+    }
+  }
 }

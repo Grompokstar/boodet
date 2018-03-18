@@ -15,6 +15,15 @@
     }
   }
 
+  @media (max-width: 575px) {
+    .case {
+      font-size: 0.85em;
+    }
+
+    padding-bottom: 3em;
+
+  }
+
 }
 
 
@@ -46,6 +55,14 @@
   #our-cases {
     .section-header .header-image img {
       left: -20em;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  #our-cases {
+    .section-header .header-image img {
+      left: -22em;
     }
   }
 }
