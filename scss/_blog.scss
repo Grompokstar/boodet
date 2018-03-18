@@ -26,6 +26,10 @@
         line-height: 1.3em;
       }
 
+      .subtitle {
+        margin-bottom: 10em;
+      }
+
       .title-bottom-row {
         display: flex;
         justify-content: space-between;
@@ -108,6 +112,27 @@
       background-color: $light-gray-color;
     }
   }
+
+
+  @media (max-width: 575px) {
+    .title-section {
+      .blog-title-container {
+        padding: 1em;
+
+        .title {
+          font-size: 2em;
+        }
+
+        .subtitle {
+          margin-bottom: 3em;
+        }
+
+        .title-img {
+          height: 10em;
+        }
+      }
+    }
+  }
 }
 
 .quote-xxl {
@@ -126,5 +151,11 @@
     line-height: 1;
     font-weight: 700;
 
+  }
+}
+
+@media (max-width: 575px) {
+  .quote-xxl {
+    font-size: 1.5em;
   }
 }

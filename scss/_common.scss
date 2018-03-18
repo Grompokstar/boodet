@@ -692,6 +692,20 @@ img.full-width {
   .btn-x2 {
     margin: auto;
   }
+
+  .img {
+
+    svg {
+      max-height: 10em;
+    }
+
+    &.no-scale {
+      svg {
+        max-height: inherit;
+      }
+    }
+
+  }
 }
 
 @media (min-width: 576px) {

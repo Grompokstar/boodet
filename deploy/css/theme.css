@@ -1334,7 +1334,12 @@ img.full-width {
     display: block; }
 
   .btn-x2 {
-    margin: auto; } }
+    margin: auto; }
+
+  .img svg {
+    max-height: 10em; }
+  .img.no-scale svg {
+    max-height: inherit; } }
 @media (min-width: 576px) {
   .d-sm {
     display: block; } }
@@ -2814,6 +2819,8 @@ img.full-width {
       text-align: center;
       padding: 0 15%;
       line-height: 1.3em; }
+    .blog-content .title-section .blog-title-container .subtitle {
+      margin-bottom: 10em; }
     .blog-content .title-section .blog-title-container .title-bottom-row {
       display: flex;
       justify-content: space-between; }
@@ -2862,6 +2869,15 @@ img.full-width {
       color: #fff; }
     .blog-content .section.gray-bg {
       background-color: #cccccc; }
+  @media (max-width: 575px) {
+    .blog-content .title-section .blog-title-container {
+      padding: 1em; }
+      .blog-content .title-section .blog-title-container .title {
+        font-size: 2em; }
+      .blog-content .title-section .blog-title-container .subtitle {
+        margin-bottom: 3em; }
+      .blog-content .title-section .blog-title-container .title-img {
+        height: 10em; } }
 
 .quote-xxl {
   font-size: 2em;
@@ -2877,5 +2893,9 @@ img.full-width {
     font-size: 2.7em;
     line-height: 1;
     font-weight: 700; }
+
+@media (max-width: 575px) {
+  .quote-xxl {
+    font-size: 1.5em; } }
 
 /*# sourceMappingURL=theme.css.map */
