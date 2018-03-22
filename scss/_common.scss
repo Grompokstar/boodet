@@ -269,6 +269,11 @@ a.btn {
   box-sizing: content-box;
 }
 
+.col-half {
+  width: 50%;
+  box-sizing: content-box;
+}
+
 
 .xl-btn-row {
   display: flex;
@@ -680,6 +685,10 @@ img.full-width {
   }
 
   .col-2 {
+    width: 100%
+  }
+
+  .col-half {
     width: 100%
   }
 

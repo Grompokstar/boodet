@@ -1,6 +1,52 @@
 #slider {
   position: relative;
-  background: lighten($blue-brand-color, 10%);
-  height: 22.5em;
+  height: 20em;
   z-index: 2;
+
+  .slider-container {
+    width: 500%;
+    display: flex;
+    position: relative;
+    transition: left 1s ease;
+
+    &[data-active-slide="1"] {
+      left: 0;
+    }
+
+    &[data-active-slide="2"] {
+      left: -100%;
+    }
+
+    &[data-active-slide="3"] {
+      left: -200%;
+    }
+
+    &[data-active-slide="4"] {
+      left: -300%;
+    }
+
+    &[data-active-slide="5"] {
+      left: -400%;
+    }
+
+    .slide-item {
+      width: 100%;
+      color: #fff;
+      height: 20em;
+      background: linear-gradient(to right, #e3e3e3 0%, #8f5643 50%);
+
+      .slide-title {
+        font-size: 3em;
+        margin-top: 0.7em;
+      }
+
+      .slide-description {
+        margin-top: 1em;
+      }
+
+      .slide-btn {
+        margin-top: 2em;
+      }
+    }
+  }
 }

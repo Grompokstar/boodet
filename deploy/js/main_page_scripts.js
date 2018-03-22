@@ -20,6 +20,27 @@ $(function(){
     howMachLoseSetPositions();
 
     $(window).resize(howMachLoseSetPositions);
+
+
+    //slider
+
+
+
+    var timerId = setInterval(function() {
+      var $sliderContainer = $('.slider-container');
+      var activeSlide = $sliderContainer.attr('data-active-slide');
+      console.log(activeSlide);
+
+      activeSlide++;
+
+      if (activeSlide > 5) {
+        activeSlide = 1;
+      }
+
+      $sliderContainer.attr('data-active-slide', activeSlide);
+    }, 5000);
+
+    //-------------------
   });
 
 }());
