@@ -87,4 +87,10 @@
       @include animation(rotate 30s infinite linear);
     }
   }
+
+  @media (max-width: 575px) {
+    .slider_content {
+      width: 100%;
+    }
+  }
 }

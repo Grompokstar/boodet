@@ -2427,11 +2427,17 @@ img.full-width {
       position: relative;
       z-index: 4;
       padding: 0 7%;
-      max-width: 35em;
+      max-width: 600px;
       overflow: hidden; }
   @media (max-width: 1200px) {
     #slider .slider-content__container {
       font-size: 0.8em; } }
+  @media (max-width: 992px) {
+    #slider .slider-content__container {
+      font-size: 0.7em; } }
+  @media (max-width: 575px) {
+    #slider .slider-content__container {
+      font-size: 0.6em; } }
 
 #slider .slider_content, #slider #slide_kipr .sky, #slider #slide_kipr .water, #slider #slide_kipr .city, #slider #slide_kipr .moon, #slider #slide_kipr .cloud_1, #slider #slide_kipr .cloud_2, #slider #slide_kipr .cloud_3, #slider #slide_kipr .tramplin, #slider #slide_kipr .girl, #slider #slide_kipr .girl_img, #slider #slide_kipr .parashute, #slider #slide_kipr .board, #slider #slide_safe .ep3_furniture, #slider #slide_safe .ep3_man2,
 #slider #slide_safe .ep3_man1, #slider #slide_safe .ep3_man2_img,
@@ -2903,6 +2909,9 @@ img.full-width {
   -webkit-animation: rotate 30s infinite linear;
   -moz-animation: rotate 30s infinite linear;
   animation: rotate 30s infinite linear; }
+@media (max-width: 575px) {
+  #slider .slider_content {
+    width: 100%; } }
 
 #how-much-lose {
   position: relative; }
