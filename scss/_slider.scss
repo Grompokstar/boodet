@@ -1,7 +1,6 @@
 #slider {
   position: relative;
   height: 20em;
-  z-index: 2;
 
   .slider-container {
     width: 500%;
@@ -56,8 +55,17 @@
     }
 
     .slider-content__container {
+      position: relative;
+      z-index: 4;
       padding: 0 7%;
       max-width: 35em;
+      overflow: hidden;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .slider-content__container {
+      font-size: 0.8em;
     }
   }
 }
