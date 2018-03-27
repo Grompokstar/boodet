@@ -30,10 +30,15 @@
     }
 
     .slide-item {
+      position: relative;
       width: 100%;
       color: #fff;
       height: 20em;
-      background: linear-gradient(to right, #e3e3e3 0%, #8f5643 50%);
+
+      .boodet__container {
+        position: relative;
+        height: 100%
+      }
 
       .slide-title {
         font-size: 3em;
