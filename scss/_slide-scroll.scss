@@ -1,162 +1,91 @@
 #slide_scroll {
-	background: linear-gradient(to right, #dadada 0%, #9c8b70 38%, #736652 100%);
+  background: linear-gradient(to right, #dadada 0%, #9c8b70 38%, #736652 100%);
 
-	.absolute {
-        position: absolute;
-        top: 0;
-    }
+  .height_100 {
+    height: 100%;
+  }
     
-    .relative {
-        position: relative;
-    }
+  .ep3_clock {
+    @extend %absolute;
+    @include position(10%, auto, auto, 47%);
+    width: 6%;
+  }
     
-    .opacity_tr {
-        transition: .15s opacity cubic-bezier(1,0,0,1);
-        opacity: 1;
-    }
-    
-    .hide {
-        opacity: 0;
-        transition-duration: .25s;
-    }
+  .wrap_img_ep3_clock {
+    height: 100%;
+  }
 
-    .height_100 {
-    	height: 100%;
-    }
+
+  @include keyframes(scale) {
+    50% {
+      transform: scale(1.1);
+    }  
+  }
     
-    .ep3_clock {
-       left: 47%; 
-       width: 6%;
-       top: 10%;
-    }
-    
-    .wrap_img_ep3_clock {
-        height: 100%;
-    }
-    
-    @keyframes scale {
-        50% {
-            transform: scale(1.1);
-        }
-    }
-    
-    .wrap_working_girl {
-    	top: 14%;
-    	left: 6%;
-    	height: 80%;
-    	animation: scale 40s infinite linear;
-    	display: inline-block;
-    }
+  .wrap_working_girl {
+    @extend %relative;
+    @include position(14%, auto, auto, 6%);
+    height: 80%;
+    @include animation(scale 40s infinite linear);
+    display: inline-block;
+  }
         
-    .wrap_working_place {
-        display: inline-block;
-        height: 100%;
-    }
+  .wrap_working_place {
+    @extend %relative;
+    display: inline-block;
+    height: 100%;
+  }
     
-    .work_monitor {
-        height: 100%;
-    }
+  .work_monitor {
+    height: 100%;
+  }
     
-    .wrap_scroll_tape {
-    	width: 35%;
-    	height: 29%;
-    	left: 52.5%;
-    	top: 7.4%;
-    }
+  .wrap_scroll_tape {
+    @extend %absolute;
+    @include position(7.4%, auto, auto, 52.5%);
+    width: 35%;
+    height: 29%;
+  }
     
-    .scroll_tape {
-    	width: 100%;
-    	height: 100%;
-    	overflow: hidden;
-    }
+  .scroll_tape {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
     
-    .floor {
-        top: unset;
-        bottom: 0;
-        width: 100%;
-        height: 15%;
-        background: linear-gradient(to right, #c9c6c2, #ede7df, #f8f1e9);
-    }
+  .floor {
+    @extend %absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(to right, #c9c6c2, #ede7df, #f8f1e9);
+  }
     
-    /*@keyframes left_girl {
-        50% {
-            left: 20%;
-        }
-    }
+  .working_girl,
+  .work {
+    @extend %absolute;
+    @include position(0, auto, auto, 0);
+    width: 100%;
+    height: 100%;
+  }
     
-    @keyframes left_work {
-        50% {
-            left: 15%;
-        }
-    }
+  .work_table {
+    @extend %absolute;
+    height:100%;
+    bottom: 0;
+  }    
+  
+  .wrap_monitor {
+  	@extend %relative;
+  	@include position(13.5%, auto, auto, 45%);
+    width: 40%;
+    height: 41%;
+  }
     
-    .working_girl {
-        animation: left_girl 40s infinite linear;
-    }
-    
-    .work {
-        animation: left_work 40s infinite linear
-    }*/
-    
-    .working_girl,
-    .work {
-        width: 100%;
-        height: 100%;
-        left: 0;
-    }
-    
-    .work_table {
-        height:100%;
-        top: unset;
-        bottom: 0;
-    }
-    
-    .wrap_monitor {
-    	width: 40%;
-    	position: relative;
-    	left: 45%;
-    	top: 13.5%;
-    	height: 41%;
-    }
-    
-    .girl {
-        height: 100%;
-        top: 1%;
-    }
-    
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-            
-        }
-    }
-    
-    @-webkit-keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-            
-        }
-    }
-    
-    #ep_clock_2 {
-        -webkit-animation: rotate 2s infinite linear;
-        animation: rotate 2s infinite linear;
-    }
-    
-    #ep_clock_3 {
-        -webkit-animation: rotate 30s infinite linear;
-        animation: rotate 30s infinite linear;
-    }
-
-    .slider_content {
-        width: 50%;
-        right: 0;
-        background: linear-gradient(to left, #172975, transparent);
-    }
+  .girl {
+    @extend %absolute;
+    @extend %opacity_tr;
+    height: 100%;
+    top: 1%;
+  }
 }

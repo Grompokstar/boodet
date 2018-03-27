@@ -1,0 +1,88 @@
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin animation($content...) {
+  -webkit-animation: #{$content};
+  -moz-animation: #{$content};
+  animation: #{$content};
+}
+
+@mixin position_v($top, $bottom) {
+  top: #{$top};
+  bottom: #{$bottom};
+}
+
+@mixin position_h($left, $right) {
+  left: #{$left};
+  right: #{$right};
+}
+
+@mixin position($top, $right, $bottom, $left) {
+  @include position_v($top, $bottom);
+  @include position_h($left, $right);
+}
+
+#slider {
+  %absolute {
+    position: absolute;
+  }
+
+  %relative {
+    position: relative;
+  }
+
+  %opacity_tr {
+    transition: .15s opacity cubic-bezier(1,0,0,1);
+    opacity: 1;
+  }
+
+  .hide {
+    opacity: 0 !important;
+    transition-duration: .25s !important;
+  }
+
+  .slider_content {
+    @extend %absolute;
+    width: 50%;
+    @include position(0, 0, auto, auto);
+    background: linear-gradient(to left, #172975, transparent);
+  }
+
+  @import 'slide-kipr';
+  @import 'slide-safe';
+  @import 'slide-scroll';
+
+  #slide_scroll,
+  #slide_safe {
+    @include keyframes(rotate) {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);    
+      }  
+    }
+
+    .ep_clock_item {
+      @extend %absolute;
+      top: 0;
+    }
+    
+    #ep_clock_2 {
+      @include animation(rotate 2s infinite linear);
+    }
+    
+    #ep_clock_3 {
+      @include animation(rotate 30s infinite linear);
+    }
+  }
+}

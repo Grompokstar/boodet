@@ -1,106 +1,56 @@
 #slide_safe {
-	.absolute {
-        position: absolute;
-        top: 0;
-    }
+  .height_100 {
+    height: 100%;
+  }
     
-    .relative {
-        position: relative;
-    }
+  .ep3_furniture {
+    @extend %absolute;
+    @include position(0, auto, auto, 0);
+    height: 100%;
+  }
 
-    .height_100 {
-    	height: 100%;
-    }
+  .ep3_wall,
+  .ep3_wall img,
+  .ep3_furniture img {
+    height: 100%;
+  }
     
-    .ep3_furniture {
-        height: 100%;
-        left: 0;
-    }
-
-    .ep3_wall,
-    .ep3_wall img,
-    .ep3_furniture img {
-    	height: 100%;
-    }
+  .ep3_man2,
+ 	.ep3_man1{
+    @extend %absolute;
+    @include position(0, auto, 0, 0);
+    width:100%;
+    margin: auto 0;
+    height:100%;
+  }
     
-    .ep3_man2,
-    .ep3_man1{
-        width:100%;
-        left: 0;
-        bottom: 0;
-        margin: auto 0;
-        height:100%;
-    }
+  .ep3_man1 {
+    z-index: 2;
+  }
     
-    .ep3_man1 {
-        z-index: 2;
-    }
+  .wrap_img_ep3_man2,
+  .wrap_img_ep3_man1{
+    @extend %relative;
+    height: 100%;
+  }
     
-    .wrap_img_ep3_man2,
-    .wrap_img_ep3_man1{
-        height: 100%;
-    }
+  .ep3_man2_img,
+  .ep3_man1_img{
+    @extend %absolute;
+    @extend %opacity_tr;
+    @include position_v(0, 0);
+    margin: auto 0; 
+    height:100%;
+  }
+        
+  .ep3_clock {
+    @extend %absolute;
+    @include position(10%, auto, auto, 43%);
+    width: 5%;
+  }
     
-    .ep3_man2_img,
-    .ep3_man1_img{
-        bottom: 0;
-        margin: auto 0; 
-        height:100%;
-    }
-    
-    .opacity_tr {
-        transition: .15s opacity cubic-bezier(1,0,0,1);
-        opacity: 1;
-    }
-    
-    .hide {
-        opacity: 0;
-        transition-duration: .25s;
-    }
-    
-    .ep3_clock {
-       left: 43%; 
-       width: 5%;
-       top: 10%;
-    }
-    
-    .wrap_img_ep3_clock {
-        height: 100%;
-    }
-    
-    @keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-            
-        }
-    }
-    
-    @-webkit-keyframes rotate {
-        from {
-            transform: rotate(0deg);
-        }
-        to {
-            transform: rotate(360deg);
-            
-        }
-    }
-    
-    #ep_clock_2 {
-        -webkit-animation: rotate 2s infinite linear;
-        animation: rotate 2s infinite linear;
-    }
-    
-    #ep_clock_3 {
-        -webkit-animation: rotate 30s infinite linear;
-        animation: rotate 30s infinite linear;
-    }
-
-    .slider_content {
-        width: 50%;
-        right: 0;
-        background: linear-gradient(to left, #172975, transparent);
-    }
+  .wrap_img_ep3_clock {
+    @extend %relative;
+    height: 100%;
+  }
 }
