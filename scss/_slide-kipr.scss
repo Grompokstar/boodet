@@ -150,8 +150,8 @@
   }
 
   .city_before_water {
-    @iclude position(auto, 0, -15%, auto);
-    transition: bottom 0s;   
+    @include position(auto, 0, -15%, auto);
+    transition: bottom 0s;  
     margin: 0 auto;
     opacity: 1;
     width: 30%;
@@ -169,7 +169,7 @@
     @include position(9%, auto, auto, 10%);
     opacity:0.5;
     width: 20%;
-    @inlcude animation(cloud 30s infinite linear 3s, cloud_start 3s 1 linear);  
+    @include animation(cloud 30s infinite linear 3s, cloud_start 3s 1 linear);  
   }
 
   .cloud_2 {

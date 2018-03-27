@@ -2656,7 +2656,8 @@ img.full-width {
 #slider #slide_kipr .city_remove {
   bottom: -100%; }
 #slider #slide_kipr .city_before_water {
-  @iclude position(auto, 0, -15%, auto);
+  bottom: -15%;
+  right: 0;
   transition: bottom 0s;
   margin: 0 auto;
   opacity: 1;
@@ -2673,7 +2674,9 @@ img.full-width {
   left: 10%;
   opacity: 0.5;
   width: 20%;
-  @inlcude animation(cloud 30s infinite linear 3s, cloud_start 3s 1 linear); }
+  -webkit-animation: cloud 30s infinite linear 3s, cloud_start 3s 1 linear;
+  -moz-animation: cloud 30s infinite linear 3s, cloud_start 3s 1 linear;
+  animation: cloud 30s infinite linear 3s, cloud_start 3s 1 linear; }
 #slider #slide_kipr .cloud_2 {
   top: 12%;
   left: 60%;
