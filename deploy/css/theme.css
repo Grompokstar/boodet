@@ -2443,8 +2443,6 @@ img.full-width {
 #slider .slider_content {
   width: 50%;
   top: 0;
-  bottom: auto;
-  left: auto;
   right: 0;
   background: linear-gradient(to left, #172975, transparent); }
 @-webkit-keyframes board_rotate {
@@ -2634,25 +2632,19 @@ img.full-width {
   overflow: hidden; }
 #slider #slide_kipr .sky {
   top: 0;
-  bottom: auto;
   left: 0;
-  right: auto;
   width: 100%;
   background: linear-gradient(to bottom, #1b67cc 0%, #172975 100%);
   height: 67%; }
 #slider #slide_kipr .water {
-  top: auto;
   bottom: 0;
   left: 0;
-  right: auto;
   width: 100%;
   height: 33.33%;
   background: linear-gradient(to bottom, #2666bd 0%, #172975 100%); }
 #slider #slide_kipr .city {
-  top: auto;
   bottom: -42%;
   left: 0;
-  right: auto;
   width: 100%;
   height: 100%;
   transition: bottom 1s linear; }
@@ -2674,23 +2666,17 @@ img.full-width {
   animation: view_city 1s linear, city_left 10s infinite linear 1s; }
 #slider #slide_kipr .moon {
   top: 5%;
-  bottom: auto;
   left: 35%;
-  right: auto;
   width: 9%; }
 #slider #slide_kipr .cloud_1 {
   top: 9%;
-  bottom: auto;
   left: 10%;
-  right: auto;
   opacity: 0.5;
   width: 20%;
   @inlcude animation(cloud 30s infinite linear 3s, cloud_start 3s 1 linear); }
 #slider #slide_kipr .cloud_2 {
   top: 12%;
-  bottom: auto;
   left: 60%;
-  right: auto;
   opacity: 0.5;
   width: 10%;
   -webkit-animation: cloud 16s infinite linear 9.6s, cloud_start 9.6s 1 linear;
@@ -2698,19 +2684,15 @@ img.full-width {
   animation: cloud 16s infinite linear 9.6s, cloud_start 9.6s 1 linear; }
 #slider #slide_kipr .cloud_3 {
   top: 15%;
-  bottom: auto;
   left: 75%;
-  right: auto;
   opacity: 0.5;
   width: 16%;
   -webkit-animation: cloud 20s infinite linear 15s, cloud_start 15s 1 linear;
   -moz-animation: cloud 20s infinite linear 15s, cloud_start 15s 1 linear;
   animation: cloud 20s infinite linear 15s, cloud_start 15s 1 linear; }
 #slider #slide_kipr .tramplin {
-  top: auto;
   bottom: 0;
   left: 0;
-  right: auto;
   top: unset;
   width: 52%;
   height: 11%;
@@ -2728,10 +2710,8 @@ img.full-width {
   bottom: 100%;
   height: 0; }
 #slider #slide_kipr .girl {
-  top: auto;
   bottom: 10%;
   left: 15.5%;
-  right: auto;
   width: 20%;
   height: 80%; }
 #slider #slide_kipr .girl_img {
@@ -2744,14 +2724,12 @@ img.full-width {
   width: 100%; }
 #slider #slide_kipr .parashute {
   top: 30%;
-  bottom: auto;
   left: 10%;
   right: 0;
   width: 0;
   opacity: 0;
   margin: 0 auto; }
 #slider #slide_kipr .board {
-  top: auto;
   bottom: 2%;
   left: 7%;
   right: 0;
@@ -2789,9 +2767,7 @@ img.full-width {
   height: 100%; }
 #slider #slide_safe .ep3_furniture {
   top: 0;
-  bottom: auto;
   left: 0;
-  right: auto;
   height: 100%; }
 #slider #slide_safe .ep3_wall,
 #slider #slide_safe .ep3_wall img,
@@ -2802,7 +2778,6 @@ img.full-width {
   top: 0;
   bottom: 0;
   left: 0;
-  right: auto;
   width: 100%;
   margin: auto 0;
   height: 100%; }
@@ -2819,9 +2794,7 @@ img.full-width {
   height: 100%; }
 #slider #slide_safe .ep3_clock {
   top: 10%;
-  bottom: auto;
   left: 43%;
-  right: auto;
   width: 5%; }
 #slider #slide_safe .wrap_img_ep3_clock {
   height: 100%; }
@@ -2831,9 +2804,7 @@ img.full-width {
     height: 100%; }
   #slider #slide_scroll .ep3_clock {
     top: 10%;
-    bottom: auto;
     left: 47%;
-    right: auto;
     width: 6%; }
   #slider #slide_scroll .wrap_img_ep3_clock {
     height: 100%; }
@@ -2848,9 +2819,7 @@ img.full-width {
     transform: scale(1.1); } }
   #slider #slide_scroll .wrap_working_girl {
     top: 14%;
-    bottom: auto;
     left: 6%;
-    right: auto;
     height: 80%;
     -webkit-animation: scale 40s infinite linear;
     -moz-animation: scale 40s infinite linear;
@@ -2863,9 +2832,7 @@ img.full-width {
     height: 100%; }
   #slider #slide_scroll .wrap_scroll_tape {
     top: 7.4%;
-    bottom: auto;
     left: 52.5%;
-    right: auto;
     width: 35%;
     height: 29%; }
   #slider #slide_scroll .scroll_tape {
@@ -2880,9 +2847,7 @@ img.full-width {
   #slider #slide_scroll .working_girl,
   #slider #slide_scroll .work {
     top: 0;
-    bottom: auto;
     left: 0;
-    right: auto;
     width: 100%;
     height: 100%; }
   #slider #slide_scroll .work_table {
@@ -2890,9 +2855,7 @@ img.full-width {
     bottom: 0; }
   #slider #slide_scroll .wrap_monitor {
     top: 13.5%;
-    bottom: auto;
     left: 45%;
-    right: auto;
     width: 40%;
     height: 41%; }
   #slider #slide_scroll .girl {

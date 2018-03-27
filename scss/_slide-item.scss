@@ -17,13 +17,13 @@
 }
 
 @mixin position_v($top, $bottom) {
-  top: #{$top};
-  bottom: #{$bottom};
+  @if $top != auto {top: #{$top};}
+  @if $bottom != auto {bottom: #{$bottom};}
 }
 
 @mixin position_h($left, $right) {
-  left: #{$left};
-  right: #{$right};
+  @if $left != auto {left: #{$left};}
+  @if $right != auto {right: #{$right};}
 }
 
 @mixin position($top, $right, $bottom, $left) {
