@@ -43,10 +43,10 @@ $(function(){
 
 }());
 
-document.addEventListener('DOMContentLoaded', resize, false);
-window.addEventListener('resize', resize, false);
+document.addEventListener('DOMContentLoaded', resizeSlider, false);
+window.addEventListener('resize', resizeSlider, false);
     
-function resize() {
+function resizeSlider() {
   var sliders = document.querySelectorAll('#slider, #slider .slide-item');
   sliders.forEach((slider) => {
     slider.style.height = null;
