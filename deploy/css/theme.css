@@ -2951,10 +2951,6 @@ img.full-width {
     border-color: transparent;
     border-image: linear-gradient(90deg, #ff3200, #2c4edd);
     border-image-slice: 1; }
-  @media (max-width: 575px) {
-    #why-we .wave-image svg {
-      height: 2em;
-      margin-left: 20%; } }
 
 @media (max-width: 1200px) {
   #why-we .section-header .header-image img {
@@ -2965,6 +2961,13 @@ img.full-width {
 @media (max-width: 768px) {
   #why-we .section-header .header-image img {
     left: -10em; } }
+@media (max-width: 575px) {
+  #why-we .section-header .header-image img {
+    height: 20em;
+    left: -5em; }
+  #why-we .wave-image svg {
+    height: 2em;
+    margin-left: 20%; } }
 #our-cases {
   padding-bottom: 7em; }
   #our-cases .section-header .header-image img {

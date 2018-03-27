@@ -23,15 +23,6 @@
       }
     }
   }
-
-  @media (max-width: 575px) {
-    .wave-image {
-      svg {
-        height: 2em;
-        margin-left: 20%;
-      }
-    }
-  }
 }
 
 @media (max-width: 1200px) {
@@ -56,4 +47,23 @@
       left: -10em;
     }
   }
+}
+
+
+@media (max-width: 575px) {
+  #why-we {
+    .section-header .header-image img {
+      height: 20em;
+      left: -5em;
+    }
+
+
+    .wave-image {
+      svg {
+        height: 2em;
+        margin-left: 20%;
+      }
+    }
+  }
+
 }
