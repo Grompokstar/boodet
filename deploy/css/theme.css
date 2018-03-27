@@ -2410,7 +2410,7 @@ img.full-width {
       left: -400%; }
     #slider .slider-container .slide-item {
       position: relative;
-      width: 100%;
+      width: 20%;
       color: #fff;
       height: 20em; }
       #slider .slider-container .slide-item .boodet__container {
@@ -2767,18 +2767,23 @@ img.full-width {
   top: 0; }
 #slide_safe .relative {
   position: relative; }
+#slide_safe .height_100 {
+  height: 100%; }
 #slide_safe .ep3_furniture {
-  width: 100%;
+  height: 100%;
   left: 0; }
+#slide_safe .ep3_wall,
+#slide_safe .ep3_wall img,
+#slide_safe .ep3_furniture img {
+  height: 100%; }
 #slide_safe .ep3_man2,
 #slide_safe .ep3_man1 {
-  width: 25%;
-  left: 22.5%;
+  width: 100%;
+  left: 0;
   bottom: 0;
   margin: auto 0;
   height: 100%; }
 #slide_safe .ep3_man1 {
-  left: 12.7%;
   z-index: 2; }
 #slide_safe .wrap_img_ep3_man2,
 #slide_safe .wrap_img_ep3_man1 {

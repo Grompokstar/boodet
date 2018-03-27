@@ -48,13 +48,16 @@ window.addEventListener('resize', resizeSlider, false);
     
 function resizeSlider() {
   var sliders = document.querySelectorAll('#slider, #slider .slide-item');
+  var wrapSliders = sliders[0];
+  wrapSliders.style.height = null;
+  var resultHeight = null;
+  if(wrapSliders.clientHeight > wrapSliders.clientWidth / 2) {
+    resultHeight = `${wrapSliders.clientWidth / 2}px`;
+  } else if(slider.clientHeight < slider.clientWidth / 3) {
+    resultHeight = `${wrapSliders.clientWidth / 3}px`;
+  }
   sliders.forEach((slider) => {
-    slider.style.height = null;
-    if(slider.clientHeight > slider.clientWidth / 2) {
-      slider.style.height = `${slider.clientWidth / 2}px`;
-    } else if(slider.clientHeight < slider.clientWidth / 3) {
-      slider.style.height = `${slider.clientWidth / 3}px`;
-    }
+    slider.style.height = resultHeight;
   });    
 }
 
@@ -288,7 +291,7 @@ new Serfing();
 
 /* safe */
 new Swap({
-  delay: 200,
+  delay: 250,
   minNum: 1,
   maxNum: 5,
   currentNum: 1,
@@ -297,7 +300,7 @@ new Swap({
 });
 
 new Swap({
-  delay: 200,
+  delay: 250,
   minNum: 1,
   maxNum: 5,
   currentNum: 1,
