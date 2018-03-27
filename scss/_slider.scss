@@ -41,17 +41,23 @@
       }
 
       .slide-title {
-        font-size: 3em;
-        margin-top: 0.7em;
+        font-size: 3.5em;
       }
 
       .slide-description {
         margin-top: 1em;
+        font-size: 1.3em;
       }
 
       .slide-btn {
+        font-size: 1.5em;
         margin-top: 2em;
       }
+    }
+
+    .slider-content__container {
+      padding: 0 7%;
+      max-width: 35em;
     }
   }
 }
