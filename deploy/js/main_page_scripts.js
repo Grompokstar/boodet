@@ -1,66 +1,3 @@
-$(function(){
-
-  $(window).ready(function(){
-
-    function howMachLoseSetPositions() {
-      var $playContainer = $('#play-container')
-      var $playContainerWidth = $playContainer.width();
-      var playContainerHeight = $playContainer.height();
-      var $playIcon = $('.play-icon');
-      var $waveIcon = $('.wave-icon');
-
-      var bgLeftPosition = $playContainerWidth/2 - playContainerHeight - 38;
-
-
-      $playContainer.css('background-position', bgLeftPosition + 'px 0px');
-      $playIcon.css('margin-left', $playContainerWidth/2 + 'px');
-      $waveIcon.css('margin-left', $playContainerWidth/2 - 20 + 'px');
-    }
-
-    howMachLoseSetPositions();
-
-    $(window).resize(howMachLoseSetPositions);
-
-
-    //slider
-
-    var timerId = setInterval(function() {
-      var $sliderContainer = $('.slider-container');
-      var activeSlide = $sliderContainer.attr('data-active-slide');
-      console.log(activeSlide);
-
-      activeSlide++;
-
-      if (activeSlide > 3) {
-        activeSlide = 1;
-      }
-
-      $sliderContainer.attr('data-active-slide', activeSlide);
-    }, 5000);
-
-    //-------------------
-  });
-
-}());
-
-document.addEventListener('DOMContentLoaded', resizeSlider, false);
-window.addEventListener('resize', resizeSlider, false);
-    
-function resizeSlider() {
-  var sliders = document.querySelectorAll('#slider, #slider .slide-item');
-  var wrapSliders = sliders[0];
-  wrapSliders.style.height = null;
-  var resultHeight = null;
-  if(wrapSliders.clientHeight > wrapSliders.clientWidth / 2) {
-    resultHeight = `${wrapSliders.clientWidth / 2}px`;
-  } else if(slider.clientHeight < slider.clientWidth / 3) {
-    resultHeight = `${wrapSliders.clientWidth / 3}px`;
-  }
-  sliders.forEach((slider) => {
-    slider.style.height = resultHeight;
-  });    
-}
-
 class Animation {
   promiseTime(functionTimeout = null, timeDelay = 10) {
     return new Promise((resolve, reject) => {
@@ -69,6 +6,10 @@ class Animation {
         resolve();
       }, timeDelay); 
     });
+  }
+
+  start() {
+    this.run();
   }
     
   process() {
@@ -98,6 +39,10 @@ class Swap extends Animation {
     this.delay = object.delay || 250;
     this.countCircles = object.countCircles || 0;
     this.resultFunction = object.resultFunction || null;
+    this.currentStep = 0;
+  }
+
+  start() {
     this.currentStep = 0;
     this.run();
   }
@@ -133,8 +78,8 @@ class Swap extends Animation {
   }
 }
 
-class Serfing {
-  constructor() {
+class Surf {
+  constructor(props = {}) {
     this.prefixId = '#girl_w_';
     this.countCirclesWalk = 2;
     this.firstId = 1;
@@ -144,16 +89,18 @@ class Serfing {
     this.city = $('#slide_kipr #city');
     this.board = $('#slide_kipr #board');
     this.parashute = $('#slide_kipr #parashute');
-           
-    this.start();
+    this.resultFunction = props.resultFunction || null;
   }
-        
-  start() {
+
+  clear() {
     $('#slide_kipr .girl_img').addClass('hide').removeClass('transition_none');
     this.tramplin.removeClass('tramplin_top tramplin_top_fixed tramplin_animation tramplin_top ');
     this.city.removeClass('city_animation city_remove city_before_water transition_none');
     this.board.removeClass('board_visible board_rotate');
-           
+  }
+        
+  start() {
+    this.clear();           
     $('#slide_kipr #girl_w_8').removeClass('hide');
     this.city.insertBefore($('#slide_kipr #cloud_1')).addClass('city_animation');
     this.tramplin.addClass('tramplin_animation');
@@ -196,6 +143,7 @@ class Serfing {
         this.afterWalk(); 
       }
     });
+    swapWalk.start();
   }
         
   afterWalk() {
@@ -245,9 +193,13 @@ class Serfing {
       countCircles: 11,
       resultFunction: () => {
         swapGirlBoard = null;
-        this.start();
+        this.clear();
+        if(typeof this.resultFunction == 'function') {
+          this.resultFunction();
+        }
       }
     });
+    swapGirlBoard.start();
   }
         
   cityMove() {
@@ -266,7 +218,6 @@ class ScrollTape extends Animation {
     this.delay = 50;
         
     this.wrap.scrollTop = 0;
-    this.run();
   }
         
   animate() {
@@ -286,35 +237,131 @@ class ScrollTape extends Animation {
   }
 }
 
-/* surf */
-new Serfing();
+class Slider {
+  constructor() {
+    this.slider = document.getElementById('slider');
+    this.container = this.slider.querySelector('.slider-container');
+    this.addEvents();
+    this.init();
+  }
 
-/* safe */
-new Swap({
-  delay: 250,
-  minNum: 1,
-  maxNum: 5,
-  currentNum: 1,
-  preventNum: 5,
-  prefixId: 'ep3_man1_c'
-});
+  addEvents() {
+    document.addEventListener('DOMContentLoaded', this.resize.bind(this), false);
+    window.addEventListener('resize', this.resize.bind(this), false);
+  }
 
-new Swap({
-  delay: 250,
-  minNum: 1,
-  maxNum: 5,
-  currentNum: 1,
-  preventNum: 5,
-  prefixId: 'ep3_man2_c'
-});
+  init() {
+    this.activeSlide = 1;
+    this.surf = new Surf({
+      resultFunction: () => {this.next();}
+    });
+    this.safe = {
+      man1: new Swap({
+        delay: 250,
+        minNum: 1,
+        maxNum: 5,
+        currentNum: 1,
+        preventNum: 5,
+        prefixId: 'ep3_man1_c',
+        countCircles: 5,
+        resultFunction: () => {this.next();}
+      }),
+      man2: new Swap({
+        delay: 250,
+        minNum: 1,
+        maxNum: 5,
+        currentNum: 1,
+        preventNum: 5,
+        prefixId: 'ep3_man2_c',
+        countCircles: 5,
+        resultFunction: () => {}
+      })
+    };
+    this.scroll = {
+      tape: new ScrollTape(),
+      girl: new Swap({
+        prefixId: 'girl_',
+        currentNum: 1,
+        preventNum: 3,
+        minNum: 1,
+        maxNum: 3,
+        delay: 350,
+        countCircles: 15,
+        resultFunction: () => {this.next();}
+      })
+    };
+    this.scroll.tape.start();
+    this.change();
+  }
 
-/* scroll */
-new ScrollTape();
-new Swap({
-  prefixId: 'girl_',
-  currentNum: 1,
-  preventNum: 3,
-  minNum: 1,
-  maxNum: 3,
-  delay: 350
-});
+  get activeSlide() {
+    return +this.container.dataset.activeSlide;
+  }
+
+  set activeSlide(numSlide = 1) {
+    this.container.dataset.activeSlide = numSlide; 
+  }
+
+  resize() {
+    var sliders = document.querySelectorAll('#slider, #slider .slide-item');
+    var wrapSliders = sliders[0];
+    wrapSliders.style.height = null;
+    var resultHeight = null;
+    if(wrapSliders.clientHeight > wrapSliders.clientWidth / 2) {
+      resultHeight = `${wrapSliders.clientWidth / 2}px`;
+    } else if(slider.clientHeight < slider.clientWidth / 3) {
+      resultHeight = `${wrapSliders.clientWidth / 3}px`;
+    }
+    sliders.forEach((slider) => {
+      slider.style.height = resultHeight;
+    });    
+  }
+
+  next() {
+    this.activeSlide = (this.activeSlide === 3) ? 1 : this.activeSlide + 1;
+    this.change();
+  }
+
+  change() {
+    switch(this.activeSlide) {
+      case 2:
+        this.safe.man1.start();
+        this.safe.man2.start();
+        break;
+      case 3:
+        this.scroll.girl.start();
+        break;
+      default: 
+        this.surf.start();
+        break;
+    }
+  }
+}
+
+new Slider();
+
+$(function(){
+
+  $(window).ready(function(){
+
+    function howMachLoseSetPositions() {
+      var $playContainer = $('#play-container')
+      var $playContainerWidth = $playContainer.width();
+      var playContainerHeight = $playContainer.height();
+      var $playIcon = $('.play-icon');
+      var $waveIcon = $('.wave-icon');
+
+      var bgLeftPosition = $playContainerWidth/2 - playContainerHeight - 38;
+
+
+      $playContainer.css('background-position', bgLeftPosition + 'px 0px');
+      $playIcon.css('margin-left', $playContainerWidth/2 + 'px');
+      $waveIcon.css('margin-left', $playContainerWidth/2 - 20 + 'px');
+    }
+
+    howMachLoseSetPositions();
+
+    $(window).resize(howMachLoseSetPositions);
+  });
+
+}());
