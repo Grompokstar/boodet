@@ -6,6 +6,16 @@
       transform: scale(1.1);
     }  
   }
+
+  @include keyframes(right) {
+    50% {
+      margin-left: -5%;
+    }
+  }
+
+  .ep3_clock {
+    @include animation(right 40s infinite ease-in-out);
+  }
       
   .wrap_working_girl {
     @include rel_position(14%, auto, auto, 6%);

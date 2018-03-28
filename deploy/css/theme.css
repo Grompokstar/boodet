@@ -2788,6 +2788,19 @@ img.full-width {
 @keyframes scale {
   50% {
     transform: scale(1.1); } }
+@-webkit-keyframes right {
+  50% {
+    margin-left: -5%; } }
+@-moz-keyframes right {
+  50% {
+    margin-left: -5%; } }
+@keyframes right {
+  50% {
+    margin-left: -5%; } }
+  #slider #slide_scroll .ep3_clock {
+    -webkit-animation: right 40s infinite ease-in-out;
+    -moz-animation: right 40s infinite ease-in-out;
+    animation: right 40s infinite ease-in-out; }
   #slider #slide_scroll .wrap_working_girl {
     top: 14%;
     left: 6%;
