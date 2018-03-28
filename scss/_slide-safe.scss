@@ -1,39 +1,23 @@
 #slide_safe {
-  .ep3_furniture {
-    @include abs_position(0, auto, auto, 0);
+  .ep3_wall {
     height: 100%;
   }
 
-  .ep3_wall,
-  .ep3_wall img,
-  .ep3_furniture img {
-    height: 100%;
-  }
-      
-  .ep3_man2 {
-    @include abs_position(0, auto, 0, 0);
-    width:100%;
-    margin: auto 0;
-    height:100%;
-  }
-      
-  .ep3_man1 {
-    @extend .ep3_man2;
-    z-index: 2;
-  }
-      
-  .wrap_img_ep3_man2,
-  .wrap_img_ep3_man1{
-    @extend %relative;
-    height: 100%;
-  }
-      
-  .ep3_man2_img,
-  .ep3_man1_img{
+  .ep3_furniture {
+    @extend .ep3_wall;
+    @include abs_position(0, auto, auto, 0);
+  } 
+
+  .ep3_man2_img {
     @extend %opacity_tr;
     @include abs_position(0, auto, 0, auto);
     margin: auto 0; 
     height:100%;
+  }
+
+  .ep3_man1_img {
+    @extend .ep3_man2_img;
+    z-index: 2;
   }
 
   @include hide;

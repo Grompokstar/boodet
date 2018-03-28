@@ -2439,14 +2439,11 @@ img.full-width {
     #slider .slider-content__container {
       font-size: 0.6em; } }
 
-#slider #slide_kipr .cloud_1, #slider #slide_kipr .cloud_2, #slider #slide_kipr .cloud_3, #slider #slide_kipr .sky, #slider #slide_kipr .water, #slider #slide_kipr .city, #slider #slide_kipr .city_top, #slider #slide_kipr .city_remove, #slider #slide_kipr .city_before_water, #slider #slide_kipr .moon, #slider #slide_kipr .tramplin, #slider #slide_kipr .tramplin_animation, #slider #slide_kipr .tramplin_top, #slider #slide_kipr .tramplin_top_fixed, #slider #slide_kipr .girl, #slider #slide_kipr .girl_img, #slider #slide_kipr .parashute, #slider #slide_kipr .board, #slider #slide_kipr .board_visible, #slider #slide_safe .ep3_furniture, #slider #slide_safe .ep3_man2, #slider #slide_safe .ep3_man1, #slider #slide_safe .ep3_man2_img,
-#slider #slide_safe .ep3_man1_img, #slider #slide_scroll .wrap_scroll_tape, #slider #slide_scroll .floor, #slider #slide_scroll .working_girl, #slider #slide_scroll .work_table, #slider #slide_scroll .girl, #slider .ep_clock_item, #slider .ep3_clock, #slider .slider_content {
+#slider #slide_kipr .cloud_1, #slider #slide_kipr .cloud_2, #slider #slide_kipr .cloud_3, #slider #slide_kipr .sky, #slider #slide_kipr .water, #slider #slide_kipr .city, #slider #slide_kipr .city_top, #slider #slide_kipr .city_remove, #slider #slide_kipr .city_before_water, #slider #slide_kipr .moon, #slider #slide_kipr .tramplin, #slider #slide_kipr .tramplin_animation, #slider #slide_kipr .tramplin_top, #slider #slide_kipr .tramplin_top_fixed, #slider #slide_kipr .girl, #slider #slide_kipr .girl_img, #slider #slide_kipr .parashute, #slider #slide_kipr .board, #slider #slide_kipr .board_visible, #slider #slide_safe .ep3_furniture, #slider #slide_safe .ep3_man2_img, #slider #slide_safe .ep3_man1_img, #slider #slide_scroll .work_table, #slider #slide_scroll .wrap_scroll_tape, #slider #slide_scroll .floor, #slider #slide_scroll .girl, #slider .ep_clock_item, #slider .ep3_clock, #slider .slider_content {
   position: absolute; }
-#slider #slide_kipr .wrap_girl, #slider #slide_kipr .wrap_blur, #slider #slide_safe .wrap_img_ep3_man2,
-#slider #slide_safe .wrap_img_ep3_man1, #slider #slide_scroll .wrap_working_girl, #slider #slide_scroll .wrap_working_place, #slider #slide_scroll .wrap_monitor, #slider .wrap_img_ep3_clock {
+#slider #slide_kipr .wrap_girl, #slider #slide_kipr .wrap_blur, #slider #slide_scroll .wrap_working_girl, #slider #slide_scroll .wrap_working_place, #slider .wrap_img_ep3_clock {
   position: relative; }
-#slider #slide_kipr .girl_img, #slider #slide_safe .ep3_man2_img,
-#slider #slide_safe .ep3_man1_img, #slider #slide_scroll .girl {
+#slider #slide_kipr .girl_img, #slider #slide_safe .ep3_man2_img, #slider #slide_safe .ep3_man1_img, #slider #slide_scroll .girl {
   transition: 0.15s opacity cubic-bezier(1, 0, 0, 1);
   opacity: 1; }
 @-webkit-keyframes rotate {
@@ -2636,7 +2633,6 @@ img.full-width {
   to {
     left: -20%; } }
 #slider #slide_kipr .wrap_blur {
-  width: 100%;
   overflow: hidden; }
 #slider #slide_kipr .sky {
   top: 0;
@@ -2766,32 +2762,18 @@ img.full-width {
 #slider #slide_kipr .hide {
   opacity: 0;
   transition-duration: .25s; }
+#slider #slide_safe .ep3_wall, #slider #slide_safe .ep3_furniture {
+  height: 100%; }
 #slider #slide_safe .ep3_furniture {
   top: 0;
-  left: 0;
-  height: 100%; }
-#slider #slide_safe .ep3_wall,
-#slider #slide_safe .ep3_wall img,
-#slider #slide_safe .ep3_furniture img {
-  height: 100%; }
-#slider #slide_safe .ep3_man2, #slider #slide_safe .ep3_man1 {
+  left: 0; }
+#slider #slide_safe .ep3_man2_img, #slider #slide_safe .ep3_man1_img {
   top: 0;
   bottom: 0;
-  left: 0;
-  width: 100%;
   margin: auto 0;
   height: 100%; }
-#slider #slide_safe .ep3_man1 {
-  z-index: 2; }
-#slider #slide_safe .wrap_img_ep3_man2,
-#slider #slide_safe .wrap_img_ep3_man1 {
-  height: 100%; }
-#slider #slide_safe .ep3_man2_img,
 #slider #slide_safe .ep3_man1_img {
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  height: 100%; }
+  z-index: 2; }
 #slider #slide_safe .hide {
   opacity: 0;
   transition-duration: .25s; }
@@ -2812,13 +2794,14 @@ img.full-width {
     height: 80%;
     -webkit-animation: scale 40s infinite linear;
     -moz-animation: scale 40s infinite linear;
-    animation: scale 40s infinite linear;
-    display: inline-block; }
+    animation: scale 40s infinite linear; }
   #slider #slide_scroll .wrap_working_place {
     display: inline-block;
     height: 100%; }
-  #slider #slide_scroll .work_monitor {
+  #slider #slide_scroll .work_monitor, #slider #slide_scroll .work_table {
     height: 100%; }
+  #slider #slide_scroll .work_table {
+    bottom: 0; }
   #slider #slide_scroll .wrap_scroll_tape {
     top: 7.4%;
     left: 52.5%;
@@ -2833,21 +2816,9 @@ img.full-width {
     width: 100%;
     height: 15%;
     background: linear-gradient(to right, #c9c6c2, #ede7df, #f8f1e9); }
-  #slider #slide_scroll .working_girl {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  #slider #slide_scroll .work_table {
-    bottom: 0;
-    height: 100%; }
-  #slider #slide_scroll .wrap_monitor {
-    top: 13.5%;
-    left: 45%;
-    width: 40%;
-    height: 41%; }
   #slider #slide_scroll .girl {
     top: 1%;
+    left: 0;
     height: 100%; }
   #slider #slide_scroll .hide {
     opacity: 0;

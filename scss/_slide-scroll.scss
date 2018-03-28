@@ -11,7 +11,6 @@
     @include rel_position(14%, auto, auto, 6%);
     height: 80%;
     @include animation(scale 40s infinite linear);
-    display: inline-block;
   }
           
   .wrap_working_place {
@@ -23,6 +22,11 @@
   .work_monitor {
     height: 100%;
   }
+
+  .work_table {
+    @extend .work_monitor;
+    @include abs_position(auto, auto, 0, auto);
+  }  
       
   .wrap_scroll_tape {
     @include abs_position(7.4%, auto, auto, 52.5%);
@@ -41,27 +45,10 @@
     width: 100%;
     height: 15%;
     background: linear-gradient(to right, #c9c6c2, #ede7df, #f8f1e9);
-  }
-      
-  .working_girl {
-    @include abs_position(0, auto, auto, 0);
-    width: 100%;
-    height: 100%;
-  }
-      
-  .work_table {
-    @include abs_position(auto, auto, 0, auto);
-    height:100%;
-  }    
-    
-  .wrap_monitor {
-    @include rel_position(13.5%, auto, auto, 45%);
-    width: 40%;
-    height: 41%;
-  }
+  }  
       
   .girl {
-    @include abs_position(1%, auto, auto, auto);
+    @include abs_position(1%, auto, auto, 0);
     @extend %opacity_tr;
     height: 100%;
   }
