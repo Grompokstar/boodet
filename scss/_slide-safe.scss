@@ -1,7 +1,6 @@
 #slide_safe {
   .ep3_furniture {
-    @extend %absolute;
-    @include position(0, auto, auto, 0);
+    @include abs_position(0, auto, auto, 0);
     height: 100%;
   }
 
@@ -12,8 +11,7 @@
   }
       
   .ep3_man2 {
-    @extend %absolute;
-    @include position(0, auto, 0, 0);
+    @include abs_position(0, auto, 0, 0);
     width:100%;
     margin: auto 0;
     height:100%;
@@ -32,9 +30,8 @@
       
   .ep3_man2_img,
   .ep3_man1_img{
-    @extend %absolute;
     @extend %opacity_tr;
-    @include position_v(0, 0);
+    @include abs_position(0, auto, 0, auto);
     margin: auto 0; 
     height:100%;
   }

@@ -1,4 +1,26 @@
 #slide_kipr {
+  %cloud {
+    @extend %absolute;
+    opacity: .5;
+  }
+
+  %hidden {
+    width: 0;
+    opacity: 0;
+    margin: 0 auto;
+  }
+
+  @mixin cloud_left() {
+    to {
+      left: -30%;
+    }
+  }
+
+  $city_bottom: -42%;
+  $tramplin_width: 52%;
+  $tramplin_height: 0.11;
+  $height_sky: 0.67;
+
   @include keyframes(board_rotate) {
     50% {
       transform:rotate(-2deg);
@@ -12,9 +34,9 @@
   }
 
   @include keyframes(tramplin_top) {
-    89% {
-      bottom: 89%;
-      height: 11%;
+    #{percentage(1 - $tramplin_height)} {
+      bottom: percentage(1 - $tramplin_height);
+      height: percentage($tramplin_height);
     }
     100% {
       bottom: 100%;
@@ -34,38 +56,32 @@
   @include keyframes(move) {
     12%,
     87% {
-      left: 13%;
-      top: -43%;
+      @include position(-43%, auto, auto, 13%);
       opacity: 1;
       width: 80%;
     }
     100% {
-      left: -30%;
-      top: -100%;
+      @include position(-100%, auto, auto, -30%);
       opacity: 0;
       width: 100%;
     }  
   }
    
   @include keyframes(cloud) {
-    to {
-      left: -30%;
-    }
     from {
       left: 110%;
     }
+    @include cloud_left();
   }
 
   @include keyframes(cloud_start) {
-    to {
-      left: -30%;
-    }  
+    @include cloud_left(); 
   }
 
   @include keyframes(tramplin_left) {
     from,
     5.7%{
-      width: 52%;
+      width: $tramplin_width;
     }  
   }
 
@@ -80,7 +96,7 @@
 
   @include keyframes(city_top) {
     from {
-      bottom: -42%;
+      bottom: $city_bottom;
     }
     10% {
       bottom: -50%;   
@@ -104,41 +120,41 @@
   }
 
   .sky {
-    @extend %absolute;
-    @include position(0, auto, auto, 0);
+    @include abs_position(0, auto, auto, 0);
     width: 100%;
     background: linear-gradient(to bottom, #1b67cc 0%, #172975 100%);
-    height: 67%;
+    height: percentage($height_sky);
   }
     
   .water {
-    @extend %absolute;
-    @include position(auto, auto, 0, 0);
+    @include abs_position(auto, auto, 0, 0);
     width: 100%;
-    height: 33.33%;    
+    height: percentage(1 - $height_sky);    
     background: linear-gradient(to bottom, #2666bd 0%, #172975 100%);
   }
 
   .city {
-    @extend %absolute;
-    @include position(auto, auto, -42%, 0);
+    @include abs_position(auto, auto, $city_bottom, 0);
     width: 100%;
     height: 100%;
     transition: bottom 1s linear;
   }
 
   .city_top {
+    @extend .city;
     bottom: -35%;
     @include animation(city_top 9s ease);
   }
 
   .city_remove {
+    @extend .city;
     bottom: -100%;
   }
 
   .city_before_water {
+    @extend .city;
     @include position(auto, 0, -15%, auto);
-    transition: bottom 0s;  
+    @extend .transition_none;
     margin: 0 auto;
     opacity: 1;
     width: 30%;
@@ -146,88 +162,84 @@
   }
 
   .moon {
-    @extend %absolute;
-    @include position(5%, auto, auto, 35%);
+    @include abs_position(5%, auto, auto, 35%);
     width: 9%;
   }
 
   .cloud_1 {
-    @extend %absolute;
+    @extend %cloud;    
     @include position(9%, auto, auto, 10%);
-    opacity:0.5;
     width: 20%;
     @include animation(cloud 30s infinite linear 3s, cloud_start 3s 1 linear);  
   }
 
   .cloud_2 {
-    @extend %absolute;
+    @extend %cloud;
     @include position(12%, auto, auto, 60%);
-    opacity:0.5;
     width: 10%;
     @include animation(cloud 16s infinite linear 9.6s, cloud_start 9.6s 1 linear);
   }
             
   .cloud_3 {
-    @extend %absolute;
+    @extend %cloud;
     @include position(15%, auto, auto, 75%);
-    opacity:0.5;
     width: 16%;
     @include animation(cloud 20s infinite linear 15s, cloud_start 15s 1 linear);
   }
 
   .tramplin {
-    @extend %absolute;
-    @include position(auto, auto, 0, 0);
-    top: unset;
-    width: 52%;
-    height: 11%;
+    @include abs_position(auto, auto, 0, 0);
+    width: $tramplin_width;
+    height: percentage($tramplin_height);
     background: linear-gradient(to right, #172975, #2666bd);
   }
             
   .tramplin_animation {
+    @extend .tramplin;
     width: 30%;
     @include animation(tramplin_left 5.3s linear);
   }
 
   .tramplin_top {
+    @extend .tramplin_animation;
     @include animation(tramplin_top 2.76s linear .75s);
   }
 
   .tramplin_top_fixed {
+    @extend .tramplin;
     bottom: 100%;
     height: 0;
   }
             
   .girl {
-    @extend %absolute;
-    @include position(auto, auto, 10%, 15.5%);
+    @include abs_position(auto, auto, 10%, 15.5%);
     width: 20%;
     height: 80%;
   }
 
   .girl_img {
-    @extend %absolute;
     @extend %opacity_tr;
-    @include position(0, 0, 0, 0);
+    @include abs_position(0, 0, 0, 0);
     margin: auto auto;
     height: 100%;
     width: 100%;
   }
 
   .parashute {
-    @extend %absolute;
-    @include position(30%, 0, auto, 10%);
-    width: 0;
-    opacity: 0;
-    margin: 0 auto;
+    @include abs_position(30%, 0, auto, 10%);
+    @extend %hidden;
   }
 
   .board {
-    @extend %absolute;
-    @include position(auto, 0, 2%, 7%);
-    opacity: 0;
-    width: 0;
-    margin: 0 auto;
+    @include abs_position(auto, 0, 2%, 7%);
+    @extend %hidden;
+  }
+
+  .board_visible {
+    @extend .board;
+    width: 100%;
+    opacity: 1;
+    transition: width, opacity .25s ease;
   }
       
   .board_rotate {
@@ -251,16 +263,9 @@
     @include animation(move 7.24s ease, fly 3s 2 linear 1s);
   }
 
-  .board_visible {
-    width: 100%;
-    opacity: 1;
-    transition: width, opacity .25s ease;
-  }
-
   .transition_none {
     transition: none;
   }
 
   @include hide;
-
 }

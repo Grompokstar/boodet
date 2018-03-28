@@ -1,43 +1,3 @@
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content;
-  }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
-  }
-}
-
-@mixin animation($content...) {
-  -webkit-animation: #{$content};
-  -moz-animation: #{$content};
-  animation: #{$content};
-}
-
-@mixin position_v($top, $bottom) {
-  @if $top != auto {top: #{$top};}
-  @if $bottom != auto {bottom: #{$bottom};}
-}
-
-@mixin position_h($left, $right) {
-  @if $left != auto {left: #{$left};}
-  @if $right != auto {right: #{$right};}
-}
-
-@mixin position($top, $right, $bottom, $left) {
-  @include position_v($top, $bottom);
-  @include position_h($left, $right);
-}
-
-@mixin hide() {
-  .hide {
-    opacity: 0;
-    transition-duration: .25s;
-  }
-}
-
 #slider {
   %absolute {
     position: absolute;
@@ -50,6 +10,48 @@
   %opacity_tr {
     transition: .15s opacity cubic-bezier(1,0,0,1);
     opacity: 1;
+  }
+
+  @mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+    @keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @mixin animation($content...) {
+    -webkit-animation: #{$content};
+    -moz-animation: #{$content};
+    animation: #{$content};
+  }
+
+  @mixin position($top, $right, $bottom, $left) {
+    @if $top != auto {top: #{$top};}
+    @if $bottom != auto {bottom: #{$bottom};}
+    @if $left != auto {left: #{$left};}
+    @if $right != auto {right: #{$right};}
+  }
+
+  @mixin abs_position($top, $right, $bottom, $left) {
+    @extend %absolute;
+    @include position($top, $right, $bottom, $left);
+  }
+
+  @mixin rel_position($top, $right, $bottom, $left) {
+    @extend %relative;
+    @include position($top, $right, $bottom, $left);
+  }
+
+  @mixin hide() {
+    .hide {
+      opacity: 0;
+      transition-duration: .25s;
+    }
   }
 
   @include keyframes(rotate) {
@@ -79,8 +81,7 @@
   }
 
   .ep3_clock {
-    @extend %absolute;
-    @include position(10%, auto, auto, 43%);
+    @include abs_position(10%, auto, auto, 43%);
     width: 5%;
   }
       
@@ -94,9 +95,8 @@
   }
 
   .slider_content {
-    @extend %absolute;
     width: 50%;
-    @include position(0, 0, auto, auto);
+    @include abs_position(0, 0, auto, auto);
     display: flex;
     align-items: center;
   }
