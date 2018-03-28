@@ -1,16 +1,12 @@
 #slide_scroll {
   background: linear-gradient(to right, #dadada 0%, #9c8b70 38%, #736652 100%);
 
-  .height_100 {
-    height: 100%;
-  }
-    
   @include keyframes(scale) {
     50% {
       transform: scale(1.1);
     }  
   }
-    
+      
   .wrap_working_girl {
     @extend %relative;
     @include position(14%, auto, auto, 6%);
@@ -18,30 +14,30 @@
     @include animation(scale 40s infinite linear);
     display: inline-block;
   }
-        
+          
   .wrap_working_place {
     @extend %relative;
     display: inline-block;
     height: 100%;
   }
-    
+      
   .work_monitor {
     height: 100%;
   }
-    
+      
   .wrap_scroll_tape {
     @extend %absolute;
     @include position(7.4%, auto, auto, 52.5%);
     width: 35%;
     height: 29%;
   }
-    
+      
   .scroll_tape {
     width: 100%;
     height: 100%;
     overflow: hidden;
   }
-    
+      
   .floor {
     @extend %absolute;
     bottom: 0;
@@ -49,32 +45,33 @@
     height: 15%;
     background: linear-gradient(to right, #c9c6c2, #ede7df, #f8f1e9);
   }
-    
-  .working_girl,
-  .work {
+      
+  .working_girl {
     @extend %absolute;
     @include position(0, auto, auto, 0);
     width: 100%;
     height: 100%;
   }
-    
+      
   .work_table {
     @extend %absolute;
     height:100%;
     bottom: 0;
   }    
-  
+    
   .wrap_monitor {
-  	@extend %relative;
-  	@include position(13.5%, auto, auto, 45%);
+    @extend %relative;
+    @include position(13.5%, auto, auto, 45%);
     width: 40%;
     height: 41%;
   }
-    
+      
   .girl {
     @extend %absolute;
     @extend %opacity_tr;
     height: 100%;
     top: 1%;
   }
+
+  @include hide;
 }

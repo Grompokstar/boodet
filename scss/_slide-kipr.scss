@@ -4,7 +4,7 @@
       transform:rotate(-2deg);
     }  
   }
-    
+      
   @include keyframes(bounce) {
     50% {
       top: -90%;
@@ -20,15 +20,6 @@
       bottom: 100%;
       height: 0;
     }  
-  }
-
-  @include keyframes(rotate) {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
   }
 
   @include keyframes(fly) {
@@ -55,7 +46,7 @@
       width: 100%;
     }  
   }
- 
+   
   @include keyframes(cloud) {
     to {
       left: -30%;
@@ -102,10 +93,6 @@
     }  
   }
 
-  .height_100 {
-    height: 100%;
-  }
-
   .wrap_girl {
     @extend %relative;
   }
@@ -123,7 +110,7 @@
     background: linear-gradient(to bottom, #1b67cc 0%, #172975 100%);
     height: 67%;
   }
-  
+    
   .water {
     @extend %absolute;
     @include position(auto, auto, 0, 0);
@@ -179,7 +166,7 @@
     width: 10%;
     @include animation(cloud 16s infinite linear 9.6s, cloud_start 9.6s 1 linear);
   }
-          
+            
   .cloud_3 {
     @extend %absolute;
     @include position(15%, auto, auto, 75%);
@@ -196,7 +183,7 @@
     height: 11%;
     background: linear-gradient(to right, #172975, #2666bd);
   }
-          
+            
   .tramplin_animation {
     width: 30%;
     @include animation(tramplin_left 5.3s linear);
@@ -210,7 +197,7 @@
     bottom: 100%;
     height: 0;
   }
-          
+            
   .girl {
     @extend %absolute;
     @include position(auto, auto, 10%, 15.5%);
@@ -242,7 +229,7 @@
     width: 0;
     margin: 0 auto;
   }
-    
+      
   .board_rotate {
     @include animation(board_rotate 1s 11 linear .5s);
   }
@@ -273,4 +260,7 @@
   .transition_none {
     transition: none;
   }
+
+  @include hide;
+
 }

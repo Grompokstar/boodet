@@ -2439,30 +2439,31 @@ img.full-width {
     #slider .slider-content__container {
       font-size: 0.6em; } }
 
-#slider .slider_content, #slider #slide_kipr .sky, #slider #slide_kipr .water, #slider #slide_kipr .city, #slider #slide_kipr .moon, #slider #slide_kipr .cloud_1, #slider #slide_kipr .cloud_2, #slider #slide_kipr .cloud_3, #slider #slide_kipr .tramplin, #slider #slide_kipr .girl, #slider #slide_kipr .girl_img, #slider #slide_kipr .parashute, #slider #slide_kipr .board, #slider #slide_safe .ep3_furniture, #slider #slide_safe .ep3_man2,
-#slider #slide_safe .ep3_man1, #slider #slide_safe .ep3_man2_img,
-#slider #slide_safe .ep3_man1_img, #slider #slide_scroll .wrap_scroll_tape, #slider #slide_scroll .floor, #slider #slide_scroll .working_girl,
-#slider #slide_scroll .work, #slider #slide_scroll .work_table, #slider #slide_scroll .girl, #slider #slide_scroll .ep_clock_item,
-#slider #slide_safe .ep_clock_item, #slider #slide_scroll .ep3_clock,
-#slider #slide_safe .ep3_clock {
+#slider #slide_kipr .sky, #slider #slide_kipr .water, #slider #slide_kipr .city, #slider #slide_kipr .moon, #slider #slide_kipr .cloud_1, #slider #slide_kipr .cloud_2, #slider #slide_kipr .cloud_3, #slider #slide_kipr .tramplin, #slider #slide_kipr .girl, #slider #slide_kipr .girl_img, #slider #slide_kipr .parashute, #slider #slide_kipr .board, #slider #slide_safe .ep3_furniture, #slider #slide_safe .ep3_man2, #slider #slide_safe .ep3_man1, #slider #slide_safe .ep3_man2_img,
+#slider #slide_safe .ep3_man1_img, #slider #slide_scroll .wrap_scroll_tape, #slider #slide_scroll .floor, #slider #slide_scroll .working_girl, #slider #slide_scroll .work_table, #slider #slide_scroll .girl, #slider .ep_clock_item, #slider .ep3_clock, #slider .slider_content {
   position: absolute; }
 #slider #slide_kipr .wrap_girl, #slider #slide_kipr .wrap_blur, #slider #slide_safe .wrap_img_ep3_man2,
-#slider #slide_safe .wrap_img_ep3_man1, #slider #slide_scroll .wrap_working_girl, #slider #slide_scroll .wrap_working_place, #slider #slide_scroll .wrap_monitor, #slider #slide_scroll .wrap_img_ep3_clock,
-#slider #slide_safe .wrap_img_ep3_clock {
+#slider #slide_safe .wrap_img_ep3_man1, #slider #slide_scroll .wrap_working_girl, #slider #slide_scroll .wrap_working_place, #slider #slide_scroll .wrap_monitor, #slider .wrap_img_ep3_clock {
   position: relative; }
 #slider #slide_kipr .girl_img, #slider #slide_safe .ep3_man2_img,
 #slider #slide_safe .ep3_man1_img, #slider #slide_scroll .girl {
   transition: 0.15s opacity cubic-bezier(1, 0, 0, 1);
   opacity: 1; }
-#slider .hide {
-  opacity: 0 !important;
-  transition-duration: .25s !important; }
-#slider .slider_content {
-  width: 50%;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: center; }
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+@-moz-keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
 @-webkit-keyframes board_rotate {
   50% {
     transform: rotate(-2deg); } }
@@ -2502,21 +2503,6 @@ img.full-width {
   100% {
     bottom: 100%;
     height: 0; } }
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-@-moz-keyframes rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-@keyframes rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
 @-webkit-keyframes fly {
   25% {
     transform: rotate(4deg); }
@@ -2643,8 +2629,6 @@ img.full-width {
 @keyframes city_left {
   to {
     left: -20%; } }
-#slider #slide_kipr .height_100 {
-  height: 100%; }
 #slider #slide_kipr .wrap_blur {
   width: 100%;
   overflow: hidden; }
@@ -2784,8 +2768,9 @@ img.full-width {
   transition: width, opacity .25s ease; }
 #slider #slide_kipr .transition_none {
   transition: none; }
-#slider #slide_safe .height_100 {
-  height: 100%; }
+#slider #slide_kipr .hide {
+  opacity: 0;
+  transition-duration: .25s; }
 #slider #slide_safe .ep3_furniture {
   top: 0;
   left: 0;
@@ -2794,8 +2779,7 @@ img.full-width {
 #slider #slide_safe .ep3_wall img,
 #slider #slide_safe .ep3_furniture img {
   height: 100%; }
-#slider #slide_safe .ep3_man2,
-#slider #slide_safe .ep3_man1 {
+#slider #slide_safe .ep3_man2, #slider #slide_safe .ep3_man1 {
   top: 0;
   bottom: 0;
   left: 0;
@@ -2813,10 +2797,11 @@ img.full-width {
   bottom: 0;
   margin: auto 0;
   height: 100%; }
+#slider #slide_safe .hide {
+  opacity: 0;
+  transition-duration: .25s; }
 #slider #slide_scroll {
   background: linear-gradient(to right, #dadada 0%, #9c8b70 38%, #736652 100%); }
-  #slider #slide_scroll .height_100 {
-    height: 100%; }
 @-webkit-keyframes scale {
   50% {
     transform: scale(1.1); } }
@@ -2853,8 +2838,7 @@ img.full-width {
     width: 100%;
     height: 15%;
     background: linear-gradient(to right, #c9c6c2, #ede7df, #f8f1e9); }
-  #slider #slide_scroll .working_girl,
-  #slider #slide_scroll .work {
+  #slider #slide_scroll .working_girl {
     top: 0;
     left: 0;
     width: 100%;
@@ -2870,42 +2854,33 @@ img.full-width {
   #slider #slide_scroll .girl {
     height: 100%;
     top: 1%; }
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-@-moz-keyframes rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-@keyframes rotate {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
-#slider #slide_scroll .ep_clock_item,
-#slider #slide_safe .ep_clock_item {
+  #slider #slide_scroll .hide {
+    opacity: 0;
+    transition-duration: .25s; }
+#slider .ep_clock_item {
   top: 0; }
-#slider #slide_scroll #ep_clock_2,
-#slider #slide_safe #ep_clock_2 {
+#slider #ep_clock_2 {
   -webkit-animation: rotate 2s infinite linear;
   -moz-animation: rotate 2s infinite linear;
   animation: rotate 2s infinite linear; }
-#slider #slide_scroll #ep_clock_3,
-#slider #slide_safe #ep_clock_3 {
+#slider #ep_clock_3 {
   -webkit-animation: rotate 30s infinite linear;
   -moz-animation: rotate 30s infinite linear;
   animation: rotate 30s infinite linear; }
-#slider #slide_scroll .ep3_clock,
-#slider #slide_safe .ep3_clock {
+#slider .ep3_clock {
   top: 10%;
   left: 43%;
   width: 5%; }
-#slider #slide_scroll .wrap_img_ep3_clock,
-#slider #slide_safe .wrap_img_ep3_clock {
+#slider .wrap_img_ep3_clock {
   height: 100%; }
+#slider .height_100 {
+  height: 100%; }
+#slider .slider_content {
+  width: 50%;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center; }
 @media (max-width: 575px) {
   #slider .slider_content {
     width: 100%; } }
