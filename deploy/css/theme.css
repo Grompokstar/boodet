@@ -2461,7 +2461,6 @@ img.full-width {
   width: 50%;
   top: 0;
   right: 0;
-  background: linear-gradient(to left, #172975, transparent);
   display: flex;
   align-items: center; }
 @-webkit-keyframes board_rotate {

@@ -54,7 +54,6 @@
     @extend %absolute;
     width: 50%;
     @include position(0, 0, auto, auto);
-    background: linear-gradient(to left, #172975, transparent);
     display: flex;
     align-items: center;
   }
