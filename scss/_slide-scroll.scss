@@ -5,17 +5,6 @@
     height: 100%;
   }
     
-  .ep3_clock {
-    @extend %absolute;
-    @include position(10%, auto, auto, 47%);
-    width: 6%;
-  }
-    
-  .wrap_img_ep3_clock {
-    height: 100%;
-  }
-
-
   @include keyframes(scale) {
     50% {
       transform: scale(1.1);

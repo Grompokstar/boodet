@@ -2441,12 +2441,14 @@ img.full-width {
 
 #slider .slider_content, #slider #slide_kipr .sky, #slider #slide_kipr .water, #slider #slide_kipr .city, #slider #slide_kipr .moon, #slider #slide_kipr .cloud_1, #slider #slide_kipr .cloud_2, #slider #slide_kipr .cloud_3, #slider #slide_kipr .tramplin, #slider #slide_kipr .girl, #slider #slide_kipr .girl_img, #slider #slide_kipr .parashute, #slider #slide_kipr .board, #slider #slide_safe .ep3_furniture, #slider #slide_safe .ep3_man2,
 #slider #slide_safe .ep3_man1, #slider #slide_safe .ep3_man2_img,
-#slider #slide_safe .ep3_man1_img, #slider #slide_safe .ep3_clock, #slider #slide_scroll .ep3_clock, #slider #slide_scroll .wrap_scroll_tape, #slider #slide_scroll .floor, #slider #slide_scroll .working_girl,
+#slider #slide_safe .ep3_man1_img, #slider #slide_scroll .wrap_scroll_tape, #slider #slide_scroll .floor, #slider #slide_scroll .working_girl,
 #slider #slide_scroll .work, #slider #slide_scroll .work_table, #slider #slide_scroll .girl, #slider #slide_scroll .ep_clock_item,
-#slider #slide_safe .ep_clock_item {
+#slider #slide_safe .ep_clock_item, #slider #slide_scroll .ep3_clock,
+#slider #slide_safe .ep3_clock {
   position: absolute; }
 #slider #slide_kipr .wrap_girl, #slider #slide_kipr .wrap_blur, #slider #slide_safe .wrap_img_ep3_man2,
-#slider #slide_safe .wrap_img_ep3_man1, #slider #slide_safe .wrap_img_ep3_clock, #slider #slide_scroll .wrap_working_girl, #slider #slide_scroll .wrap_working_place, #slider #slide_scroll .wrap_monitor {
+#slider #slide_safe .wrap_img_ep3_man1, #slider #slide_scroll .wrap_working_girl, #slider #slide_scroll .wrap_working_place, #slider #slide_scroll .wrap_monitor, #slider #slide_scroll .wrap_img_ep3_clock,
+#slider #slide_safe .wrap_img_ep3_clock {
   position: relative; }
 #slider #slide_kipr .girl_img, #slider #slide_safe .ep3_man2_img,
 #slider #slide_safe .ep3_man1_img, #slider #slide_scroll .girl {
@@ -2812,21 +2814,9 @@ img.full-width {
   bottom: 0;
   margin: auto 0;
   height: 100%; }
-#slider #slide_safe .ep3_clock {
-  top: 10%;
-  left: 43%;
-  width: 5%; }
-#slider #slide_safe .wrap_img_ep3_clock {
-  height: 100%; }
 #slider #slide_scroll {
   background: linear-gradient(to right, #dadada 0%, #9c8b70 38%, #736652 100%); }
   #slider #slide_scroll .height_100 {
-    height: 100%; }
-  #slider #slide_scroll .ep3_clock {
-    top: 10%;
-    left: 47%;
-    width: 6%; }
-  #slider #slide_scroll .wrap_img_ep3_clock {
     height: 100%; }
 @-webkit-keyframes scale {
   50% {
@@ -2909,6 +2899,14 @@ img.full-width {
   -webkit-animation: rotate 30s infinite linear;
   -moz-animation: rotate 30s infinite linear;
   animation: rotate 30s infinite linear; }
+#slider #slide_scroll .ep3_clock,
+#slider #slide_safe .ep3_clock {
+  top: 10%;
+  left: 43%;
+  width: 5%; }
+#slider #slide_scroll .wrap_img_ep3_clock,
+#slider #slide_safe .wrap_img_ep3_clock {
+  height: 100%; }
 @media (max-width: 575px) {
   #slider .slider_content {
     width: 100%; } }

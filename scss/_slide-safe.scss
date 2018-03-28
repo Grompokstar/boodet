@@ -42,15 +42,4 @@
     margin: auto 0; 
     height:100%;
   }
-        
-  .ep3_clock {
-    @extend %absolute;
-    @include position(10%, auto, auto, 43%);
-    width: 5%;
-  }
-    
-  .wrap_img_ep3_clock {
-    @extend %relative;
-    height: 100%;
-  }
 }

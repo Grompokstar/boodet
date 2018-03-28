@@ -86,6 +86,17 @@
     #ep_clock_3 {
       @include animation(rotate 30s infinite linear);
     }
+
+    .ep3_clock {
+      @extend %absolute;
+      @include position(10%, auto, auto, 43%);
+      width: 5%;
+    }
+      
+    .wrap_img_ep3_clock {
+      @extend %relative;
+      height: 100%;
+    }
   }
 
   @media (max-width: 575px) {
