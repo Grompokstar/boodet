@@ -190,10 +190,9 @@ class Surf {
       currentNum: currentId,
       preventNum: preventId,
       prefixId: 'girl_w_',
-      countCircles: 11,
+      countCircles: 10,
       resultFunction: () => {
         swapGirlBoard = null;
-        this.clear();
         if(typeof this.resultFunction == 'function') {
           this.resultFunction();
         }
@@ -273,7 +272,7 @@ class Slider {
         currentNum: 1,
         preventNum: 5,
         prefixId: 'ep3_man2_c',
-        countCircles: 5,
+        countCircles: 8,
         resultFunction: () => {}
       })
     };
@@ -286,7 +285,7 @@ class Slider {
         minNum: 1,
         maxNum: 3,
         delay: 350,
-        countCircles: 15,
+        countCircles: 10,
         resultFunction: () => {this.next();}
       })
     };
