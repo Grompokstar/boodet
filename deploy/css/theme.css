@@ -2314,9 +2314,12 @@ img.full-width {
     font-weight: 500;
     text-transform: uppercase;
     border-bottom: 1px solid #b3b3b3;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: none;
+    color: #000; }
     #header .header-container .entry:hover {
-      border: none; }
+      border: none;
+      color: #000; }
 #header .logo {
   padding: 2em;
   margin: auto; }
