@@ -29,13 +29,13 @@ $(function(){
   function initSvgAnimation() {
     var scrolled = $(window).scrollTop();
     var windowHeight = $(window).height();
-    var $blocks = $('.block');
+    var $blocks = $('.block-pic');
 
 
     $blocks.each(function() {
       var offsetTop = $(this).offset().top;
       var blockHeight = $(this).height();
-      var svgId = $(this).attr('data-svg-id');
+      var svgId = $(this).closest('.block').attr('data-svg-id');
 
       if (scrolled + windowHeight > offsetTop + blockHeight) {
         vivusObjects[svgId].play();

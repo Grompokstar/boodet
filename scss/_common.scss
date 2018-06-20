@@ -75,7 +75,7 @@ html, body {
   justify-content: space-around;
 
   &.just-left {
-justify-content: flex-start;
+    justify-content: flex-start;
   }
 
 
@@ -715,6 +715,10 @@ img.full-width {
     }
 
   }
+}
+
+.d-center {
+  text-align: center;
 }
 
 @media (min-width: 576px) {
