@@ -1,0 +1,45 @@
+#documents {
+  @include blue-background-gradient-1();
+  position: relative;
+
+  .section-header {
+    position: relative;
+    z-index: 4;
+
+    .header-image {
+      min-height: 25em;
+
+      img {
+        height: 25em;
+        position: absolute;
+        top: -1.5em;
+        left: -5em;
+      }
+    }
+
+    .header-text {
+      position: relative;
+      z-index: 3;
+      .section-header-title {
+
+      }
+    }
+  }
+}
+
+.document-links {
+  margin-top: 1.5em;
+
+  a {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.7em;
+    line-height: 1.2em;
+  }
+
+  &.white-bg {
+    a {
+      color: #000;
+    }
+  }
+}

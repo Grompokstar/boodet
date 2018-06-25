@@ -1307,7 +1307,12 @@ img.full-width {
 
   .section-header {
     font-size: 0.8em; }
+    .section-header .header-image {
+      width: 10%; }
+      .section-header .header-image svg {
+        left: 0; }
     .section-header .header-text {
+      width: 80%;
       position: relative;
       -moz-hyphens: auto;
       -webkit-hyphens: auto;
@@ -2899,101 +2904,31 @@ img.full-width {
         top: 5em;
         right: 0; }
 
-.blog-content {
-  line-height: 1.3; }
-  .blog-content .title-section .blog-title-container {
-    border: 2px solid #000;
-    padding: 3em; }
-    .blog-content .title-section .blog-title-container .title-img {
-      height: 15em;
-      display: flex;
-      justify-content: center; }
-      .blog-content .title-section .blog-title-container .title-img svg {
-        height: 100%; }
-    .blog-content .title-section .blog-title-container .title {
-      font-weight: 700;
-      font-size: 2.5em;
-      text-align: center;
-      padding: 0 15%;
-      line-height: 1.3em; }
-    .blog-content .title-section .blog-title-container .subtitle {
-      margin-bottom: 10em; }
-    .blog-content .title-section .blog-title-container .title-bottom-row {
-      display: flex;
-      justify-content: space-between; }
-    .blog-content .title-section .blog-title-container .date {
-      color: #b3b3b3; }
-    .blog-content .title-section .blog-title-container .author {
-      color: #b3b3b3;
-      position: relative; }
-      .blog-content .title-section .blog-title-container .author::before {
-        content: '';
-        position: absolute;
-        left: -1.5em;
-        top: -0.1em;
-        width: 1.2em;
-        height: 1.2em;
-        background-color: #cccccc;
-        border-radius: 50%; }
-  .blog-content .right-column {
-    height: 100%;
-    margin-left: 15%; }
-    .blog-content .right-column .sidebar {
-      background-color: #cccccc;
-      height: 100%; }
-  .blog-content .person {
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .blog-content .person .ava {
-      height: 9em;
-      margin-bottom: 0.5em; }
-      .blog-content .person .ava img {
-        height: 100%;
-        border-radius: 50%; }
-    .blog-content .person .name {
-      font-weight: 700;
-      margin-bottom: 0.4em; }
-    .blog-content .person .description {
-      font-style: italic;
-      font-weight: 500; }
-  .blog-content .section {
-    padding: 3em 0 4em; }
-    .blog-content .section.npdg {
-      padding: 0; }
-    .blog-content .section.dark-bg {
-      background-color: #000;
-      color: #fff; }
-    .blog-content .section.gray-bg {
-      background-color: #cccccc; }
-  @media (max-width: 575px) {
-    .blog-content .title-section .blog-title-container {
-      padding: 1em; }
-      .blog-content .title-section .blog-title-container .title {
-        font-size: 2em;
-        padding: 0 5%; }
-      .blog-content .title-section .blog-title-container .subtitle {
-        margin-bottom: 3em; }
-      .blog-content .title-section .blog-title-container .title-img {
-        height: 10em; } }
-
-.quote-xxl {
-  font-size: 2em;
-  color: #b3b3b3;
-  margin-left: 27%;
+#documents {
+  background: linear-gradient(45deg, #3d41a3 0%, #2c4edd 100%);
   position: relative; }
-  .quote-xxl::before {
-    content: "\AB";
-    position: absolute;
-    left: -0.7em;
-    top: -0.2em;
-    color: #2c4edd;
-    font-size: 2.7em;
-    line-height: 1;
-    font-weight: 700; }
+  #documents .section-header {
+    position: relative;
+    z-index: 4; }
+    #documents .section-header .header-image {
+      min-height: 25em; }
+      #documents .section-header .header-image img {
+        height: 25em;
+        position: absolute;
+        top: -1.5em;
+        left: -5em; }
+    #documents .section-header .header-text {
+      position: relative;
+      z-index: 3; }
 
-@media (max-width: 575px) {
-  .quote-xxl {
-    font-size: 1.5em; } }
+.document-links {
+  margin-top: 1.5em; }
+  .document-links a {
+    display: block;
+    color: #fff;
+    margin-bottom: 0.7em;
+    line-height: 1.2em; }
+  .document-links.white-bg a {
+    color: #000; }
 
 /*# sourceMappingURL=theme.css.map */

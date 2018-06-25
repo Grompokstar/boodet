@@ -648,7 +648,17 @@ img.full-width {
   .section-header {
     font-size: 0.8em;
 
+    .header-image {
+      width: 10%;
+
+      svg {
+        left: 0;
+      }
+
+    }
+
     .header-text {
+      width: 80%;
       position: relative;
       -moz-hyphens: auto;
       -webkit-hyphens: auto;
