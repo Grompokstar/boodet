@@ -1,0 +1,23 @@
+#youtube-video-container {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: radial-gradient(at bottom left, rgba(18, 23, 41, 0.9) 0%, rgba(44, 78, 221, 0.9) 61%, rgba(100, 44, 221, 0.9) 100%);
+
+  .close-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 2.5em;
+    right: 3em;
+    width: 3em;
+    height: 3em;
+  }
+}

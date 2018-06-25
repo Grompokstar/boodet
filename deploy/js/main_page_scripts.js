@@ -1,4 +1,4 @@
-class Animation {
+/*class Animation {
   promiseTime(functionTimeout = null, timeDelay = 10) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -337,7 +337,7 @@ class Slider {
   }
 }
 
-new Slider();
+new Slider();*/
 
 $(function(){
 
@@ -361,6 +361,32 @@ $(function(){
     howMachLoseSetPositions();
 
     $(window).resize(howMachLoseSetPositions);
+
+    var $playIcon = $('.play-icon');
+    var $youtubeContainer = $('#youtube-video-container');
+    var $youtubeIframe = $youtubeContainer.find('iframe');
+    var $closeBtn = $youtubeContainer.find('.close-btn');
+    var iframeWidth = document.documentElement.clientWidth * 0.75;
+    var iframeHeight = iframeWidth/1.7777;
+
+    $youtubeIframe.attr('width', iframeWidth + 'px');
+    $youtubeIframe.attr('height', iframeHeight + 'px');
+
+    $playIcon.on('click', function() {
+      iframeWidth = document.documentElement.clientWidth * 0.75;
+      iframeHeight = iframeWidth/1.7777;
+
+      $youtubeIframe.attr('width', iframeWidth + 'px');
+      $youtubeIframe.attr('height', iframeHeight + 'px');
+
+      $youtubeIframe.attr('src', 'https://www.youtube.com/embed/n90AMv8R9DU?autoplay=1');
+      $youtubeContainer.css('display', 'flex');
+    })
+
+    $closeBtn.on('click', function() {
+      $youtubeIframe.attr('src', '');
+      $youtubeContainer.hide();
+    })
   });
 
 }());
