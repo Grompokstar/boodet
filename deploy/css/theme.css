@@ -2931,4 +2931,23 @@ img.full-width {
   .document-links.white-bg a {
     color: #000; }
 
+#page-404 {
+  background: linear-gradient(45deg, #3d41a3 0%, #2c4edd 100%);
+  position: relative; }
+  #page-404 .section-header {
+    position: relative;
+    z-index: 4; }
+    #page-404 .section-header .header-image {
+      min-height: 35em;
+      position: relative; }
+      #page-404 .section-header .header-image img {
+        height: 32em;
+        position: absolute;
+        top: -1em;
+        right: 0;
+        left: auto; }
+    #page-404 .section-header .header-text {
+      position: relative;
+      z-index: 3; }
+
 /*# sourceMappingURL=theme.css.map */

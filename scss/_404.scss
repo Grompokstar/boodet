@@ -1,0 +1,27 @@
+#page-404 {
+  @include blue-background-gradient-1();
+  position: relative;
+
+  .section-header {
+    position: relative;
+    z-index: 4;
+
+    .header-image {
+      min-height: 35em;
+      position: relative;
+
+      img {
+        height: 32em;
+        position: absolute;
+        top: -1em;
+        right: 0;
+        left: auto;
+      }
+    }
+
+    .header-text {
+      position: relative;
+      z-index: 3;
+    }
+  }
+}
