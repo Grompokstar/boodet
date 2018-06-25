@@ -13,7 +13,13 @@
         height: 25em;
         position: absolute;
         top: -1.5em;
-        left: -5em;
+        right: 0;
+        left: auto;
+
+        @media (max-width: 576px) {
+          top: -0.5em;
+          left: -5em;
+        }
       }
     }
 

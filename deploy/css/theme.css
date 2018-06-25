@@ -2903,6 +2903,10 @@ img.full-width {
         position: absolute;
         top: 5em;
         right: 0; }
+        @media (max-width: 576px) {
+          #cloud-store .section-header .header-image svg {
+            top: -0.5em;
+            left: -5em; } }
 
 #documents {
   background: linear-gradient(45deg, #3d41a3 0%, #2c4edd 100%);
@@ -2916,7 +2920,12 @@ img.full-width {
         height: 25em;
         position: absolute;
         top: -1.5em;
-        left: -5em; }
+        right: 0;
+        left: auto; }
+        @media (max-width: 576px) {
+          #documents .section-header .header-image img {
+            top: -0.5em;
+            left: -5em; } }
     #documents .section-header .header-text {
       position: relative;
       z-index: 3; }
@@ -2946,6 +2955,10 @@ img.full-width {
         top: -1em;
         right: 0;
         left: auto; }
+        @media (max-width: 576px) {
+          #page-404 .section-header .header-image img {
+            top: -0.5em;
+            left: -7em; } }
     #page-404 .section-header .header-text {
       position: relative;
       z-index: 3; }
