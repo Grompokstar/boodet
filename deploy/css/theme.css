@@ -989,7 +989,7 @@ html, body {
       .blocks-container .block-row .block-icon svg {
         height: 4.5em; }
 
-a.btn {
+button.btn, a.btn {
   cursor: pointer;
   color: #fff;
   display: inline-block;
@@ -997,19 +997,21 @@ a.btn {
   text-decoration: none;
   border-style: solid;
   border-width: 0.125em;
+  background-color: transparent;
   border-color: transparent;
   border-image: linear-gradient(to right, #ff3200 0%, #c45492 50%, #2c4edd 100%);
   border-image-slice: 1;
-  transition: all 0.3s ease; }
-  a.btn:hover {
+  transition: all 0.3s ease;
+  font-size: 1em; }
+  button.btn:hover, a.btn:hover {
     background: #fff;
     color: #2c4edd; }
-  a.btn:active {
+  button.btn:active, a.btn:active {
     border-image: none; }
-  a.btn.white-bg {
+  button.btn.white-bg, a.btn.white-bg {
     color: #000;
     background-color: #fff; }
-    a.btn.white-bg:hover {
+    button.btn.white-bg:hover, a.btn.white-bg:hover {
       color: #2c4edd; }
 
 .section-header {
@@ -1064,13 +1066,13 @@ a.btn {
   width: 50%;
   box-sizing: content-box; }
 
-.xl-btn-row {
+.btn-row {
   display: flex;
   justify-content: center;
-  font-size: 2em; }
+  position: relative; }
 
 .btn-x2 {
-  font-size: 2em; }
+  font-size: 2em !important; }
 
 .btn-x15 {
   font-size: 1.5em; }
