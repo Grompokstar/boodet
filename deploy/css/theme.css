@@ -2611,13 +2611,15 @@ img.full-width {
     line-height: 1.3em; }
     #footer a:hover {
       text-decoration: underline; }
-  #footer .socials-block .social-links {
-    display: flex;
-    margin: 1em 0; }
-    #footer .socials-block .social-links a {
-      margin-right: 1em; }
-    #footer .socials-block .social-links a img {
-      height: 2.2em; }
+  #footer .socials-block {
+    margin-top: 1em; }
+    #footer .socials-block .social-links {
+      display: flex;
+      margin: 1em 0; }
+      #footer .socials-block .social-links a {
+        margin-right: 1em; }
+      #footer .socials-block .social-links a img {
+        height: 2.2em; }
   #footer .footer-bottom-container {
     display: flex;
     margin-top: 1em; }
