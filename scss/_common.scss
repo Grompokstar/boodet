@@ -36,6 +36,10 @@ html, body {
   font-size: 1.2em;
 }
 
+.font-sm {
+  font-size: 0.9em;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -54,6 +58,10 @@ html, body {
 
 .italic {
   font-style: italic;
+}
+
+.gray-color {
+  color: $gray-color;
 }
 
 .section-header-title {
@@ -652,6 +660,11 @@ img.full-width {
 
 .max-width-80percent {
   max-width: 80%;
+}
+
+.boodet-link {
+  color: $blue-brand-color;
+  text-decoration: none;
 }
 
 
