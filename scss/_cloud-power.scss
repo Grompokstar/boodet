@@ -47,11 +47,17 @@
   }
 
   .block-pic {
-    min-height: 6.5em;
+    min-height: 10em;
     margin-bottom: 2em;
+    display: flex;
+    align-items: center;
 
     svg {
       height: 6.5em;
+    }
+
+    img {
+      height: 10em;
     }
 
     #pic13 {

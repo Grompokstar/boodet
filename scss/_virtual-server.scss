@@ -27,8 +27,8 @@
   .section-header {
     .header-image {
       img {
-        height: 25em;
-        left: -5em;
+        height: 30em;
+        left: -23em;
       }
     }
 
@@ -44,7 +44,7 @@
 @media (max-width: 1400px) {
   #virtual-server {
     .section-header .header-image img {
-      left: -14em;
+      left: -23em;
     }
   }
 }
@@ -52,7 +52,7 @@
 @media (max-width: 1200px) {
   #virtual-server {
     .section-header .header-image img {
-      left: -18em;
+      left: -23em;
     }
   }
 }
@@ -60,7 +60,7 @@
 @media (max-width: 992px) {
   #virtual-server {
     .section-header .header-image img {
-      left: -22em;
+      left: -23em;
     }
   }
 }
@@ -68,7 +68,7 @@
 @media (max-width: 768px) {
   #virtual-server {
     .section-header .header-image img {
-      left: -24em;
+      left: -23em;
     }
   }
 }
