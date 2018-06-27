@@ -477,6 +477,12 @@ ol.blue-number-list {
     }
   }
 
+  &.white {
+    li:before {
+      background-color: #fff;
+    }
+  }
+
   &.inline {
     margin: 0;
     font-size: 1em;
@@ -572,7 +578,7 @@ ol.blue-number-list {
 
   .case {
     .case-li {
-      font-size: 1.3em;
+      font-size: 1.2em;
       margin-bottom: 2em;
       line-height: 1.4em;
       display: flex;
@@ -642,6 +648,10 @@ img.full-width {
 
 .d-sm {
   display: none;
+}
+
+.max-width-80percent {
+  max-width: 80%;
 }
 
 
