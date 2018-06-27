@@ -2489,13 +2489,22 @@ img.full-width {
     height: 2em;
     margin-left: 20%; } }
 #our-cases {
-  padding-bottom: 7em; }
+  padding-bottom: 7em;
+  position: relative; }
   #our-cases .section-header .header-image img {
     left: -10em;
     height: 20em;
     bottom: -70px; }
   #our-cases .section-header .header-text {
     margin-bottom: 1.5em; }
+  #our-cases .gradient-oval {
+    position: absolute;
+    left: -6em;
+    top: 2em;
+    width: 12em;
+    height: 35em;
+    background: linear-gradient(#2c4edd, #ff3200);
+    border-radius: 12em/35em; }
   @media (max-width: 575px) {
     #our-cases {
       padding-bottom: 3em; }
