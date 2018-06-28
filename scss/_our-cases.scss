@@ -26,6 +26,11 @@
     border-radius: 12em/35em;
   }
 
+  .go-to-case {
+    cursor: pointer;
+
+  }
+
   @media (max-width: 575px) {
     .case {
       font-size: 0.85em;

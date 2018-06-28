@@ -387,6 +387,10 @@ $(function(){
       $youtubeIframe.attr('src', '');
       $youtubeContainer.hide();
     })
+
+    $('.go-to-case').on('click', function() {
+      document.location.href = 'cases.html';
+    })
   });
 
 }());

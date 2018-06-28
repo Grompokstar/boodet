@@ -1,8 +1,9 @@
 #cases {
+  position: relative;
   .gradient-oval {
     position: absolute;
     left: -5em;
-    top: 2em;
+    top: 5em;
     width: 10em;
     height: 35em;
     background: linear-gradient($blue-brand-color, $red-brand-color);
@@ -29,6 +30,8 @@
   }
 
   .case {
+    position: relative;
+
     .case-li {
       font-size: 1.2em;
       margin-bottom: 2em;
@@ -43,6 +46,7 @@
         color: $blue-brand-color;
         letter-spacing: 2px;
         min-width: 15em;
+        max-width: 15em;
         text-align: right;
         padding-right: 2em;
         box-sizing: border-box;
@@ -64,18 +68,24 @@
   }
 
   .arenadata-logo {
+    position: relative;
     background-color: #29323b;
     padding: 2em 1em;
-
-
-
   }
 
   .company-description {
+    position: relative;
     font-style: italic;
-    font-weight: 200;
-    color: $gray-color;
+    font-weight: 300;
+    color: $dark-gray-color;
+    font-size: 0.85em;
     line-height: 1.3;
-    font-size: 0.9em;
+  }
+
+  .absolute-image-bag {
+    position: absolute;
+    right: -19em;
+    bottom: -4em;
+    height: 18em;
   }
 }

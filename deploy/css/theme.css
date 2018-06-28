@@ -2520,6 +2520,8 @@ img.full-width {
     height: 35em;
     background: linear-gradient(#2c4edd, #ff3200);
     border-radius: 12em/35em; }
+  #our-cases .go-to-case {
+    cursor: pointer; }
   @media (max-width: 575px) {
     #our-cases {
       padding-bottom: 3em; }
@@ -2980,59 +2982,71 @@ img.full-width {
   .document-links.white-bg a {
     color: #000; }
 
-#cases .gradient-oval {
-  position: absolute;
-  left: -5em;
-  top: 2em;
-  width: 10em;
-  height: 35em;
-  background: linear-gradient(#2c4edd, #ff3200);
-  border-radius: 10em/35em; }
-#cases .page-title-chip {
-  position: relative;
-  display: inline-block;
-  text-transform: uppercase;
-  background-color: #2c4edd;
-  border-radius: 0.2em;
-  color: #fff;
-  padding: 0.3em 0.5em;
-  font-weight: 500;
-  font-size: 1.2em;
-  letter-spacing: 0.1em; }
-#cases .page-title {
-  position: relative;
-  font-size: 5.5em;
-  font-weight: 500; }
-#cases .case .case-li {
-  font-size: 1.2em;
-  margin-bottom: 2em;
-  line-height: 1.4em;
-  display: flex;
+#cases {
   position: relative; }
-  #cases .case .case-li .li-title {
-    font-size: 0.5em;
-    font-weight: 500;
+  #cases .gradient-oval {
+    position: absolute;
+    left: -5em;
+    top: 5em;
+    width: 10em;
+    height: 35em;
+    background: linear-gradient(#2c4edd, #ff3200);
+    border-radius: 10em/35em; }
+  #cases .page-title-chip {
+    position: relative;
+    display: inline-block;
     text-transform: uppercase;
-    color: #2c4edd;
-    letter-spacing: 2px;
-    min-width: 15em;
-    text-align: right;
-    padding-right: 2em;
-    box-sizing: border-box; }
-#cases .case-blue-background {
-  background: radial-gradient(at bottom left, #151e45 0%, #2c4edd 61%, #642cdd 100%);
-  color: #fff; }
-  #cases .case-blue-background .case .case-li .li-title {
+    background-color: #2c4edd;
+    border-radius: 0.2em;
+    color: #fff;
+    padding: 0.3em 0.5em;
+    font-weight: 500;
+    font-size: 1.2em;
+    letter-spacing: 0.1em; }
+  #cases .page-title {
+    position: relative;
+    font-size: 5.5em;
+    font-weight: 500; }
+  #cases .case {
+    position: relative; }
+    #cases .case .case-li {
+      font-size: 1.2em;
+      margin-bottom: 2em;
+      line-height: 1.4em;
+      display: flex;
+      position: relative; }
+      #cases .case .case-li .li-title {
+        font-size: 0.5em;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #2c4edd;
+        letter-spacing: 2px;
+        min-width: 15em;
+        max-width: 15em;
+        text-align: right;
+        padding-right: 2em;
+        box-sizing: border-box; }
+  #cases .case-blue-background {
+    background: radial-gradient(at bottom left, #151e45 0%, #2c4edd 61%, #642cdd 100%);
     color: #fff; }
-#cases .arenadata-logo {
-  background-color: #29323b;
-  padding: 2em 1em; }
-#cases .company-description {
-  font-style: italic;
-  font-weight: 200;
-  color: #b3b3b3;
-  line-height: 1.3;
-  font-size: 0.9em; }
+    #cases .case-blue-background .case .case-li .li-title {
+      color: #fff; }
+  #cases .arenadata-logo {
+    position: relative;
+    background-color: #29323b;
+    padding: 2em 1em; }
+  #cases .company-description {
+    position: relative;
+    font-style: italic;
+    font-weight: 300;
+    color: #666666;
+    font-size: 0.85em;
+    line-height: 1.3; }
+  #cases .absolute-image-bag {
+    position: absolute;
+    right: -19em;
+    bottom: -4em;
+    height: 18em; }
 
 #page-404 {
   background: linear-gradient(45deg, #3d41a3 0%, #2c4edd 100%);
