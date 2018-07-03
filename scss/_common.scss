@@ -8,6 +8,21 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  @media screen and (min-width: 1400px) {
+    font-size:1.2em;
+  }
+  @media screen and (min-width: 1600px) {
+    font-size:1.4em;
+  }
+  @media screen and (min-width: 1900px) {
+    font-size:1.6em;
+  }
+  @media screen and (min-width: 2500px) {
+    font-size:1.8em;
+  }
+}
+
 .boodet__container {
   padding: 0 7%;
 }
@@ -78,7 +93,7 @@ html, body {
 
 .blocks-container {
   display: flex;
-  padding: 3em 7% 1em;
+  padding: 1em 7% 1em;
   flex-wrap: wrap;
   justify-content: space-around;
 
@@ -136,7 +151,7 @@ html, body {
     }
 
     .block-pic {
-      margin-bottom: 3em;
+      margin-bottom: 2em;
 
       svg {
         height: 4.5em;
@@ -146,8 +161,8 @@ html, body {
     .block-title {
       font-size: 1.8em;
       font-weight: 500;
-      margin-bottom: 1em;
-      line-height: 1.3em;
+      margin-bottom: 0.5em;
+      line-height: 1em;
     }
 
     .block-description {
@@ -187,10 +202,13 @@ button.btn, a.btn {
   padding: 0.4em 1em;
   text-decoration: none;
   border-style: solid;
-  border-width: 0.125em;
+  border-width: 2px;
   background-color: transparent;
   border-color: transparent;
-  border-image: linear-gradient(to right, $red-brand-color 0%, #c45492 50%,  $blue-brand-color 100%);
+  -webkit-border-image: linear-gradient(to right, $red-brand-color 0%, #c45492 50%,  $blue-brand-color 100%) 27 repeat;
+  -o-border-image: linear-gradient(to right, $red-brand-color 0%, #c45492 50%,  $blue-brand-color 100%) 27 repeat;
+  -moz-border-image: linear-gradient(to right, $red-brand-color 0%, #c45492 50%,  $blue-brand-color 100%) 27 repeat;
+  border-image: linear-gradient(to right, $red-brand-color 0%, #c45492 50%,  $blue-brand-color 100%) 27 repeat;
   border-image-slice: 1;
   transition: all 0.3s ease;
   font-size: 1em;
@@ -210,6 +228,7 @@ button.btn, a.btn {
 
     &:hover {
       color: $blue-brand-color;
+      border-color: #000;
     }
   }
 
@@ -241,7 +260,7 @@ button.btn, a.btn {
   .header-text {
     position: relative;
     width: 66.666%;
-    margin: 5em 0 3em;
+    margin: 4em 0 3em;
     padding-left: 5%;
   }
 }

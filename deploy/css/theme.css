@@ -876,6 +876,19 @@ html, body {
   background-color: #fff;
   overflow-x: hidden; }
 
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 1.2em; } }
+@media screen and (min-width: 1600px) {
+  body {
+    font-size: 1.4em; } }
+@media screen and (min-width: 1900px) {
+  body {
+    font-size: 1.6em; } }
+@media screen and (min-width: 2500px) {
+  body {
+    font-size: 1.8em; } }
+
 .boodet__container {
   padding: 0 7%; }
 
@@ -930,7 +943,7 @@ html, body {
 
 .blocks-container {
   display: flex;
-  padding: 3em 7% 1em;
+  padding: 1em 7% 1em;
   flex-wrap: wrap;
   justify-content: space-around; }
   .blocks-container.just-left {
@@ -970,14 +983,14 @@ html, body {
         font-size: 1.7em;
         text-align: center; }
     .blocks-container .block .block-pic {
-      margin-bottom: 3em; }
+      margin-bottom: 2em; }
       .blocks-container .block .block-pic svg {
         height: 4.5em; }
     .blocks-container .block .block-title {
       font-size: 1.8em;
       font-weight: 500;
-      margin-bottom: 1em;
-      line-height: 1.3em; }
+      margin-bottom: 0.5em;
+      line-height: 1em; }
     .blocks-container .block .block-description {
       line-height: 1.3em;
       margin-bottom: auto; }
@@ -1002,10 +1015,13 @@ button.btn, a.btn {
   padding: 0.4em 1em;
   text-decoration: none;
   border-style: solid;
-  border-width: 0.125em;
+  border-width: 2px;
   background-color: transparent;
   border-color: transparent;
-  border-image: linear-gradient(to right, #ff3200 0%, #c45492 50%, #2c4edd 100%);
+  -webkit-border-image: linear-gradient(to right, #ff3200 0%, #c45492 50%, #2c4edd 100%) 27 repeat;
+  -o-border-image: linear-gradient(to right, #ff3200 0%, #c45492 50%, #2c4edd 100%) 27 repeat;
+  -moz-border-image: linear-gradient(to right, #ff3200 0%, #c45492 50%, #2c4edd 100%) 27 repeat;
+  border-image: linear-gradient(to right, #ff3200 0%, #c45492 50%, #2c4edd 100%) 27 repeat;
   border-image-slice: 1;
   transition: all 0.3s ease;
   font-size: 1em; }
@@ -1018,7 +1034,8 @@ button.btn, a.btn {
     color: #000;
     background-color: #fff; }
     button.btn.white-bg:hover, a.btn.white-bg:hover {
-      color: #2c4edd; }
+      color: #2c4edd;
+      border-color: #000; }
 
 .section-header {
   display: flex; }
@@ -1037,7 +1054,7 @@ button.btn, a.btn {
   .section-header .header-text {
     position: relative;
     width: 66.666%;
-    margin: 5em 0 3em;
+    margin: 4em 0 3em;
     padding-left: 5%; }
 
 .flex-container {
@@ -2545,7 +2562,7 @@ img.full-width {
     left: -22em; } }
 #virtual-server {
   position: relative;
-  padding-bottom: 10em;
+  padding-bottom: 5em;
   background: radial-gradient(at bottom left, #151e45 0%, #2c4edd 61%, #642cdd 100%); }
   #virtual-server .bg1 {
     position: absolute;
