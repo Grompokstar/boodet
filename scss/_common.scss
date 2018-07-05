@@ -83,6 +83,7 @@ body {
   font-size: 5.5em;
   font-weight: 500;
   line-height: 1em;
+  margin-bottom: 0.5em;
 }
 
 .header-subtext {
@@ -111,6 +112,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    @media screen and (max-width: 575px){
+      width: 90%;
+    }
 
     &.centered {
       align-items: center;
@@ -168,6 +172,7 @@ body {
     .block-description {
       line-height: 1.3em;
       margin-bottom: auto;
+      text-align: left;
     }
 
     .btn {
@@ -518,6 +523,10 @@ ol.blue-number-list {
   li {
     position: relative;
     margin-bottom: 1em;
+    line-height: 1.3em;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
 
     &:before {
       content: '';
@@ -608,6 +617,10 @@ ol.blue-number-list {
       display: flex;
       position: relative;
       left: -6em;
+      @media screen and (max-width: 575px){
+        display: block;
+        padding-left: 2em;
+      }
 
       .li-title {
         font-size: 0.5em;
@@ -619,6 +632,9 @@ ol.blue-number-list {
         text-align: right;
         padding-right: 2em;
         box-sizing: border-box;
+        @media screen and (max-width: 575px){
+            text-align: left;
+        }
       }
     }
   }
@@ -719,7 +735,7 @@ img.full-width {
     font-size: 0.9em;
 
     .block {
-      margin-bottom: 2em;
+      margin-bottom: 0em;
 
       .block-pic {
         margin-bottom: 1.5em;
@@ -789,5 +805,11 @@ img.full-width {
   .d-sm {
     display: block;
   }
+}
+
+@media screen and (max-width: 575px){
+    .m-ml-0 {
+      margin-left: 0 !important;
+    }
 }
 

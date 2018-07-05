@@ -24,6 +24,9 @@
     height: 35em;
     background: linear-gradient($blue-brand-color, $red-brand-color);
     border-radius: 12em/35em;
+    @media screen and (max-width: 575px) {
+        left: -9em;
+    }
   }
 
   .go-to-case {
@@ -78,7 +81,7 @@
 @media (max-width: 575px) {
   #our-cases {
     .section-header .header-image img {
-      left: -22em;
+      left: -25em;
     }
   }
 }
