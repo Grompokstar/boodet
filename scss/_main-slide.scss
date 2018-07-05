@@ -1,7 +1,6 @@
 #slider {
   position: relative;
-  height: 40em;
-  
+
   .main-slide-bg {
     position: relative;
     height: 100%;
@@ -63,7 +62,7 @@
 
       .slide-btn {
         font-size: 1.8em;
-        margin-top: 3em;
+        margin: 3em 0 2em;
       }
 
       @media (max-width: 1440px) {
@@ -82,9 +81,5 @@
           font-size: 0.6em;
       }
     }
-  }
-
-  @media (max-width: 768px) {
-    height: 30em;
   }
 }
