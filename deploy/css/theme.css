@@ -1021,6 +1021,7 @@ button.btn, a.btn {
   text-decoration: none;
   border-style: solid;
   border-width: 2px;
+  background-color: transparent;
   -o-border-image: linear-gradient(to right, #ff3200 0%, #c45492 50%, #2c4edd 100%) 1 repeat;
   -moz-border-image: linear-gradient(to right, #ff3200 0%, #c45492 50%, #2c4edd 100%) 1 repeat;
   -webkit-border-image: linear-gradient(to right, #ff3200 0%, #c45492 50%, #2c4edd 100%) 1 repeat;

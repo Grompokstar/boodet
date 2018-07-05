@@ -208,6 +208,7 @@ button.btn, a.btn {
   text-decoration: none;
   border-style: solid;
   border-width: 2px;
+  background-color: transparent;
   -o-border-image: linear-gradient(to right, $red-brand-color 0%, #c45492 50%,  $blue-brand-color 100%) 1 repeat;
   -moz-border-image: linear-gradient(to right, $red-brand-color 0%, #c45492 50%,  $blue-brand-color 100%) 1 repeat;
   -webkit-border-image: linear-gradient(to right, $red-brand-color 0%, #c45492 50%,  $blue-brand-color 100%) 1 repeat;
