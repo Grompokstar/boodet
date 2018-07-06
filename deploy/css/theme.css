@@ -2730,6 +2730,9 @@ img.full-width {
       bottom: 15%;
       left: 19%;
       width: 12%; }
+      @media screen and (max-width: 575px) {
+        #slider .main-slide-bg #main-slide_img-3 {
+          display: none; } }
     #slider .main-slide-bg #main-slide_img-4 {
       position: absolute;
       bottom: 15%;
@@ -2750,7 +2753,7 @@ img.full-width {
         font-weight: 500; }
       #slider .main-slide-bg .slide-content .slide-description {
         margin-top: 0.7em;
-        font-size: 2em;
+        font-size: 1.2em;
         line-height: 1.3em; }
       #slider .main-slide-bg .slide-content .slide-btn {
         font-size: 1.8em;
