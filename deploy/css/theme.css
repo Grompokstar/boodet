@@ -1058,7 +1058,9 @@ button.btn, a.btn {
     position: relative;
     width: 66.666%;
     margin: 4em 0 3em;
-    padding-left: 5%; }
+    padding: 0 5%; }
+    .section-header .header-text p {
+      line-height: 1.3em; }
 
 .flex-container {
   display: flex; }
@@ -1232,6 +1234,29 @@ ol.blue-number-list {
       width: 1.1em;
       height: 2px;
       background-color: #2c4edd; }
+
+.boodet-list--numeric {
+  counter-reset: a; }
+  .boodet-list--numeric li:before {
+    counter-increment: a;
+    content: counter(a);
+    color: #fff;
+    background-color: #2c4edd;
+    border-radius: 50%;
+    text-align: center;
+    width: 1.5em;
+    line-height: 1.5em;
+    font-size: .6em;
+    letter-spacing: -.05em;
+    left: -2.2em;
+    top: .3em;
+    height: auto; }
+
+.boodet-list--sublist {
+  font-size: 1em;
+  margin: .5em 0 0; }
+  .boodet-list--sublist li {
+    margin-bottom: .4em; }
 
 .boodet-custom-list {
   padding-left: 1.5em; }
