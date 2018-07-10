@@ -946,7 +946,9 @@ html, body {
   display: flex;
   padding: 1em 7% 1em;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  position: relative;
+  z-index: 3; }
   .blocks-container.just-left {
     justify-content: flex-start; }
   .blocks-container .block {
