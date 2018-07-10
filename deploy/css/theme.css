@@ -2973,14 +2973,14 @@ img.full-width {
     margin-top: 5em;
     padding: 0 2em; }
   #cloud-power .blocks-container {
-    padding-top: 1em; }
+    padding-top: 0; }
   #cloud-power .block {
     align-items: center;
     text-align: center;
     min-width: 19em; }
   #cloud-power .block-pic {
     min-height: 10em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     display: flex;
     align-items: center; }
     #cloud-power .block-pic svg {
