@@ -17,14 +17,16 @@
     z-index: 4;
 
     .header-image {
-      min-height: 27em;
-
       svg {
-        height: 22em;
+        height: calc(100% - 5em);
         position: absolute;
-        top: 5em;
         right: 0;
+        bottom: 0;
       }
+    }
+
+    .header-text {
+      margin-bottom: 0;
     }
   }
 

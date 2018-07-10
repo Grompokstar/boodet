@@ -2958,13 +2958,13 @@ img.full-width {
   #cloud-power .section-header {
     position: relative;
     z-index: 4; }
-    #cloud-power .section-header .header-image {
-      min-height: 27em; }
-      #cloud-power .section-header .header-image svg {
-        height: 22em;
-        position: absolute;
-        top: 5em;
-        right: 0; }
+    #cloud-power .section-header .header-image svg {
+      height: calc(100% - 5em);
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+    #cloud-power .section-header .header-text {
+      margin-bottom: 0; }
   #cloud-power .blocks-header {
     position: relative;
     z-index: 4;
