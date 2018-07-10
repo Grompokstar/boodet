@@ -2960,13 +2960,36 @@ img.full-width {
   #cloud-power .section-header {
     position: relative;
     z-index: 4; }
+    @media screen and (max-width: 575px) {
+      #cloud-power .section-header {
+        flex-direction: column; } }
+    @media screen and (max-width: 575px) {
+      #cloud-power .section-header .header-image {
+        width: 50%;
+        min-width: 19em;
+        padding-left: 5%; } }
+  @media screen and (max-width: 575px) and (max-width: 360px) {
+    #cloud-power .section-header .header-image {
+      width: 90%;
+      padding-right: 5%; } }
+
     #cloud-power .section-header .header-image svg {
       height: calc(100% - 5em);
       position: absolute;
       right: 0;
       bottom: 0; }
+      @media screen and (max-width: 575px) {
+        #cloud-power .section-header .header-image svg {
+          position: static;
+          height: auto;
+          width: 100%;
+          margin-top: 2em; } }
     #cloud-power .section-header .header-text {
       margin-bottom: 0; }
+      @media screen and (max-width: 575px) {
+        #cloud-power .section-header .header-text {
+          width: 100%;
+          box-sizing: border-box; } }
   #cloud-power .blocks-header {
     position: relative;
     z-index: 4;

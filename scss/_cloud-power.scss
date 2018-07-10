@@ -15,17 +15,39 @@
   .section-header {
     position: relative;
     z-index: 4;
+    @media screen and (max-width: 575px) {
+        flex-direction: column;
+    }
 
     .header-image {
+      @media screen and (max-width: 575px) {
+        width: 50%;
+        min-width: 19em;
+        padding-left: 5%;
+        @media screen and (max-width: 360px){
+            width: 90%;
+            padding-right: 5%;
+        }
+      }
       svg {
         height: calc(100% - 5em);
         position: absolute;
         right: 0;
         bottom: 0;
+        @media screen and (max-width: 575px) {
+          position: static;
+          height: auto;
+          width: 100%;
+          margin-top: 2em;
+        }
       }
     }
 
     .header-text {
+      @media screen and (max-width: 575px) {
+        width: 100%;
+        box-sizing: border-box;
+      }
       margin-bottom: 0;
     }
   }
