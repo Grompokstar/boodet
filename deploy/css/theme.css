@@ -2989,6 +2989,8 @@ img.full-width {
       height: 10em; }
     #cloud-power .block-pic #pic13 {
       height: 5em; }
+    #cloud-power .block-pic #pic15 {
+      height: 9em; }
   @media (max-width: 575px) {
     #cloud-power .wave-image svg {
       height: 2em;
