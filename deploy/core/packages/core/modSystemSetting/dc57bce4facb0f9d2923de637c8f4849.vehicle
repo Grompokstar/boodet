@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd29742f415a5b3f08fe57f84e6c8d794',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'dc57bce4facb0f9d2923de637c8f4849',
+  'native_key' => 'preserve_menuindex',
+  'object' => '{"key":"preserve_menuindex","value":true,"xtype":"combo-boolean","namespace":"core","area":"manager","editedon":null}',
+);

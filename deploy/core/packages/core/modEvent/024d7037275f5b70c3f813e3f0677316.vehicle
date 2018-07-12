@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6d837b7e7ef3fc3419048ef20ac12c6f',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '024d7037275f5b70c3f813e3f0677316',
+  'native_key' => 'OnPackageRemove',
+  'object' => '{"name":"OnPackageRemove","service":2,"groupname":"Package Manager"}',
+);

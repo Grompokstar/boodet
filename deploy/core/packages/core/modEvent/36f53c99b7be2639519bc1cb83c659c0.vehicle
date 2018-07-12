@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5581e41213df26c59ee5896d51569e5f',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '36f53c99b7be2639519bc1cb83c659c0',
+  'native_key' => 'OnUserNotFound',
+  'object' => '{"name":"OnUserNotFound","service":1,"groupname":"Users"}',
+);

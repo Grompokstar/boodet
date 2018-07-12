@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ffc9106bb1d9966ab01e6d9086a0797b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'c343bcde7cd431eaa89eb0aaaa369766',
+  'native_key' => 'default_duplicate_publish_option',
+  'object' => '{"key":"default_duplicate_publish_option","value":"preserve","xtype":"textfield","namespace":"core","area":"manager","editedon":null}',
+);

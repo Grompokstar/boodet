@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'edf2fcd0061eb6f695b43988940d6379',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '8336dfc96ecd6fa578d5c6b9ddbe2c19',
+  'native_key' => 'OnPluginFormDelete',
+  'object' => '{"name":"OnPluginFormDelete","service":1,"groupname":"Plugins"}',
+);
