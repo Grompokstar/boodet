@@ -1,0 +1,73 @@
+data_directory: core/data/
+backup_directory: core/backup/
+data:
+    contexts:
+        class: modContext
+        primary: key
+    context_settings:
+        class: modContextSetting
+        primary:
+            - context_key
+            - key
+    template_variables:
+        class: modTemplateVar
+        primary: name
+    template_variables_access:
+        class: modTemplateVarTemplate
+        primary:
+            - tmplvarid
+            - templateid
+    content:
+        type: content
+        exclude_keys:
+            - editedby
+            - editedon
+        truncate_on_force:
+            - modTemplateVarResource
+    categories:
+        class: modCategory
+        primary: category
+        truncate_on_force:
+            - modCategoryClosure
+    templates:
+        class: modTemplate
+        primary: templatename
+        extension: .html
+    chunks:
+        class: modChunk
+        primary: name
+        extension: .html
+    snippets:
+        class: modSnippet
+        primary: name
+        extension: .php
+    plugins:
+        class: modPlugin
+        primary: name
+        extension: .php
+    plugin_events:
+        class: modPluginEvent
+        primary:
+            - pluginid
+            - event
+    events:
+        class: modEvent
+        primary: name
+    namespaces:
+        class: modNamespace
+        primary: name
+    system_settings:
+        class: modSystemSetting
+        primary: key
+        exclude_keys:
+            - editedon
+    extension_packages:
+        class: modExtensionPackage
+        primary: namespace
+        exclude_keys:
+            - created_at
+            - updated_at
+packages:
+    modx.com:
+        service_url: 'https://rest.modx.com/extras/'
+        description: 'The official MODX transport provider for 3rd party components.'
