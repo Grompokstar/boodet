@@ -1,0 +1,13 @@
+id: 2
+name: childs_resource
+locked: 1
+description: ''
+
+-----
+
+[[pdoResources?
+    &depth=`0`
+    &select=`id,pagetitle,longtitle,introtext,description,content`
+    &sortby=`{"menuindex": "ASC", "pagetitle": "ASC"}`
+    &tpl=`@INLINE {{+content}}`
+]]
