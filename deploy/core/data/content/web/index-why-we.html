@@ -33,50 +33,15 @@ menuindex: 2
     </div>
 
     <div class="blocks-container">
-        <div class="block" data-svg-id="0">
-            <div class="block-pic">
-                [[$boodet_svg_currency]]
-            </div>
-            <div class="block-title">
-                По&nbsp;карману каждому
-            </div>
-            <div class="block-description">
-                Плати только за ресурсы, которые используешь.
-            </div>
-            <div class="block-btn">
-                <a href="prices.html" class="btn">Рассчитать</a>
-            </div>
-        </div>
-
-        <div class="block" data-svg-id="1">
-            <div class="block-pic">
-                [[$boodet_svg_shield]]
-            </div>
-            <div class="block-title">
-                Не&nbsp;просто надежность
-            </div>
-            <div class="block-description">
-                Данные в безопасности, так как хранятся в ЦОДах современного уровня, SLA 99,95%.
-            </div>
-            <div class="block-btn">
-                <a href="http://digitalenergy.online/" class="btn">О технологии</a>
-            </div>
-        </div>
-
-        <div class="block" data-svg-id="2">
-            <div class="block-pic">
-                [[$boodet_svg_sphera]]
-            </div>
-            <div class="block-title">
-                Готовьте MVP
-            </div>
-            <div class="block-description">
-                в четыре раза быстрее, используя виртуальные мощности.
-            </div>
-            <div class="block-btn">
-                <a href="#" class="btn">Подробнее</a>
-            </div>
-        </div>
+        [[pdoResources?
+            &parents=`[[+id]]`
+            &depth=`0`
+            &select=`pagetitle,longtitle,introtext,description,content`
+            &sortby=`{"menuindex": "ASC", "pagetitle": "ASC"}`
+            &tpl=`boodet_tpl_index_block_item`
+            &idx=`[[!+total_virtual_server:default=`0`]]`
+            &total=`total_why_we`
+        ]]
     </div>
 
     <div class="wave-image">
