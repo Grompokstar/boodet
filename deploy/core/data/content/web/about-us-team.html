@@ -20,21 +20,13 @@ tvs: {  }
     <div class="font-xl medium">[[+longtitle]]</div>
 
     <div class="team-container">
-        <div class="team-item">
-            <div class="avatar"></div>
-            <div class="name">Иванов Иван</div>
-            <div class="position">CEO</div>
-        </div>
-        <div class="team-item">
-            <div class="avatar"></div>
-            <div class="name">Иванов Иван</div>
-            <div class="position">CEO</div>
-        </div>
-        <div class="team-item">
-            <div class="avatar"></div>
-            <div class="name">Иванов Иван</div>
-            <div class="position">CEO</div>
-        </div>
+        [[pdoResources?
+            &parents=`[[+id]]`
+            &depth=`0`
+            &select=`pagetitle,longtitle,introtext`
+            &sortby=`{"menuindex": "ASC", "pagetitle": "ASC"}`
+            &tpl=`boodet_tpl_about_us_team_item`
+        ]]
     </div>
 
 </div>
