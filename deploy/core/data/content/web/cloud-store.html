@@ -26,10 +26,15 @@ tvs: {  }
             <p class="font-md mt-15 mb-15">[[*introtext]]</p>
 
             <ul class="boodet-custom-list font-md mb-2">
-                <li><span class="medium yellow-font-color">Boodet.Standard.</span> Подойдет для&nbsp;большинства задач.</li>
-                <li><span class="medium yellow-font-color">Boodet.Archive.</span> Оптимизированное по&nbsp;стоимости хранение больших объемов данных.</li>
-                <li><span class="medium yellow-font-color">Boodet.Perfomance.</span> Для требовательных к&nbsp;производительности задач.</li>
-                <li><span class="medium yellow-font-color">Boodet.Custom.</span> Лучшее решение для&nbsp;особых задач.</li>
+                [[pdoResources?
+                    &depth=`0`
+                    &select=`longtitle,introtext`
+                    &sortby=`{"menuindex": "ASC", "pagetitle": "ASC"}`
+                    &tpl=`@INLINE
+                        <li>
+                            <span class="medium yellow-font-color">[[+longtitle]]</span> [[+introtext]]
+                        </li>`
+                ]]
             </ul>
 
             <div class="btn-x2">
