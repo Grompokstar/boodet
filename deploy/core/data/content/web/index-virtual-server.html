@@ -36,78 +36,14 @@ menuindex: 4
     </div>
 
     <div class="blocks-container">
-
-        <div class="block" data-svg-id="3">
-            <div class="block-pic">
-                [[$boodet_svg_ip]]
-            </div>
-            <div class="block-title">
-                Индивидуальный IP-адрес
-            </div>
-            <div class="block-description">
-                Статический IP дает множество преимуществ вашему сайту или&nbsp;веб-продукту.
-            </div>
-        </div>
-
-        <div class="block" data-svg-id="4">
-            <div class="block-pic">
-                [[$boodet_svg_counter]]
-            </div>
-            <div class="block-title">
-                Быструю связь
-            </div>
-            <div class="block-description">
-                Можно гибко увеличить пропускную способность для&nbsp;вашего виртуального сервера.
-            </div>
-        </div>
-
-        <div class="block" data-svg-id="5">
-            <div class="block-pic">
-                [[$boodet_svg_disks]]
-            </div>
-            <div class="block-title">
-                DATA-диски
-            </div>
-            <div class="block-description">
-                Вам доступны архивные, стандартные и&nbsp;специально подобранные для&nbsp;вашей задачи диски.
-            </div>
-        </div>
-
-        <div class="block" data-svg-id="8">
-            <div class="block-pic">
-                [[$boodet_svg_backup]]
-            </div>
-            <div class="block-title">
-                File Based Backup
-            </div>
-            <div class="block-description">
-                Делайте резервные копии с&nbsp;удобной системой поиска и&nbsp;восстановления файлов.
-            </div>
-        </div>
-
-        <div class="block" data-svg-id="7">
-            <div class="block-pic">
-                [[$boodet_svg_box]]
-            </div>
-            <div class="block-title">
-                ОС
-            </div>
-            <div class="block-description">
-                Выбирайте операционную систему. Вы можете использовать Windows или&nbsp;ОС на&nbsp;базе Linux.
-            </div>
-        </div>
-
-        <div class="block" data-svg-id="6">
-            <div class="block-pic">
-                [[$boodet_svg_cloud_natural]]
-            </div>
-            <div class="block-title">
-                Облако
-            </div>
-            <div class="block-description">
-                Миграция на&nbsp;облако «под&nbsp;ключ». Удобное решение для&nbsp;тех, кто не&nbsp;тратит время на&nbsp;технические сложности.
-            </div>
-        </div>
+        [[!pdoResources?
+            &parents=`[[+id]]`
+            &depth=`0`
+            &select=`pagetitle,longtitle,content`
+            &sortby=`{"menuindex": "ASC", "pagetitle": "ASC"}`
+            &tpl=`boodet_tpl_index_block_item`
+            &idx=`[[boodet_index_get_idx?&input=`[[+id]]`]]`
+        ]]
     </div>
 
     <div class="btn-row">

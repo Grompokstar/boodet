@@ -33,14 +33,13 @@ menuindex: 2
     </div>
 
     <div class="blocks-container">
-        [[pdoResources?
+        [[!pdoResources?
             &parents=`[[+id]]`
             &depth=`0`
             &select=`pagetitle,longtitle,introtext,description,content`
             &sortby=`{"menuindex": "ASC", "pagetitle": "ASC"}`
             &tpl=`boodet_tpl_index_block_item`
-            &idx=`[[!+total_virtual_server:default=`0`]]`
-            &total=`total_why_we`
+            &idx=`[[boodet_index_get_idx?&input=`[[+id]]`]]`
         ]]
     </div>
 

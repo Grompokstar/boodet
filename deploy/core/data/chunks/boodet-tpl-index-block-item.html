@@ -15,7 +15,11 @@ description: ''
     <div class="block-description">
         [[+longtitle]]
     </div>
-    <div class="block-btn">
-        <a href="[[+introtext]]" class="btn">[[+description]]</a>
-    </div>
+    [[+introtext:len:isnot=`0`:then=`
+        [[+description:len:isnot=`0`:then=`
+            <div class="block-btn">
+                <a href="[[+introtext]]" class="btn">[[+description]]</a>
+            </div>
+        `]]
+    `]]
 </div>
