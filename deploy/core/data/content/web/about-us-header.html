@@ -20,100 +20,13 @@ tvs: {  }
     </div>
 
     <div class="blocks-container">
-        <div class="block centered">
-            <div class="circle-group">
-                <svg class="circle-1 rotate-180" width="200px" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="100px" cy="100px" r="100px"
-                            stroke="#fff"
-                            fill="transparent"
-                            stroke-width="1"
-                            stroke-dasharray="400px"
-                    />
-                </svg>
-
-                <svg class="circle-1 rotate-70" width="182px" height="182px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="91px" cy="91px" r="91px"
-                            stroke="#f4d47a"
-                            fill="transparent"
-                            stroke-width="1"
-                            stroke-dasharray="380px"
-                    />
-                </svg>
-                <div class="block-circle">
-                    <div class="count">58</div>
-                    <div class="text">лет</div>
-                </div>
-            </div>
-            <div class="block-title text-center">
-                Общий стаж наших технических сотрудников
-            </div>
-            <div class="block-description text-center">
-                Мы собрали в&nbsp;компании профессионалов с&nbsp;уникальными компетенциями в&nbsp;IT
-            </div>
-        </div>
-
-        <div class="block centered">
-            <div class="circle-group">
-                <svg class="circle-1 rotate-260" width="200px" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="100px" cy="100px" r="100px"
-                            stroke="#fff"
-                            fill="transparent"
-                            stroke-width="1"
-                            stroke-dasharray="300px"
-                    />
-                </svg>
-
-                <svg class="circle-1 rotate-135" width="182px" height="182px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="91px" cy="91px" r="91px"
-                            stroke="#f4d47a"
-                            fill="transparent"
-                            stroke-width="1"
-                            stroke-dasharray="400px"
-                    />
-                </svg>
-                <div class="block-circle">
-                    <div class="count">35</div>
-                </div>
-            </div>
-            <div class="block-title text-center">
-                Успешных проектов
-            </div>
-            <div class="block-description text-center">
-                В&nbsp;сфере крупного бизнеса. Наши клиенты
-            </div>
-        </div>
-
-        <div class="block centered">
-            <div class="circle-group">
-                <svg class="circle-1 rotate-240" width="200px" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="100px" cy="100px" r="100px"
-                            stroke="#fff"
-                            fill="transparent"
-                            stroke-width="1"
-                            stroke-dasharray="300px"
-                    />
-                </svg>
-
-                <svg class="circle-1 rotate-45" width="182px" height="182px" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="91px" cy="91px" r="91px"
-                            stroke="#f4d47a"
-                            fill="transparent"
-                            stroke-width="1"
-                            stroke-dasharray="380px"
-                    />
-                </svg>
-                <div class="block-circle">
-                    <div class="count">2</div>
-                    <div class="text">года</div>
-                </div>
-            </div>
-            <div class="block-title text-center">
-                Существует наша компания
-            </div>
-            <div class="block-description text-center">
-                А мы уже столько успели сделать&nbsp;:)
-            </div>
-        </div>
+        [[pdoResources?
+            &parents=`[[+id]]`
+            &depth=`0`
+            &select=`pagetitle,longtitle,introtext,description,content`
+            &sortby=`{"menuindex": "ASC", "pagetitle": "ASC"}`
+            &tpl=`boodet_tpl_about_us_fact`
+        ]]
     </div>
 
     <div class="wave-image">
