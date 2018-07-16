@@ -389,7 +389,7 @@ $(function(){
     })
 
     $('.go-to-case').on('click', function() {
-      document.location.href = 'cases.html';
+      document.location.href = 'cases';
     })
   });
 
