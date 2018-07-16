@@ -30,45 +30,11 @@ tvs: {  }
         </div>
     </div>
 
-    <div class="boodet__container">
-        <div class="blocks-header"><h3 class="font-xl medium">[[+description]]</h3></div>
-    </div>
-
-    <div class="blocks-container">
-        <div class="block">
-            <div class="block-pic">
-                [[$boodet_svg_advantages]]
-            </div>
-            <div class="block-description">
-                Свободно выбирайте, сколько ресурсов вам нужно, и&nbsp;платите только за&nbsp;то, что используется.
-            </div>
-        </div>
-
-        <div class="block">
-            <div class="block-pic">
-                [[$boodet_svg_logo_systems]]
-            </div>
-            <div class="block-description">
-                Используйте приготовленные нами образы бесплатных и&nbsp;коммерческих операционных систем или&nbsp;устанавливайте свои.
-            </div>
-        </div>
-
-        <div class="block" data-svg-id="2">
-            <div class="block-pic">
-                <object id="pic16" data="images/svg/pic_cabinet.svg"></object>
-            </div>
-            <div class="block-description">
-                Удобный личный кабинет, чтобы управлять виртуальными серверами, настраивать доступ в интернет,
-                контролировать потребляемые ресурсы и общаться с техподдержкой.
-            </div>
-        </div>
-    </div>
-
-    <div class="btn-row mb-3">
-        <a href="[[~7]]" class="btn btn-x2">Рассчитать цену</a>
-    </div>
-
-    <div class="wave-image">
-        [[$boodet_svg_wave]]
-    </div>
+    [[pdoResources?
+        &parents=`[[+id]]`
+        &depth=`0`
+        &select=`id,longtitle,description,content`
+        &sortby=`{"menuindex": "ASC", "pagetitle": "ASC"}`
+        &tpl=`@INLINE {{+content}}`
+    ]]
 </div>

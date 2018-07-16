@@ -1,0 +1,38 @@
+id: 33
+parent: 16
+pagetitle: 'Преимущества'
+longtitle: 'Ваши преимущества'
+alias: 'cloud-power-header-advantages'
+published: 1
+introtext: ''
+description: 'Рассчитать цену'
+richtext: 0
+template: 0
+content_type: 9
+uri: ''
+properties: null
+tvs: {  }
+
+-----
+
+<div class="boodet__container">
+    <div class="blocks-header"><h3 class="font-xl medium">[[+longtitle]]</h3></div>
+</div>
+
+<div class="blocks-container">
+    [[pdoResources?
+        &parents=`[[+id]]`
+        &depth=`0`
+        &select=`introtext,content`
+        &sortby=`{"menuindex": "ASC", "pagetitle": "ASC"}`
+        &tpl=`boodet_tpl_cloud_power_advantage`
+    ]]
+</div>
+
+<div class="btn-row mb-3">
+    <a href="[[~7]]" class="btn btn-x2">[[+description]]</a>
+</div>
+
+<div class="wave-image">
+    [[$boodet_svg_wave]]
+</div>
