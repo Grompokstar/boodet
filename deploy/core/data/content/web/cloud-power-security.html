@@ -4,7 +4,7 @@ pagetitle: Безопасность
 longtitle: Безопасность
 alias: 'cloud-power-security'
 published: 1
-introtext: 'Двухфакторная идентификация пользователя исключает случаи взлома'
+introtext: ''
 description: 'Безопасность системы проверяет и&nbsp;обрегает компания Bi.ZONE'
 richtext: 0
 template: 0
@@ -22,17 +22,12 @@ tvs: {  }
 	</div>
 
 	<div class="blocks-container">
-		<div class="block-row">
-			<div class="block-icon">
-				[[$boodet_svg_safe]]
-			</div>
-			<div class="text">[[+introtext]]</div>
-		</div>
-		<div class="block-row">
-			<div class="block-icon">
-				[[$boodet_svg_shield]]
-			</div>
-			<div class="text">[[+description]]</div>
-		</div>
+		[[pdoResources?
+			&parents=`[[+id]]`
+			&depth=`0`
+			&select=`introtext,content`
+			&sortby=`{"menuindex": "ASC", "pagetitle": "ASC"}`
+			&tpl=`boodet_tpl_cloud_power_security_item`
+		]]
 	</div>
 </div>
