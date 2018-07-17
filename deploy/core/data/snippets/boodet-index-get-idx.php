@@ -6,9 +6,8 @@ name: boodet_index_get_idx
 
 #<?php
 /** @var modX $modx */
-/** @var int $input */
+/** @var int $input id resource - 24 or 22*/
 $currentResource = (int) $input;
-$modx->log(1, $input);
 
 $qGetResource = $modx->newQuery('modResource', [
     'id:IN' => [24,22],
