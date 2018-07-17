@@ -1,6 +1,7 @@
 id: 11
 source: 1
 name: boodet_index_get_idx
+properties: null
 
 -----
 
