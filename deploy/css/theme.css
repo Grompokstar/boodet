@@ -973,8 +973,8 @@ html, body {
       align-items: center;
       margin-bottom: 1em; }
     .blocks-container .block .block-circle {
-      width: 164px;
-      height: 164px;
+      width: 12em;
+      height: 12em;
       border-radius: 50%;
       background-color: #fff;
       color: #2c4edd;
