@@ -993,7 +993,7 @@ html, body {
       .blocks-container .block .block-pic svg {
         height: 4.5em; }
     .blocks-container .block .block-title {
-      font-size: 1.8em;
+      font-size: 2.5em;
       font-weight: 500;
       margin-bottom: 0.5em;
       line-height: 1em; }
@@ -1138,7 +1138,8 @@ ol.yellow-number-list {
   margin: 1em 0;
   padding-left: 2em; }
   ol.yellow-number-list li {
-    position: relative; }
+    position: relative;
+    margin: .2em 0; }
     ol.yellow-number-list li:first-child:before {
       content: '1'; }
     ol.yellow-number-list li:nth-child(2):before {
@@ -2566,12 +2567,14 @@ img.full-width {
 #our-cases {
   padding-bottom: 7em;
   position: relative; }
-  #our-cases .section-header .header-image img {
-    left: -10em;
-    height: 20em;
-    bottom: -70px; }
-  #our-cases .section-header .header-text {
-    margin-bottom: 1.5em; }
+  #our-cases .section-header {
+    align-items: baseline; }
+    #our-cases .section-header .header-image img {
+      left: -10em;
+      height: 20em;
+      bottom: -70px; }
+    #our-cases .section-header .header-text {
+      margin-bottom: 1.5em; }
   #our-cases .gradient-oval {
     position: absolute;
     left: -6em;
