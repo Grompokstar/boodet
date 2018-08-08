@@ -1413,7 +1413,6 @@ img.full-width {
     .section-header .header-image svg {
       left: 0; }
     .section-header .header-text {
-      width: 80%;
       position: relative;
       -moz-hyphens: auto;
       -webkit-hyphens: auto;
@@ -2628,7 +2627,7 @@ img.full-width {
     border-radius: 12em/35em; }
     @media screen and (max-width: 575px) {
       #our-cases .gradient-oval {
-        left: -9em; } }
+        left: -10em; } }
   #our-cases .go-to-case {
     cursor: pointer; }
   @media (max-width: 575px) {
@@ -2967,8 +2966,7 @@ img.full-width {
     height: 15em; }
   #mission .img {
     height: 15em;
-    position: absolute;
-    top: 0;
+    position: relative;
     width: 100%; }
     #mission .img svg {
       height: 100%; }
@@ -2980,6 +2978,10 @@ img.full-width {
       position: absolute;
       top: -1em;
       right: 1em; }
+      @media screen and (max-width: 575px) {
+        #mission .img .yellow-circle {
+          right: auto;
+          left: 10em; } }
 
 #team {
   padding: 3em 9% 4em;
@@ -3103,6 +3105,9 @@ img.full-width {
     height: 35em;
     background: linear-gradient(#2c4edd, #ff3200);
     border-radius: 10em/35em; }
+    @media screen and (max-width: 575px) {
+      #cases .gradient-oval {
+        left: -8em; } }
   #cases .page-title-chip {
     position: relative;
     display: inline-block;
@@ -3165,6 +3170,9 @@ img.full-width {
     right: -19em;
     bottom: -4em;
     height: 18em; }
+    @media screen and (max-width: 575px) {
+      #cases .absolute-image-bag {
+        right: -24em; } }
 
 #page-404 {
   background: linear-gradient(45deg, #3d41a3 0%, #2c4edd 100%);
