@@ -1,12 +1,21 @@
 #mission {
   padding: 3em 0 5em;
-
+  .case {
+    .case-li {
+      @media screen and (max-width: 575px){
+          padding-left: 0;
+          left: 0;
+      }
+    }
+  }
+  .width-33 {
+    height: 15em;
+  }
   .img {
     height: 15em;
     position: absolute;
     top: 0;
-    right: 2em;
-
+    width: 100%;
     svg {
       height: 100%;
     }

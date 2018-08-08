@@ -12,14 +12,15 @@
 
       img {
         height: 32em;
-        position: absolute;
+        position: static;
         top: -1em;
         right: 0;
         left: auto;
 
-        @media (max-width: 576px) {
-          top: -0.5em;
-          left: -7em;
+        @media (max-width: 575px) {
+          height: 32em;
+          position: static;
+          margin-top: 2em;
         }
       }
     }

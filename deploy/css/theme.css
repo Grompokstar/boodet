@@ -971,7 +971,7 @@ html, body {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 1em; }
+      margin-bottom: 1.5em; }
     .blocks-container .block .block-circle {
       width: 12em;
       height: 12em;
@@ -1043,15 +1043,36 @@ button.btn, a.btn {
       border-color: #000; }
 
 .section-header {
+  position: relative;
+  z-index: 4;
   display: flex; }
+  @media screen and (max-width: 575px) {
+    .section-header {
+      flex-direction: column; } }
   .section-header .header-image {
     width: 33.333%;
     position: relative; }
+    @media screen and (max-width: 575px) {
+      .section-header .header-image {
+        width: 50%;
+        min-width: 19em;
+        padding-left: 5%; } }
+  @media screen and (max-width: 575px) and (max-width: 360px) {
+    .section-header .header-image {
+      width: 90%;
+      padding-right: 5%; } }
+
     .section-header .header-image img {
       height: 22em;
       position: absolute;
       left: 0;
       bottom: 0; }
+    @media screen and (max-width: 575px) {
+      .section-header .header-image svg {
+        position: static;
+        height: auto;
+        width: 100%;
+        margin-top: 2em; } }
     .section-header .header-image.to-right-position img {
       left: inherit;
       right: 0;
@@ -1061,6 +1082,10 @@ button.btn, a.btn {
     width: 66.666%;
     margin: 4em 0 3em;
     padding: 0 5%; }
+    @media screen and (max-width: 575px) {
+      .section-header .header-text {
+        width: 100%;
+        box-sizing: border-box; } }
     .section-header .header-text p {
       line-height: 1.3em; }
 
@@ -1385,10 +1410,8 @@ img.full-width {
 
   .section-header {
     font-size: 0.8em; }
-    .section-header .header-image {
-      width: 10%; }
-      .section-header .header-image svg {
-        left: 0; }
+    .section-header .header-image svg {
+      left: 0; }
     .section-header .header-text {
       width: 80%;
       position: relative;
@@ -1440,6 +1463,26 @@ img.full-width {
 .mb-06 {
   margin-bottom: 0.6em;
   display: inline-block; }
+
+@media screen and (max-width: 575px) {
+  .section-img__flex-container {
+    flex-direction: column; }
+    .section-img__flex-container .width-33 {
+      width: 100%;
+      padding-left: 5%;
+      padding-right: 3%;
+      box-sizing: border-box; }
+      .section-img__flex-container .width-33 .img {
+        min-height: auto; }
+        .section-img__flex-container .width-33 .img svg {
+          max-height: unset;
+          height: auto;
+          width: 50%;
+          min-width: 15em;
+          position: static; }
+    .section-img__flex-container .width-66 {
+      width: 100%;
+      box-sizing: border-box; } }
 
 @media (min-width: 576px) {
   .d-sm {
@@ -2629,6 +2672,10 @@ img.full-width {
     height: 20em;
     background: url("../images/svg/site-06.svg") no-repeat;
     opacity: 0.3; }
+  @media screen and (max-width: 575px) {
+    #virtual-server .section-header .header-image {
+      position: absolute;
+      margin-top: 28em; } }
   #virtual-server .section-header .header-image img {
     height: 30em;
     left: -23em; }
@@ -2826,15 +2873,18 @@ img.full-width {
   background: linear-gradient(45deg, #3d41a3 0%, #2c4edd 100%);
   padding-bottom: 3em; }
   #rules .section-header .header-image svg {
-    position: absolute;
-    top: 1em;
-    right: 0;
+    margin-top: 2em;
     height: 18em; }
     #rules .section-header .header-image svg#tennis-ball {
+      position: absolute;
       width: 2.5em;
       height: 2.5em;
       right: 13em;
       z-index: 3; }
+      @media screen and (max-width: 575px) {
+        #rules .section-header .header-image svg#tennis-ball {
+          right: auto;
+          left: 10em; } }
   #rules .wave-image {
     margin-top: 3em; }
     #rules .wave-image svg {
@@ -2909,11 +2959,17 @@ img.full-width {
 
 #mission {
   padding: 3em 0 5em; }
+  @media screen and (max-width: 575px) {
+    #mission .case .case-li {
+      padding-left: 0;
+      left: 0; } }
+  #mission .width-33 {
+    height: 15em; }
   #mission .img {
     height: 15em;
     position: absolute;
     top: 0;
-    right: 2em; }
+    width: 100%; }
     #mission .img svg {
       height: 100%; }
     #mission .img .yellow-circle {
@@ -2960,39 +3016,10 @@ img.full-width {
     #cloud-power .wave-image svg {
       height: 4em;
       margin-left: 35.333%; }
-  #cloud-power .section-header {
-    position: relative;
-    z-index: 4; }
-    @media screen and (max-width: 575px) {
-      #cloud-power .section-header {
-        flex-direction: column; } }
-    @media screen and (max-width: 575px) {
-      #cloud-power .section-header .header-image {
-        width: 50%;
-        min-width: 19em;
-        padding-left: 5%; } }
-  @media screen and (max-width: 575px) and (max-width: 360px) {
-    #cloud-power .section-header .header-image {
-      width: 90%;
-      padding-right: 5%; } }
-
-    #cloud-power .section-header .header-image svg {
-      height: calc(100% - 5em);
-      position: absolute;
-      right: 0;
-      bottom: 0; }
-      @media screen and (max-width: 575px) {
-        #cloud-power .section-header .header-image svg {
-          position: static;
-          height: auto;
-          width: 100%;
-          margin-top: 2em; } }
-    #cloud-power .section-header .header-text {
-      margin-bottom: 0; }
-      @media screen and (max-width: 575px) {
-        #cloud-power .section-header .header-text {
-          width: 100%;
-          box-sizing: border-box; } }
+  #cloud-power .section-header .header-image svg {
+    margin-top: 2em; }
+  #cloud-power .section-header .header-text {
+    margin-bottom: 0; }
   #cloud-power .blocks-header {
     position: relative;
     z-index: 4;
@@ -3025,20 +3052,14 @@ img.full-width {
 #cloud-store {
   background: linear-gradient(45deg, #3d41a3 0%, #2c4edd 100%);
   position: relative; }
-  #cloud-store .section-header {
-    position: relative;
-    z-index: 4; }
+  @media screen and (min-width: 576px) {
     #cloud-store .section-header .header-image {
       min-height: 25em; }
       #cloud-store .section-header .header-image svg {
         height: 20em;
         position: absolute;
         top: 5em;
-        right: 0; }
-        @media (max-width: 576px) {
-          #cloud-store .section-header .header-image svg {
-            top: -0.5em;
-            left: -5em; } }
+        right: 0; } }
 
 #documents {
   background: linear-gradient(45deg, #3d41a3 0%, #2c4edd 100%);
@@ -3105,6 +3126,10 @@ img.full-width {
       line-height: 1.4em;
       display: flex;
       position: relative; }
+      @media screen and (max-width: 575px) {
+        #cases .case .case-li {
+          display: block;
+          margin-top: 1.5em; } }
       #cases .case .case-li .li-title {
         font-size: 0.5em;
         font-weight: 500;
@@ -3116,6 +3141,9 @@ img.full-width {
         text-align: right;
         padding-right: 2em;
         box-sizing: border-box; }
+        @media screen and (max-width: 575px) {
+          #cases .case .case-li .li-title {
+            text-align: left; } }
   #cases .case-blue-background {
     background: radial-gradient(at bottom left, #151e45 0%, #2c4edd 61%, #642cdd 100%);
     color: #fff; }
@@ -3149,14 +3177,15 @@ img.full-width {
       position: relative; }
       #page-404 .section-header .header-image img {
         height: 32em;
-        position: absolute;
+        position: static;
         top: -1em;
         right: 0;
         left: auto; }
-        @media (max-width: 576px) {
+        @media (max-width: 575px) {
           #page-404 .section-header .header-image img {
-            top: -0.5em;
-            left: -7em; } }
+            height: 32em;
+            position: static;
+            margin-top: 2em; } }
     #page-404 .section-header .header-text {
       position: relative;
       z-index: 3; }

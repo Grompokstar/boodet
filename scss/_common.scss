@@ -131,7 +131,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
     }
 
     .block-circle {
@@ -240,17 +240,40 @@ button.btn, a.btn {
 }
 
 .section-header {
+  position: relative;
+  z-index: 4;
   display: flex;
+  @media screen and (max-width: 575px) {
+    flex-direction: column;
+  }
 
   .header-image {
     width: 33.333%;
     position: relative;
+    @media screen and (max-width: 575px) {
+      width: 50%;
+      min-width: 19em;
+      padding-left: 5%;
+      @media screen and (max-width: 360px){
+        width: 90%;
+        padding-right: 5%;
+      }
+    }
 
     img {
       height: 22em;
       position: absolute;
       left: 0;
       bottom: 0;
+    }
+
+    svg {
+      @media screen and (max-width: 575px) {
+        position: static;
+        height: auto;
+        width: 100%;
+        margin-top: 2em;
+      }
     }
 
     &.to-right-position {
@@ -267,6 +290,10 @@ button.btn, a.btn {
     width: 66.666%;
     margin: 4em 0 3em;
     padding: 0 5%;
+    @media screen and (max-width: 575px) {
+      width: 100%;
+      box-sizing: border-box;
+    }
     p {
       line-height: 1.3em;
     }
@@ -745,7 +772,6 @@ img.full-width {
     font-size: 0.8em;
 
     .header-image {
-      width: 10%;
 
       svg {
         left: 0;
@@ -835,6 +861,37 @@ img.full-width {
 .mb-06 {
   margin-bottom: 0.6em;
   display: inline-block;
+}
+
+.section-img {
+  &__flex-container {
+    @media screen and (max-width: 575px){
+        flex-direction: column;
+        .width-33 {
+          width: 100%;
+          padding-left: 5%;
+          padding-right: 3%;
+          box-sizing: border-box;
+          .img {
+            min-height: auto;
+            svg {
+              max-height: unset;
+              height: auto;
+              width: 50%;
+              min-width: 15em;
+              position: static;
+              @media screen and (max-width: 360px){
+
+              }
+            }
+          }
+        }
+        .width-66 {
+          width: 100%;
+          box-sizing: border-box;
+        }
+    }
+  }
 }
 
 @media (min-width: 576px) {
