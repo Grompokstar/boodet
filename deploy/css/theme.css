@@ -2674,7 +2674,7 @@ img.full-width {
   @media screen and (max-width: 575px) {
     #virtual-server .section-header .header-image {
       position: absolute;
-      margin-top: 28em; } }
+      margin-top: 22em; } }
   #virtual-server .section-header .header-image img {
     height: 30em;
     left: -23em; }
