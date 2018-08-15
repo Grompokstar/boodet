@@ -966,12 +966,16 @@ html, body {
     .blocks-container .block.centered {
       align-items: center; }
     .blocks-container .block .circle-1 {
-      position: absolute; }
+      position: absolute;
+      left: -1.5em;
+      top: -1.5em; }
+    .blocks-container .block .circle-2 {
+      position: absolute;
+      left: -0.825em;
+      top: -0.825em; }
     .blocks-container .block .circle-group {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 1.5em; }
+      margin-bottom: 1.5em;
+      position: relative; }
     .blocks-container .block .block-circle {
       width: 12em;
       height: 12em;
