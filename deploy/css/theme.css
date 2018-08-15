@@ -2892,7 +2892,7 @@ img.full-width {
       @media screen and (max-width: 575px) {
         #rules .section-header .header-image svg#tennis-ball {
           right: auto;
-          left: 10em; } }
+          left: 30%; } }
   #rules .wave-image {
     margin-top: 3em; }
     #rules .wave-image svg {
