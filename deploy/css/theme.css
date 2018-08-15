@@ -1311,6 +1311,10 @@ ol.blue-number-list {
     width: 26em;
     align-items: center;
     margin-bottom: 3em; }
+    @media screen and (max-width: 575px) {
+      .cases .cases-control {
+        margin-left: -6em;
+        width: calc(100% + 5em); } }
     .cases .cases-control .circle {
       width: 1.5em;
       min-width: 1.5em;
@@ -1321,6 +1325,11 @@ ol.blue-number-list {
       justify-content: center;
       align-items: center;
       cursor: pointer; }
+      @media screen and (max-width: 575px) {
+        .cases .cases-control .circle {
+          width: 1.4em;
+          min-width: 1.4em;
+          height: 1.4em; } }
       .cases .cases-control .circle .red-circle {
         display: none;
         width: 0.82em;

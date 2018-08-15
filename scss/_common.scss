@@ -636,6 +636,10 @@ ol.blue-number-list {
     width: 26em;
     align-items: center;
     margin-bottom: 3em;
+    @media screen and (max-width: 575px){
+        margin-left: -6em;
+        width: calc(100% + 5em);
+    }
 
     .circle {
       width: 1.5em;
@@ -647,6 +651,11 @@ ol.blue-number-list {
       justify-content: center;
       align-items: center;
       cursor: pointer;
+      @media screen and (max-width: 575px){
+        width: 1.4em;
+        min-width: 1.4em;
+        height: 1.4em;
+      }
 
       .red-circle {
         display: none;
