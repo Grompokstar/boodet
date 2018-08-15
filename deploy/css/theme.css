@@ -2922,9 +2922,20 @@ img.full-width {
     margin-bottom: 0.7em; }
   #kipr ul {
     margin-bottom: 3em; }
+  @media screen and (max-width: 575px) {
+    #kipr .flex-container {
+      flex-direction: column; } }
   #kipr .width-33 {
     position: relative;
     top: -3em; }
+    @media screen and (max-width: 575px) {
+      #kipr .width-33 {
+        width: 100%;
+        box-sizing: border-box; } }
+  @media screen and (max-width: 575px) {
+    #kipr .width-66 {
+      width: 100%;
+      box-sizing: border-box; } }
   #kipr .img {
     position: relative; }
     #kipr .img #beach-img {

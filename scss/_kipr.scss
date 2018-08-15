@@ -11,9 +11,26 @@
     margin-bottom: 3em;
   }
 
+  .flex-container {
+    @media screen and (max-width: 575px){
+        flex-direction: column;
+    }
+  }
+
   .width-33 {
     position: relative;
-    top: -3em
+    top: -3em;
+    @media screen and (max-width: 575px){
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  .width-66 {
+    @media screen and (max-width: 575px){
+      width: 100%;
+      box-sizing: border-box;
+    }
   }
 
   .img {
