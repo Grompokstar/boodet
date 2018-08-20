@@ -10,21 +10,21 @@
 
     #main-slide_img-1 {
       position: absolute;
-      top: 15%;
+      top: 10%;
       left: 5%;
       width: 7%;
     }
 
     #main-slide_img-2 {
       position: absolute;
-      bottom: 15%;
+      bottom: 20%;
       left: 7%;
       width: 10%;
     }
 
     #main-slide_img-3 {
       position: absolute;
-      bottom: 15%;
+      bottom: 20%;
       left: 19%;
       width: 12%;
       @media screen and (max-width: 575px){
@@ -34,7 +34,7 @@
 
     #main-slide_img-4 {
       position: absolute;
-      bottom: 15%;
+      bottom: 20%;
       left: 33%;
       width: 10%;
     }
@@ -52,7 +52,7 @@
       z-index: 5;
 
       .slide-title {
-        margin-top: 1.5em;
+        margin-top: .8em;
         font-size: 4em;
         font-weight: 500;
       }
@@ -65,7 +65,7 @@
 
       .slide-btn {
         font-size: 1.8em;
-        margin: 3em 0 2em;
+        margin: 3em 0 2.5em;
       }
 
       @media (max-width: 1440px) {
