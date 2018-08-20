@@ -2887,6 +2887,8 @@ img.full-width {
   #rules .section-header .header-image svg {
     margin-top: 2em;
     height: 18em; }
+    #rules .section-header .header-image svg#tennis {
+      float: right; }
     #rules .section-header .header-image svg#tennis-ball {
       position: absolute;
       width: 2.5em;
