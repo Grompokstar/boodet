@@ -3211,7 +3211,7 @@ img.full-width {
       position: relative; }
       #page-404 .section-header .header-image img {
         height: 32em;
-        position: static;
+        position: absolute;
         top: -1em;
         right: 0;
         left: auto; }
